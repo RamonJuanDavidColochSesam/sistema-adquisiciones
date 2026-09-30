@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Departamentos</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; }
+  table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+  th, td { border: 1px solid #ccc; padding: 6px; text-align: left; }
+  .fila-form { display: flex; gap: 10px; flex-wrap: wrap; }
+  .fila-form input, .fila-form select { flex: 1; min-width: 120px; padding: 6px; box-sizing: border-box; }
+</style>
+</head>
+<body>
+  <h2>Departamentos</h2>
+
+  <div class="fila-form">
+    <input type="hidden" id="idDepartamento">
+    <select id="idSucursal"></select>
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="text" id="descripcion" placeholder="Descripción">
+  </div>
+  <button onclick="guardar()">Guardar</button>
+  <button onclick="limpiarFormulario()">Limpiar</button>
+  <p id="error" style="color:red;"></p>
+
+  <table>
+    <thead>
+      <tr><th>ID</th><th>Sucursal</th><th>Nombre</th><th>Descripción</th><th></th></tr>
+    </thead>
+    <tbody id="tablaDepartamentos"></tbody>
+  </table>
+
+  <script>
+    async function cargarSucursalesEnSelect() {
+      const respuesta = await fetch('api/sucursales', { credentials: 'same-origin' });
+      if (respuesta.status === 401) { window.location.href = 'login.html'; return; }
+      const sucursales = await respuesta.json();
+      const select = document.getElementById('idSucursal');
+      select.innerHTML = '<option value="">-- Seleccione sucursal --</option>';
+      sucursales.forEach(s => {
+        const opcion = document.createElement('option');
+        opcion.value = s.idSucursal;
+        opcion.textContent = `${s.codigoSucursal} - ${s.ciudad}`;
+        select.appendChild(opcion);
+      });
+    }
+
+    async function cargarDepartamentos() {
+      const respuesta = await fetch('api/departamentos', { credentials: 'same-origin' });
+      if (respuesta.status === 401) { window.location.href = 'login.html'; return; }
+      const lista = await respuesta.json();
+      const tbody = document.getElementById('tablaDepartamentos');
+      tbody.innerHTML = '';
+
+      lista.forEach(d => {
+        const fila = document.createElement('tr');
+        fila.innerHTML = `
+          <td>${d.idDepartamento}</td><td>${d.codigoSucursal}</td><td>${d.nombre}</td><td>${d.descripcion ?? ''}</td>
+          <td>
+            <button onclick='editar(${JSON.stringify(d)})'>Editar</button>
+            <button onclick='eliminar(${d.idDepartamento})'>Eliminar</button>
+          </td>`;
+        tbody.appendChild(fila);
+      });
+    }
+
+    function editar(d) {
+      document.getElementById('idDepartamento').value = d.idDepartamento;
+      document.getElementById('idSucursal').value = d.idSucursal;
+      document.getElementById('nombre').value = d.nombre;
+      document.getElementById('descripcion').value = d.descripcion ?? '';
+    }
+
+    function limpiarFormulario() {
+      document.getElementById('idDepartamento').value = '';
+      document.getElementById('idSucursal').value = '';
+      document.getElementById('nombre').value = '';
+      document.getElementById('descripcion').value = '';
+    }
+
+    async function guardar() {
+      const id = document.getElementById('idDepartamento').value;
+      const cuerpo = {
+        idSucursal: parseInt(document.getElementById('idSucursal').value, 10),
+        nombre: document.getElementById('nombre').value,
+        descripcion: document.getElementById('descripcion').value
+      };
+
+      const url = id ? `api/departamentos/${id}` : 'api/departamentos';
+      const metodo = id ? 'PUT' : 'POST';
+
+      const respuesta = await fetch(url, {
+        method: metodo,
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'same-origin',
+        body: JSON.stringify(cuerpo)
+      });
+
+      const errorEl = document.getElementById('error');
+      if (!respuesta.ok) {
+        const datos = await respuesta.json();
+        errorEl.textContent = datos.error || 'Error al guardar';
+        return;
+      }
+
+      errorEl.textContent = '';
+      limpiarFormulario();
+      cargarDepartamentos();
+    }
+
+    async function eliminar(id) {
+      if (!confirm('¿Eliminar este departamento?')) return;
+      await fetch(`api/departamentos/${id}`, { method: 'DELETE', credentials: 'same-origin' });
+      cargarDepartamentos();
+    }
+
+    cargarSucursalesEnSelect().then(cargarDepartamentos);
+  </script>
+</body>
+</html>
