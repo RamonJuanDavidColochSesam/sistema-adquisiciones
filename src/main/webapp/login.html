@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Login - Sistema de Adquisiciones</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 320px; margin: 100px auto; }
+  input { display: block; width: 100%; margin-bottom: 10px; padding: 8px; box-sizing: border-box; }
+  button { width: 100%; padding: 8px; }
+  #error { color: red; }
+</style>
+</head>
+<body>
+  <h2>Iniciar sesión</h2>
+  <input type="text" id="nombreUsuario" placeholder="Usuario">
+  <input type="password" id="contrasena" placeholder="Contraseña">
+  <button onclick="iniciarSesion()">Entrar</button>
+  <p id="error"></p>
+
+  <script>
+    async function iniciarSesion() {
+      const nombreUsuario = document.getElementById('nombreUsuario').value;
+      const contrasena = document.getElementById('contrasena').value;
+      const errorEl = document.getElementById('error');
+      errorEl.textContent = '';
+
+      try {
+        const respuesta = await fetch('api/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          credentials: 'same-origin',
+          body: JSON.stringify({ nombreUsuario, contrasena })
+        });
+
+        if (!respuesta.ok) {
+          const datos = await respuesta.json();
+          errorEl.textContent = datos.error || 'Error al iniciar sesión';
+          return;
+        }
+
+        window.location.href = 'sucursales.html';
+      } catch (e) {
+        errorEl.textContent = 'Error de conexión con el servidor';
+      }
+    }
+  </script>
+</body>
+</html>

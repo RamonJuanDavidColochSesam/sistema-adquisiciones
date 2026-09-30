@@ -19,5 +19,14 @@
         <servlet-name>JerseyServlet</servlet-name>
         <url-pattern>/api/*</url-pattern>
     </servlet-mapping>
+    
+    <filter>
+    <filter-name>AuthFilter</filter-name>
+    <filter-class>com.adquisiciones.filtro.AuthFilter</filter-class>
+</filter>
+<filter-mapping>
+    <filter-name>AuthFilter</filter-name>
+    <url-pattern>/api/*</url-pattern>
+</filter-mapping>
 
 </web-app>

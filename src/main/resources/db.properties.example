@@ -1,0 +1,7 @@
+sqlserver.url=jdbc:sqlserver://localhost:1433;databaseName=GuateCompras;encrypt=true;trustServerCertificate=true
+sqlserver.user=app_adquisiciones
+sqlserver.password=TU_CONTRASENA_AQUI
+
+postgres.url=jdbc:postgresql://localhost:5432/guatecompras
+postgres.user=app_adquisiciones
+postgres.password=TU_CONTRASENA_AQUI

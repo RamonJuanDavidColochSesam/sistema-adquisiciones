@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Sucursales</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; }
+  table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+  th, td { border: 1px solid #ccc; padding: 6px; text-align: left; }
+  .fila-form { display: flex; gap: 10px; flex-wrap: wrap; }
+  .fila-form input { flex: 1; min-width: 120px; padding: 6px; box-sizing: border-box; }
+</style>
+</head>
+<body>
+  <h2>Sucursales</h2>
+
+  <div class="fila-form">
+    <input type="hidden" id="idSucursal">
+    <input type="text" id="codigoSucursal" placeholder="Código">
+    <input type="text" id="direccion" placeholder="Dirección">
+    <input type="text" id="ciudad" placeholder="Ciudad">
+    <input type="text" id="region" placeholder="Región">
+    <input type="text" id="telefono" placeholder="Teléfono">
+  </div>
+  <button onclick="guardar()">Guardar</button>
+  <button onclick="limpiarFormulario()">Limpiar</button>
+  <p id="error" style="color:red;"></p>
+
+  <table>
+    <thead>
+      <tr><th>ID</th><th>Código</th><th>Dirección</th><th>Ciudad</th><th>Región</th><th>Teléfono</th><th></th></tr>
+    </thead>
+    <tbody id="tablaSucursales"></tbody>
+  </table>
+
+  <script>
+    async function cargarSucursales() {
+      const respuesta = await fetch('api/sucursales', { credentials: 'same-origin' });
+      if (respuesta.status === 401) { window.location.href = 'login.html'; return; }
+      const lista = await respuesta.json();
+      const tbody = document.getElementById('tablaSucursales');
+      tbody.innerHTML = '';
+
+      lista.forEach(s => {
+        const fila = document.createElement('tr');
+        fila.innerHTML = `
+          <td>${s.idSucursal}</td><td>${s.codigoSucursal}</td><td>${s.direccion}</td>
+          <td>${s.ciudad}</td><td>${s.region}</td><td>${s.telefono}</td>
+          <td>
+            <button onclick='editar(${JSON.stringify(s)})'>Editar</button>
+            <button onclick='eliminar(${s.idSucursal})'>Eliminar</button>
+          </td>`;
+        tbody.appendChild(fila);
+      });
+    }
+
+    function editar(s) {
+      document.getElementById('idSucursal').value = s.idSucursal;
+      document.getElementById('codigoSucursal').value = s.codigoSucursal;
+      document.getElementById('direccion').value = s.direccion;
+      document.getElementById('ciudad').value = s.ciudad;
+      document.getElementById('region').value = s.region;
+      document.getElementById('telefono').value = s.telefono;
+    }
+
+    function limpiarFormulario() {
+      ['idSucursal','codigoSucursal','direccion','ciudad','region','telefono']
+        .forEach(id => document.getElementById(id).value = '');
+    }
+
+    async function guardar() {
+      const id = document.getElementById('idSucursal').value;
+      const cuerpo = {
+        codigoSucursal: document.getElementById('codigoSucursal').value,
+        direccion: document.getElementById('direccion').value,
+        ciudad: document.getElementById('ciudad').value,
+        region: document.getElementById('region').value,
+        telefono: document.getElementById('telefono').value
+      };
+
+      const url = id ? `api/sucursales/${id}` : 'api/sucursales';
+      const metodo = id ? 'PUT' : 'POST';
+
+      const respuesta = await fetch(url, {
+        method: metodo,
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'same-origin',
+        body: JSON.stringify(cuerpo)
+      });
+
+      const errorEl = document.getElementById('error');
+      if (!respuesta.ok) {
+        const datos = await respuesta.json();
+        errorEl.textContent = datos.error || 'Error al guardar';
+        return;
+      }
+
+      errorEl.textContent = '';
+      limpiarFormulario();
+      cargarSucursales();
+    }
+
+    async function eliminar(id) {
+      if (!confirm('¿Eliminar esta sucursal?')) return;
+      await fetch(`api/sucursales/${id}`, { method: 'DELETE', credentials: 'same-origin' });
+      cargarSucursales();
+    }
+
+    cargarSucursales();
+  </script>
+</body>
+</html>
