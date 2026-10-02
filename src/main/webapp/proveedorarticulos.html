@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Artículos del proveedor</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; }
+  table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+  th, td { border: 1px solid #ccc; padding: 6px; text-align: left; }
+  .fila-form { display: flex; gap: 10px; flex-wrap: wrap; }
+  .fila-form input, .fila-form select { flex: 1; min-width: 120px; padding: 6px; box-sizing: border-box; }
+</style>
+</head>
+<body>
+  <p><a href="proveedores.html">&larr; Volver a proveedores</a></p>
+  <h2>Artículos del proveedor: <span id="nombreProveedor"></span></h2>
+
+  <div class="fila-form">
+    <select id="idArticulo"></select>
+    <input type="number" id="precio" placeholder="Precio" step="0.01" min="0.01">
+  </div>
+  <button onclick="guardar()">Guardar</button>
+  <button onclick="limpiarFormulario()">Limpiar</button>
+  <p id="error" style="color:red;"></p>
+
+  <table>
+    <thead>
+      <tr><th>Código</th><th>Artículo</th><th>Precio</th><th></th></tr>
+    </thead>
+    <tbody id="tablaArticulosProveedor"></tbody>
+  </table>
+
+  <script>
+    const idProveedor = new URLSearchParams(window.location.search).get('idProveedor');
+    let asociaciones = [];
+    let editando = false;
+
+    function esc(texto) {
+      return String(texto ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    }
+
+    async function cargarProveedor() {
+      const respuesta = await fetch(`api/proveedores/${idProveedor}`, { credentials: 'same-origin' });
+      if (respuesta.status === 401) { window.location.href = 'login.html'; return; }
+      if (!respuesta.ok) { window.location.href = 'proveedores.html'; return; }
+      const proveedor = await respuesta.json();
+      document.getElementById('nombreProveedor').textContent = `${proveedor.codigoProveedor} - ${proveedor.nombreComercial}`;
+    }
+
+    async function cargarArticulosEnSelect() {
+      const respuesta = await fetch('api/articulos', { credentials: 'same-origin' });
+      if (respuesta.status === 401) { window.location.href = 'login.html'; return; }
+      const articulos = await respuesta.json();
+      const select = document.getElementById('idArticulo');
+      select.innerHTML = '<option value="">-- Seleccione artículo --</option>';
+      articulos.forEach(a => {
+        const opcion = document.createElement('option');
+        opcion.value = a.idArticulo;
+        opcion.textContent = `${a.codigoArticulo} - ${a.nombre}`;
+        select.appendChild(opcion);
+      });
+    }
+
+    async function cargarAsociaciones() {
+      const respuesta = await fetch(`api/proveedores/${idProveedor}/articulos`, { credentials: 'same-origin' });
+      if (respuesta.status === 401) { window.location.href = 'login.html'; return; }
+      asociaciones = await respuesta.json();
+      const tbody = document.getElementById('tablaArticulosProveedor');
+      tbody.innerHTML = '';
+
+      asociaciones.forEach((pa, i) => {
+        const fila = document.createElement('tr');
+        fila.innerHTML = `
+          <td>${esc(pa.codigoArticulo)}</td><td>${esc(pa.nombreArticulo)}</td><td>${Number(pa.precio).toFixed(2)}</td>
+          <td>
+            <button onclick='editar(${i})'>Editar precio</button>
+            <button onclick='eliminar(${pa.idArticulo})'>Quitar</button>
+          </td>`;
+        tbody.appendChild(fila);
+      });
+    }
+
+    function editar(i) {
+      const pa = asociaciones[i];
+      editando = true;
+      document.getElementById('idArticulo').value = pa.idArticulo;
+      document.getElementById('idArticulo').disabled = true;
+      document.getElementById('precio').value = pa.precio;
+    }
+
+    function limpiarFormulario() {
+      editando = false;
+      document.getElementById('idArticulo').disabled = false;
+      document.getElementById('idArticulo').value = '';
+      document.getElementById('precio').value = '';
+    }
+
+    async function guardar() {
+      const idArticulo = document.getElementById('idArticulo').value;
+      const textoPrecio = document.getElementById('precio').value;
+      const cuerpo = {
+        idArticulo: parseInt(idArticulo, 10),
+        precio: textoPrecio === '' ? null : parseFloat(textoPrecio)
+      };
+
+      const url = editando
+        ? `api/proveedores/${idProveedor}/articulos/${idArticulo}`
+        : `api/proveedores/${idProveedor}/articulos`;
+      const metodo = editando ? 'PUT' : 'POST';
+
+      const respuesta = await fetch(url, {
+        method: metodo,
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'same-origin',
+        body: JSON.stringify(cuerpo)
+      });
+
+      const errorEl = document.getElementById('error');
+      if (!respuesta.ok) {
+        const datos = await respuesta.json();
+        errorEl.textContent = datos.error || 'Error al guardar';
+        return;
+      }
+
+      errorEl.textContent = '';
+      limpiarFormulario();
+      cargarAsociaciones();
+    }
+
+    async function eliminar(idArticulo) {
+      if (!confirm('¿Quitar este artículo del proveedor?')) return;
+      await fetch(`api/proveedores/${idProveedor}/articulos/${idArticulo}`, { method: 'DELETE', credentials: 'same-origin' });
+      cargarAsociaciones();
+    }
+
+    if (!idProveedor) {
+      window.location.href = 'proveedores.html';
+    } else {
+      cargarProveedor();
+      cargarArticulosEnSelect().then(cargarAsociaciones);
+    }
+  </script>
+</body>
+</html>

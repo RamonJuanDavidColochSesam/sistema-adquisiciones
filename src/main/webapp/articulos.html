@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Artículos</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; }
+  table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+  th, td { border: 1px solid #ccc; padding: 6px; text-align: left; }
+  .fila-form { display: flex; gap: 10px; flex-wrap: wrap; }
+  .fila-form input { flex: 1; min-width: 120px; padding: 6px; box-sizing: border-box; }
+</style>
+</head>
+<body>
+  <h2>Artículos</h2>
+
+  <div class="fila-form">
+    <input type="hidden" id="idArticulo">
+    <input type="text" id="codigoArticulo" placeholder="Código">
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="text" id="descripcion" placeholder="Descripción">
+  </div>
+  <button onclick="guardar()">Guardar</button>
+  <button onclick="limpiarFormulario()">Limpiar</button>
+  <p id="error" style="color:red;"></p>
+
+  <table>
+    <thead>
+      <tr><th>ID</th><th>Código</th><th>Nombre</th><th>Descripción</th><th></th></tr>
+    </thead>
+    <tbody id="tablaArticulos"></tbody>
+  </table>
+
+  <script>
+    let articulos = [];
+
+    function esc(texto) {
+      return String(texto ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    }
+
+    async function cargarArticulos() {
+      const respuesta = await fetch('api/articulos', { credentials: 'same-origin' });
+      if (respuesta.status === 401) { window.location.href = 'login.html'; return; }
+      articulos = await respuesta.json();
+      const tbody = document.getElementById('tablaArticulos');
+      tbody.innerHTML = '';
+
+      articulos.forEach((a, i) => {
+        const fila = document.createElement('tr');
+        fila.innerHTML = `
+          <td>${a.idArticulo}</td><td>${esc(a.codigoArticulo)}</td><td>${esc(a.nombre)}</td><td>${esc(a.descripcion)}</td>
+          <td>
+            <button onclick='editar(${i})'>Editar</button>
+            <button onclick='eliminar(${a.idArticulo})'>Eliminar</button>
+          </td>`;
+        tbody.appendChild(fila);
+      });
+    }
+
+    function editar(i) {
+      const a = articulos[i];
+      document.getElementById('idArticulo').value = a.idArticulo;
+      document.getElementById('codigoArticulo').value = a.codigoArticulo;
+      document.getElementById('nombre').value = a.nombre;
+      document.getElementById('descripcion').value = a.descripcion ?? '';
+    }
+
+    function limpiarFormulario() {
+      ['idArticulo','codigoArticulo','nombre','descripcion']
+        .forEach(id => document.getElementById(id).value = '');
+    }
+
+    async function guardar() {
+      const id = document.getElementById('idArticulo').value;
+      const cuerpo = {
+        codigoArticulo: document.getElementById('codigoArticulo').value,
+        nombre: document.getElementById('nombre').value,
+        descripcion: document.getElementById('descripcion').value
+      };
+
+      const url = id ? `api/articulos/${id}` : 'api/articulos';
+      const metodo = id ? 'PUT' : 'POST';
+
+      const respuesta = await fetch(url, {
+        method: metodo,
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'same-origin',
+        body: JSON.stringify(cuerpo)
+      });
+
+      const errorEl = document.getElementById('error');
+      if (!respuesta.ok) {
+        const datos = await respuesta.json();
+        errorEl.textContent = datos.error || 'Error al guardar';
+        return;
+      }
+
+      errorEl.textContent = '';
+      limpiarFormulario();
+      cargarArticulos();
+    }
+
+    async function eliminar(id) {
+      if (!confirm('¿Eliminar este artículo?')) return;
+      const respuesta = await fetch(`api/articulos/${id}`, { method: 'DELETE', credentials: 'same-origin' });
+      const errorEl = document.getElementById('error');
+      if (!respuesta.ok) {
+        const datos = await respuesta.json();
+        errorEl.textContent = datos.error || 'Error al eliminar';
+        return;
+      }
+      errorEl.textContent = '';
+      cargarArticulos();
+    }
+
+    cargarArticulos();
+  </script>
+</body>
+</html>

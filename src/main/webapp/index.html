@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Sistema de Adquisiciones</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; }
+  ul { list-style: none; padding: 0; }
+  li { margin-bottom: 10px; }
+  li a { display: block; padding: 10px; border: 1px solid #ccc; text-decoration: none; color: inherit; }
+  li a:hover { background: #f0f0f0; }
+</style>
+</head>
+<body>
+  <h2>Sistema de Gestión de Adquisiciones y Proveedores</h2>
+
+  <h3>Estructura organizacional</h3>
+  <ul>
+    <li><a href="sucursales.html">Sucursales</a></li>
+    <li><a href="departamentos.html">Departamentos</a></li>
+  </ul>
+
+  <h3>Catálogos</h3>
+  <ul>
+    <li><a href="articulos.html">Artículos</a></li>
+    <li><a href="proveedores.html">Proveedores</a></li>
+  </ul>
+
+  <button onclick="cerrarSesion()">Cerrar sesión</button>
+
+  <script>
+    async function cerrarSesion() {
+      await fetch('api/login/logout', { method: 'POST', credentials: 'same-origin' });
+      window.location.href = 'login.html';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Proveedores</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; }
+  table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+  th, td { border: 1px solid #ccc; padding: 6px; text-align: left; }
+  .fila-form { display: flex; gap: 10px; flex-wrap: wrap; }
+  .fila-form input { flex: 1; min-width: 120px; padding: 6px; box-sizing: border-box; }
+</style>
+</head>
+<body>
+  <h2>Proveedores</h2>
+
+  <div class="fila-form">
+    <input type="hidden" id="idProveedor">
+    <input type="text" id="codigoProveedor" placeholder="Código (NIT)">
+    <input type="text" id="nombreComercial" placeholder="Nombre comercial">
+    <input type="text" id="direccion" placeholder="Dirección">
+    <input type="text" id="telefono" placeholder="Teléfono">
+    <input type="text" id="categoria" placeholder="Categoría">
+  </div>
+  <button onclick="guardar()">Guardar</button>
+  <button onclick="limpiarFormulario()">Limpiar</button>
+  <p id="error" style="color:red;"></p>
+
+  <table>
+    <thead>
+      <tr><th>ID</th><th>Código</th><th>Nombre comercial</th><th>Dirección</th><th>Teléfono</th><th>Categoría</th><th></th></tr>
+    </thead>
+    <tbody id="tablaProveedores"></tbody>
+  </table>
+
+  <script>
+    let proveedores = [];
+
+    function esc(texto) {
+      return String(texto ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    }
+
+    async function cargarProveedores() {
+      const respuesta = await fetch('api/proveedores', { credentials: 'same-origin' });
+      if (respuesta.status === 401) { window.location.href = 'login.html'; return; }
+      proveedores = await respuesta.json();
+      const tbody = document.getElementById('tablaProveedores');
+      tbody.innerHTML = '';
+
+      proveedores.forEach((p, i) => {
+        const fila = document.createElement('tr');
+        fila.innerHTML = `
+          <td>${p.idProveedor}</td><td>${esc(p.codigoProveedor)}</td><td>${esc(p.nombreComercial)}</td>
+          <td>${esc(p.direccion)}</td><td>${esc(p.telefono)}</td><td>${esc(p.categoria)}</td>
+          <td>
+            <button onclick='editar(${i})'>Editar</button>
+            <button onclick='eliminar(${p.idProveedor})'>Eliminar</button>
+            <button onclick="window.location.href='proveedorarticulos.html?idProveedor=${p.idProveedor}'">Artículos</button>
+          </td>`;
+        tbody.appendChild(fila);
+      });
+    }
+
+    function editar(i) {
+      const p = proveedores[i];
+      document.getElementById('idProveedor').value = p.idProveedor;
+      document.getElementById('codigoProveedor').value = p.codigoProveedor;
+      document.getElementById('nombreComercial').value = p.nombreComercial;
+      document.getElementById('direccion').value = p.direccion;
+      document.getElementById('telefono').value = p.telefono;
+      document.getElementById('categoria').value = p.categoria;
+    }
+
+    function limpiarFormulario() {
+      ['idProveedor','codigoProveedor','nombreComercial','direccion','telefono','categoria']
+        .forEach(id => document.getElementById(id).value = '');
+    }
+
+    async function guardar() {
+      const id = document.getElementById('idProveedor').value;
+      const cuerpo = {
+        codigoProveedor: document.getElementById('codigoProveedor').value,
+        nombreComercial: document.getElementById('nombreComercial').value,
+        direccion: document.getElementById('direccion').value,
+        telefono: document.getElementById('telefono').value,
+        categoria: document.getElementById('categoria').value
+      };
+
+      const url = id ? `api/proveedores/${id}` : 'api/proveedores';
+      const metodo = id ? 'PUT' : 'POST';
+
+      const respuesta = await fetch(url, {
+        method: metodo,
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'same-origin',
+        body: JSON.stringify(cuerpo)
+      });
+
+      const errorEl = document.getElementById('error');
+      if (!respuesta.ok) {
+        const datos = await respuesta.json();
+        errorEl.textContent = datos.error || 'Error al guardar';
+        return;
+      }
+
+      errorEl.textContent = '';
+      limpiarFormulario();
+      cargarProveedores();
+    }
+
+    async function eliminar(id) {
+      if (!confirm('¿Eliminar este proveedor?')) return;
+      const respuesta = await fetch(`api/proveedores/${id}`, { method: 'DELETE', credentials: 'same-origin' });
+      const errorEl = document.getElementById('error');
+      if (!respuesta.ok) {
+        const datos = await respuesta.json();
+        errorEl.textContent = datos.error || 'Error al eliminar';
+        return;
+      }
+      errorEl.textContent = '';
+      cargarProveedores();
+    }
+
+    cargarProveedores();
+  </script>
+</body>
+</html>
