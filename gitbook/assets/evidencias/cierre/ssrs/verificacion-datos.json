@@ -1,0 +1,81 @@
+{
+  "fecha": "2026-10-06",
+  "orden": 10,
+  "desde": "2025-01-01",
+  "hasta": "2026-12-31",
+  "informes": [
+    {
+      "informe": "01_HistorialCompra",
+      "filas": 30,
+      "paginas": 2,
+      "datos": "COINCIDEN TODOS LOS CAMPOS",
+      "rdl": "SHA256 IDENTICO AL SERVIDOR",
+      "pdfSha256": "51742fa6142f93a6dd896533aadece69fbd09576b441e8e7f369e6a24f1577ce",
+      "revisionVisual": "REVISADAS TODAS LAS PAGINAS, SIN RECORTES NI SOLAPAMIENTOS"
+    },
+    {
+      "informe": "02_TopProveedores",
+      "filas": 5,
+      "paginas": 1,
+      "datos": "COINCIDEN TODOS LOS CAMPOS",
+      "rdl": "SHA256 IDENTICO AL SERVIDOR",
+      "pdfSha256": "602b9654321412451e492cfca45e9bcdc3c9019e7467c584037faaad0bd3f1e1",
+      "revisionVisual": "REVISADAS TODAS LAS PAGINAS, SIN RECORTES NI SOLAPAMIENTOS"
+    },
+    {
+      "informe": "03_ComparacionOfertas",
+      "filas": 9,
+      "paginas": 1,
+      "datos": "COINCIDEN TODOS LOS CAMPOS",
+      "rdl": "SHA256 IDENTICO AL SERVIDOR",
+      "pdfSha256": "082a004cf9d67b5f58e9321b936394b73881fa823da6cbbe47f5895193643491",
+      "revisionVisual": "REVISADAS TODAS LAS PAGINAS, SIN RECORTES NI SOLAPAMIENTOS"
+    },
+    {
+      "informe": "04_PedidosSinAsignar",
+      "filas": 40,
+      "paginas": 3,
+      "datos": "COINCIDEN TODOS LOS CAMPOS",
+      "rdl": "SHA256 IDENTICO AL SERVIDOR",
+      "pdfSha256": "fb51c637fb8cb8076ec3a32e958ffdeb231a4e42320134d28129ac22157e7e0c",
+      "revisionVisual": "REVISADAS TODAS LAS PAGINAS, SIN RECORTES NI SOLAPAMIENTOS"
+    },
+    {
+      "informe": "05_OrdenesAbiertas",
+      "filas": 10,
+      "paginas": 1,
+      "datos": "COINCIDEN TODOS LOS CAMPOS",
+      "rdl": "SHA256 IDENTICO AL SERVIDOR",
+      "pdfSha256": "9b7940a090026c7f2c7cc7deffea9a4318018d3fe2c9b23677fc64075a21bef7",
+      "revisionVisual": "REVISADAS TODAS LAS PAGINAS, SIN RECORTES NI SOLAPAMIENTOS"
+    },
+    {
+      "informe": "06_GastoDepartamento",
+      "filas": 10,
+      "paginas": 1,
+      "datos": "COINCIDEN TODOS LOS CAMPOS",
+      "rdl": "SHA256 IDENTICO AL SERVIDOR",
+      "pdfSha256": "4c35a3b43225a5befafb85c8dd623f2ef39b59ee1eb062c375634394deb3df96",
+      "revisionVisual": "REVISADAS TODAS LAS PAGINAS, SIN RECORTES NI SOLAPAMIENTOS"
+    },
+    {
+      "informe": "07_PromedioAdjudicacion",
+      "filas": 1,
+      "paginas": 1,
+      "datos": "COINCIDEN TODOS LOS CAMPOS",
+      "rdl": "SHA256 IDENTICO AL SERVIDOR",
+      "pdfSha256": "4830bd1c6a8d04162ce1e0a80affa3c0d873a14919ca0316b0dcf056f89d60c7",
+      "revisionVisual": "REVISADAS TODAS LAS PAGINAS, SIN RECORTES NI SOLAPAMIENTOS"
+    },
+    {
+      "informe": "08_EvolucionPrecios",
+      "filas": 180,
+      "paginas": 10,
+      "datos": "COINCIDEN TODOS LOS CAMPOS",
+      "rdl": "SHA256 IDENTICO AL SERVIDOR",
+      "pdfSha256": "9817a54f8b1cce14c3025b34e289db60deedc5407262e3acbf594458a72ae03e",
+      "revisionVisual": "REVISADAS TODAS LAS PAGINAS, SIN RECORTES NI SOLAPAMIENTOS"
+    }
+  ],
+  "limite": "Comparacion de los parametros registrados; no acredita pruebas de todas las combinaciones de filtros."
+}

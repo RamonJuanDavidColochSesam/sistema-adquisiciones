@@ -1,0 +1,434 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition">
+  <Description>GuateCompras • Informe académico 6 • Datos SQL Server</Description>
+  <DataSources>
+    <DataSource Name="GuateComprasSQL">
+      <DataSourceReference>/GuateCompras/GuateComprasSQL</DataSourceReference>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="Datos">
+      <Query>
+        <DataSourceName>GuateComprasSQL</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@Sucursal">
+            <Value>=Parameters!Sucursal.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@InicioAnio">
+            <Value>=DateSerial(Parameters!Anio.Value,1,1)</Value>
+          </QueryParameter>
+          <QueryParameter Name="@FinAnio">
+            <Value>=DateSerial(Parameters!Anio.Value+1,1,1)</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT s.codigo_sucursal,s.ciudad,de.nombre AS departamento,SUM(CAST(d.cantidad_final*d.precio_acordado AS DECIMAL(18,2))) AS gasto FROM DetalleAdjudicacion d JOIN Adjudicacion a ON a.id_adjudicacion=d.id_adjudicacion JOIN Pedido p ON p.id_pedido=d.id_pedido JOIN Departamento de ON de.id_departamento=p.id_departamento JOIN Sucursal s ON s.id_sucursal=de.id_sucursal WHERE (@Sucursal=0 OR s.id_sucursal=@Sucursal) AND a.fecha_resolucion&gt;=@InicioAnio AND a.fecha_resolucion&lt;@FinAnio GROUP BY s.codigo_sucursal,s.ciudad,de.nombre ORDER BY s.codigo_sucursal,de.nombre</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="codigo_sucursal">
+          <DataField>codigo_sucursal</DataField>
+        </Field>
+        <Field Name="ciudad">
+          <DataField>ciudad</DataField>
+        </Field>
+        <Field Name="departamento">
+          <DataField>departamento</DataField>
+        </Field>
+        <Field Name="gasto">
+          <DataField>gasto</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="Sucursal">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>0</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Sucursal</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Anio">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>=Year(Today())</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Anio</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Textbox Name="Titulo">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>GuateCompras | Gasto Departamento</Value>
+                    <Style>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <FontSize>8pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+              </Paragraph>
+            </Paragraphs>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+                <Color>#DCE3EC</Color>
+              </Border>
+              <PaddingLeft>4pt</PaddingLeft>
+              <PaddingRight>4pt</PaddingRight>
+              <PaddingTop>4pt</PaddingTop>
+              <PaddingBottom>4pt</PaddingBottom>
+              <BackgroundColor>#173E5C</BackgroundColor>
+              <Color>White</Color>
+            </Style>
+            <Top>0in</Top>
+            <Left>0in</Left>
+            <Height>0.45in</Height>
+            <Width>10.5in</Width>
+          </Textbox>
+          <Tablix Name="TablaDatos">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>2.6250in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.6250in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.6250in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.6250in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.35in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Cab_codigo_sucursal">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Codigo sucursal</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Color>#DCE3EC</Color>
+                            </Border>
+                            <PaddingLeft>4pt</PaddingLeft>
+                            <PaddingRight>4pt</PaddingRight>
+                            <PaddingTop>4pt</PaddingTop>
+                            <PaddingBottom>4pt</PaddingBottom>
+                            <BackgroundColor>#173E5C</BackgroundColor>
+                            <Color>White</Color>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Cab_ciudad">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Ciudad</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Color>#DCE3EC</Color>
+                            </Border>
+                            <PaddingLeft>4pt</PaddingLeft>
+                            <PaddingRight>4pt</PaddingRight>
+                            <PaddingTop>4pt</PaddingTop>
+                            <PaddingBottom>4pt</PaddingBottom>
+                            <BackgroundColor>#173E5C</BackgroundColor>
+                            <Color>White</Color>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Cab_departamento">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Departamento</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Color>#DCE3EC</Color>
+                            </Border>
+                            <PaddingLeft>4pt</PaddingLeft>
+                            <PaddingRight>4pt</PaddingRight>
+                            <PaddingTop>4pt</PaddingTop>
+                            <PaddingBottom>4pt</PaddingBottom>
+                            <BackgroundColor>#173E5C</BackgroundColor>
+                            <Color>White</Color>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Cab_gasto">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Gasto</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Color>#DCE3EC</Color>
+                            </Border>
+                            <PaddingLeft>4pt</PaddingLeft>
+                            <PaddingRight>4pt</PaddingRight>
+                            <PaddingTop>4pt</PaddingTop>
+                            <PaddingBottom>4pt</PaddingBottom>
+                            <BackgroundColor>#173E5C</BackgroundColor>
+                            <Color>White</Color>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.35in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Dato_codigo_sucursal">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!codigo_sucursal.Value</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Color>#DCE3EC</Color>
+                            </Border>
+                            <PaddingLeft>4pt</PaddingLeft>
+                            <PaddingRight>4pt</PaddingRight>
+                            <PaddingTop>4pt</PaddingTop>
+                            <PaddingBottom>4pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Dato_ciudad">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!ciudad.Value</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Color>#DCE3EC</Color>
+                            </Border>
+                            <PaddingLeft>4pt</PaddingLeft>
+                            <PaddingRight>4pt</PaddingRight>
+                            <PaddingTop>4pt</PaddingTop>
+                            <PaddingBottom>4pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Dato_departamento">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!departamento.Value</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Color>#DCE3EC</Color>
+                            </Border>
+                            <PaddingLeft>4pt</PaddingLeft>
+                            <PaddingRight>4pt</PaddingRight>
+                            <PaddingTop>4pt</PaddingTop>
+                            <PaddingBottom>4pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Dato_gasto">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!gasto.Value</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Color>#DCE3EC</Color>
+                            </Border>
+                            <PaddingLeft>4pt</PaddingLeft>
+                            <PaddingRight>4pt</PaddingRight>
+                            <PaddingTop>4pt</PaddingTop>
+                            <PaddingBottom>4pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                  <RepeatOnNewPage>true</RepeatOnNewPage>
+                  <FixedData>true</FixedData>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="Detalle" />
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>Datos</DataSetName>
+            <Top>0.75in</Top>
+            <Left>0in</Left>
+            <Height>0.7in</Height>
+            <Width>10.5in</Width>
+            <Style />
+          </Tablix>
+        </ReportItems>
+        <Height>1.5in</Height>
+        <Style />
+      </Body>
+      <Width>10.5in</Width>
+      <Page>
+        <PageHeight>8.3in</PageHeight>
+        <PageWidth>11.7in</PageWidth>
+        <LeftMargin>0.5in</LeftMargin>
+        <RightMargin>0.5in</RightMargin>
+        <TopMargin>0.5in</TopMargin>
+        <BottomMargin>0.5in</BottomMargin>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Language>es-GT</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+</Report>

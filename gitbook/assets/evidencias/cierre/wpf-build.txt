@@ -1,0 +1,13 @@
+restore EXIT=0
+  Determinando los proyectos que se van a restaurar...
+  Todos los proyectos est�n actualizados para la restauraci�n.
+
+build EXIT=0
+  GuateCompras.Desktop -> C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\desktop\GuateCompras.Desktop\bin\Release\net10.0-windows\GuateCompras.Desktop.dll
+
+Compilaci�n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:03.31
+

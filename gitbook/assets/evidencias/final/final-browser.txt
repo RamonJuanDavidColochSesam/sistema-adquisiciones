@@ -1,0 +1,2 @@
+PASS limpieza art�culo navegador 204
+PASS prueba E2E navegador cre�, busc� y edit�; limpieza API confirm� eliminaci�n

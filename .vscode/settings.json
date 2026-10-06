@@ -1,0 +1,50 @@
+{
+  "files.encoding": "utf8",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": false,
+  "javascript.validate.enable": true,
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-17",
+      "path": "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\work\\tooling\\jdk17\\jdk-17.0.20.1+1",
+      "default": true
+    }
+  ],
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "maven.executable.path": "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\work\\tooling\\apache-maven-3.9.9\\bin\\mvn.cmd",
+  "maven.terminal.customEnv": [
+    {
+      "environmentVariable": "JAVA_HOME",
+      "value": "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\work\\tooling\\jdk17\\jdk-17.0.20.1+1"
+    }
+  ],
+  "dotnet.defaultSolution": "desktop/GuateCompras.sln",
+  "python.defaultInterpreterPath": "C:\\Users\\dinae\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+  "terminal.integrated.profiles.windows": {
+    "Windows PowerShell": {
+      "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-NoLogo"
+      ]
+    }
+  },
+  "terminal.integrated.env.windows": {
+    "JAVA_HOME": "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\work\\tooling\\jdk17\\jdk-17.0.20.1+1",
+    "PATH": "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\work\\tooling\\jdk17\\jdk-17.0.20.1+1\\bin;C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\work\\tooling\\apache-maven-3.9.9\\bin;C:\\Program Files\\dotnet;C:\\Users\\dinae\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin;C:\\Users\\dinae\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python;${env:PATH}",
+    "GUATECOMPRAS_API_URL": "http://127.0.0.1:18080/sistema-adquisiciones/api/",
+    "GUATECOMPRAS_SSRS_URL": "http://localhost/ReportServer"
+  },
+  "files.watcherExclude": {
+    "**/target/**": true,
+    "**/bin/**": true,
+    "**/obj/**": true,
+    "**/.build-environment/**": true
+  },
+  "search.exclude": {
+    "**/target": true,
+    "**/bin": true,
+    "**/obj": true,
+    "**/.build-environment": true
+  }
+}

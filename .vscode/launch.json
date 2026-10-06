@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "GuateCompras: portal web (Edge)",
+      "type": "pwa-msedge",
+      "request": "launch",
+      "url": "http://127.0.0.1:18080/sistema-adquisiciones/",
+      "webRoot": "${workspaceFolder}/src/main/webapp"
+    },
+    {
+      "name": "GuateCompras: depurar WPF",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "GuateCompras: compilar WPF",
+      "program": "${workspaceFolder}/desktop/GuateCompras.Desktop/bin/Release/net10.0-windows/GuateCompras.Desktop.dll",
+      "cwd": "${workspaceFolder}/desktop/GuateCompras.Desktop",
+      "env": {
+        "GUATECOMPRAS_API_URL": "http://127.0.0.1:18080/sistema-adquisiciones/api/"
+      }
+    }
+  ]
+}

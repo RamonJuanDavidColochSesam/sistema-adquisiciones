@@ -1,0 +1,53 @@
+{
+  "fecha": "2026-10-06",
+  "herramienta": "Apache Maven PMD Plugin 3.28.0 / PMD y CPD 7.17.0",
+  "reglas": "maven-pmd-plugin-default.xml, sin exclusiones de fuentes Java",
+  "antes": 10,
+  "despues": 5,
+  "erroresProcesamiento": 0,
+  "prioridades": {
+    "4": 4,
+    "3": 1
+  },
+  "duplicaciones": [
+    {
+      "lineas": 17,
+      "tokens": 101,
+      "ocurrencias": 3
+    }
+  ],
+  "qualityGateSonar": "NO APLICA al documento oficial; no ejecutado",
+  "complejidad": "No se generó una métrica de complejidad con este conjunto de reglas",
+  "hallazgosPendientes": [
+    {
+      "archivo": "src/main/java/com/adquisiciones/dao/SqlDAO.java",
+      "linea": 9,
+      "regla": "UnnecessaryFullyQualifiedName",
+      "prioridad": 4
+    },
+    {
+      "archivo": "src/main/java/com/adquisiciones/dao/SqlDAO.java",
+      "linea": 12,
+      "regla": "UnnecessaryFullyQualifiedName",
+      "prioridad": 4
+    },
+    {
+      "archivo": "src/main/java/com/adquisiciones/filtro/AuthFilter.java",
+      "linea": 37,
+      "regla": "CollapsibleIfStatements",
+      "prioridad": 3
+    },
+    {
+      "archivo": "src/main/java/com/adquisiciones/util/SemillaDemo.java",
+      "linea": 123,
+      "regla": "UselessParentheses",
+      "prioridad": 4
+    },
+    {
+      "archivo": "src/main/java/com/adquisiciones/util/SemillaDemo.java",
+      "linea": 136,
+      "regla": "UnnecessaryFullyQualifiedName",
+      "prioridad": 4
+    }
+  ]
+}

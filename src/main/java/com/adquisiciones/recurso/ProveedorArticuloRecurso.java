@@ -13,11 +13,6 @@ import java.util.Map;
 @Path("/proveedores/{idProveedor}/articulos")
 public class ProveedorArticuloRecurso {
 
-    // Códigos de error de SQL Server: 2627/2601 = clave duplicada, 547 = conflicto con llave foránea
-    private static final int ERROR_CLAVE_DUPLICADA = 2627;
-    private static final int ERROR_INDICE_DUPLICADO = 2601;
-    private static final int ERROR_LLAVE_FORANEA = 547;
-
     private final ProveedorArticuloServicio servicio = new ProveedorArticuloServicio();
 
     @GET
@@ -35,6 +30,7 @@ public class ProveedorArticuloRecurso {
     @Produces(MediaType.APPLICATION_JSON)
     public Response crear(@PathParam("idProveedor") int idProveedor, ProveedorArticulo proveedorArticulo) {
         try {
+            if (proveedorArticulo == null) throw new IllegalArgumentException("Se requiere un cuerpo JSON");
             proveedorArticulo.setIdProveedor(idProveedor);
             return Response.status(Response.Status.CREATED).entity(servicio.crear(proveedorArticulo)).build();
         } catch (IllegalArgumentException e) {
@@ -54,6 +50,7 @@ public class ProveedorArticuloRecurso {
                                @PathParam("idArticulo") int idArticulo,
                                ProveedorArticulo proveedorArticulo) {
         try {
+            if (proveedorArticulo == null) throw new IllegalArgumentException("Se requiere un cuerpo JSON");
             proveedorArticulo.setIdProveedor(idProveedor);
             proveedorArticulo.setIdArticulo(idArticulo);
             if (!servicio.actualizarPrecio(proveedorArticulo)) return notFound();
@@ -78,22 +75,6 @@ public class ProveedorArticuloRecurso {
     }
 
     private Response manejarErrorSql(SQLException e) {
-        String detalle = e.getMessage() != null ? e.getMessage() : "";
-        boolean claveDuplicada = e.getErrorCode() == ERROR_CLAVE_DUPLICADA || e.getErrorCode() == ERROR_INDICE_DUPLICADO;
-
-        if (claveDuplicada && detalle.contains("PK_ProveedorArticulo")) {
-            return Response.status(Response.Status.CONFLICT)
-                    .entity(Map.of("error", "Este artículo ya está asociado a este proveedor"))
-                    .build();
-        }
-        if (e.getErrorCode() == ERROR_LLAVE_FORANEA && detalle.contains("FK_ProveedorArticulo_Proveedor")) {
-            return Response.status(Response.Status.NOT_FOUND)
-                    .entity(Map.of("error", "Proveedor no encontrado"))
-                    .build();
-        }
-        if (e.getErrorCode() == ERROR_LLAVE_FORANEA && detalle.contains("FK_ProveedorArticulo_Articulo")) {
-            return badRequest("El artículo seleccionado no existe");
-        }
         return error(e);
     }
 
@@ -106,7 +87,6 @@ public class ProveedorArticuloRecurso {
     }
 
     private Response error(Exception e) {
-        String mensaje = e.getMessage() != null ? e.getMessage() : "Error interno";
-        return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(Map.of("error", mensaje)).build();
+        return new ErroresApi().toResponse(e);
     }
 }

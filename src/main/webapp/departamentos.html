@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/api.js"></script>
 <meta charset="UTF-8">
 <title>Departamentos</title>
 <style>
@@ -55,12 +57,7 @@
 
       lista.forEach(d => {
         const fila = document.createElement('tr');
-        fila.innerHTML = `
-          <td>${d.idDepartamento}</td><td>${d.codigoSucursal}</td><td>${d.nombre}</td><td>${d.descripcion ?? ''}</td>
-          <td>
-            <button onclick='editar(${JSON.stringify(d)})'>Editar</button>
-            <button onclick='eliminar(${d.idDepartamento})'>Eliminar</button>
-          </td>`;
+        guateRow(fila, [d.idDepartamento, d.codigoSucursal, d.nombre, d.descripcion], () => editar(d), () => eliminar(d.idDepartamento));
         tbody.appendChild(fila);
       });
     }

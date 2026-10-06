@@ -1,0 +1,2 @@
+-- Parámetros: Articulo, Proveedor, Desde, Hasta
+SELECT ar.codigo_articulo,ar.nombre AS articulo,v.nombre_comercial AS proveedor,f.fecha_oferta,f.precio_unitario,p.id_orden FROM Oferta f JOIN Pedido p ON p.id_pedido=f.id_pedido JOIN Articulo ar ON ar.id_articulo=p.id_articulo JOIN Proveedor v ON v.id_proveedor=f.id_proveedor WHERE (@Articulo=0 OR ar.id_articulo=@Articulo) AND (@Proveedor=0 OR f.id_proveedor=@Proveedor) AND f.fecha_oferta BETWEEN @Desde AND @Hasta  ORDER BY ar.nombre,v.nombre_comercial,f.fecha_oferta,f.id_oferta;

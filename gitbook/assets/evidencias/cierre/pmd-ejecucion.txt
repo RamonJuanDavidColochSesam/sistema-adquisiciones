@@ -1,0 +1,20 @@
+Acceso denegado.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< com.adquisiciones:sistema-adquisiciones >---------------
+[INFO] Building sistema-adquisiciones 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- pmd:3.28.0:pmd (default-cli) @ sistema-adquisiciones ---
+[INFO] PMD version: 7.17.0
+[INFO] Rendering content with org.apache.maven.skins:maven-fluido-skin:jar:2.0.0-M9 skin
+[INFO] 
+[INFO] --- pmd:3.28.0:cpd (default-cli) @ sistema-adquisiciones ---
+[INFO] Rendering content with org.apache.maven.skins:maven-fluido-skin:jar:2.0.0-M9 skin
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  18.619 s
+[INFO] Finished at: 2026-10-06T00:31:16-06:00
+[INFO] ------------------------------------------------------------------------

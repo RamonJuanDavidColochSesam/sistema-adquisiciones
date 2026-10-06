@@ -1,0 +1,7 @@
+  GuateCompras.Desktop -> C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\desktop\GuateCompras.Desktop\bin\Release\net10.0-windows\GuateCompras.Desktop.dll
+
+Compilación correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:09.12

@@ -64,6 +64,7 @@ public class ArticuloRecurso {
     @Produces(MediaType.APPLICATION_JSON)
     public Response actualizar(@PathParam("id") int id, Articulo articulo) {
         try {
+            if (articulo == null) throw new IllegalArgumentException("Se requiere un cuerpo JSON");
             articulo.setIdArticulo(id);
             if (!servicio.actualizar(articulo)) return notFound();
             return Response.ok(articulo).build();
@@ -114,7 +115,6 @@ public class ArticuloRecurso {
     }
 
     private Response error(Exception e) {
-        String mensaje = e.getMessage() != null ? e.getMessage() : "Error interno";
-        return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(Map.of("error", mensaje)).build();
+        return new ErroresApi().toResponse(e);
     }
 }

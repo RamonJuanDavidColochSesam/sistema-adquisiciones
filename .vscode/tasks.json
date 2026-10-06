@@ -1,0 +1,119 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "GuateCompras: verificar JavaScript",
+      "type": "process",
+      "command": "C:\\Users\\dinae\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+      "args": [
+        "${workspaceFolder}/.vscode/check-js.cjs"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "GuateCompras: compilar backend",
+      "type": "process",
+      "command": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/scripts/build.ps1",
+        "-Maven",
+        "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\work\\tooling\\apache-maven-3.9.9\\bin\\mvn.cmd",
+        "-RestrictedWindows",
+        "-Repository",
+        "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\work\\maven-repository"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "GuateCompras: iniciar backend",
+      "type": "process",
+      "command": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/scripts/iniciar_tomcat.ps1",
+        "-TomcatHome",
+        "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\work\\tooling\\apache-tomcat-10.1.60",
+        "-Java",
+        "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\work\\tooling\\jdk17\\jdk-17.0.20.1+1\\bin\\java.exe"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "GuateCompras: compilar WPF",
+      "type": "process",
+      "command": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/scripts/build_desktop.ps1",
+        "-Dotnet",
+        "C:\\Program Files\\dotnet\\dotnet.exe",
+        "-Isolated"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "GuateCompras: verificar bases",
+      "type": "process",
+      "command": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/scripts/bases.ps1",
+        "-Accion",
+        "Verificar",
+        "-Java",
+        "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\work\\tooling\\jdk17\\jdk-17.0.20.1+1\\bin\\java.exe"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "GuateCompras: ejecutar WPF",
+      "type": "process",
+      "command": "${workspaceFolder}/desktop/GuateCompras.Desktop/bin/Release/net10.0-windows/GuateCompras.Desktop.exe",
+      "dependsOn": "GuateCompras: compilar WPF",
+      "problemMatcher": []
+    },
+    {
+      "label": "GuateCompras: compilar y comprobar backend",
+      "dependsOn": [
+        "GuateCompras: verificar JavaScript",
+        "GuateCompras: compilar backend"
+      ],
+      "dependsOrder": "sequence",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}

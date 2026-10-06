@@ -1,0 +1,2 @@
+FALLO WSDL SSRS: Error al descargar 'http://localhost/ReportServer/ReportService2010.asmx?wsdl'.
+EXIT=1

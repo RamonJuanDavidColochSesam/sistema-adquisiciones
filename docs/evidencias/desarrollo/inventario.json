@@ -1,0 +1,2586 @@
+{
+  "fecha": "2026-10-06",
+  "archivos": [
+    {
+      "ruta": ".gitbook.yaml",
+      "bytes": 74,
+      "sha256": "78be61ad8d151b45d5939f9a4a7b46ee79a036965836a36a545cdf20ac578d7a"
+    },
+    {
+      "ruta": "pom.xml",
+      "bytes": 8012,
+      "sha256": "7aea0845978d6feaad0b2facd0906e2455bcf22ea62ee6048908a2ce44de9bca"
+    },
+    {
+      "ruta": "README.md",
+      "bytes": 3926,
+      "sha256": "0c2d50e161d0d8fc85a3e0cc1ee99eb29ac723ea421f900a2bbd318d318a854d"
+    },
+    {
+      "ruta": "schema.sql",
+      "bytes": 9950,
+      "sha256": "82f236520a171703ac38244007c70372e8864bfb7ce40a13c1be8cf41d70c5ce"
+    },
+    {
+      "ruta": ".settings/org.eclipse.core.resources.prefs",
+      "bytes": 191,
+      "sha256": "fb60379490c72d1b5511d1a36371a9c91ee2e84c68cc7a627d619cbf39cda7de"
+    },
+    {
+      "ruta": ".settings/org.eclipse.jdt.core.prefs",
+      "bytes": 548,
+      "sha256": "c158617d4522b2e73cdefc8362d1991c98c8002be41fe7cd178aa8526561c9e0"
+    },
+    {
+      "ruta": ".settings/org.eclipse.m2e.core.prefs",
+      "bytes": 90,
+      "sha256": "773c6d111354b495e68035a89eddbe5881224fea04a237d27ed5ca138835ffd7"
+    },
+    {
+      "ruta": ".settings/org.eclipse.wst.common.project.facet.core.xml",
+      "bytes": 251,
+      "sha256": "b4b9650387ff9e711d247703e2dd90927e03ee3ba9183a0376bf14e330a2287c"
+    },
+    {
+      "ruta": ".settings/org.eclipse.wst.validation.prefs",
+      "bytes": 431,
+      "sha256": "187094c9ca9d4858fd9df15a78d6f0756c0cbf2f3fad868f71680def22bc3d21"
+    },
+    {
+      "ruta": "config/db.example.properties",
+      "bytes": 320,
+      "sha256": "a31e6a348c5b92f553a44efc33c2ea9493439585f3d01f9a8706309dfbc583ca"
+    },
+    {
+      "ruta": "db/schema_postgres.sql",
+      "bytes": 7304,
+      "sha256": "19dbae2f0ecb84910f4030aaa458abb06c2e0de7454cde3ab4d2aa62060afa8c"
+    },
+    {
+      "ruta": "desktop/GuateCompras.sln",
+      "bytes": 934,
+      "sha256": "6e5207821e1d34c86a81d9af493a451634a4ae395bead7b28efe33949372829f"
+    },
+    {
+      "ruta": "desktop/NuGet.Config",
+      "bytes": 202,
+      "sha256": "ea7345754d8fe2127aed4178467faeb577e4566e227b4465c4d683e25e91c0c0"
+    },
+    {
+      "ruta": "docs/AUDITORIA_FINAL.md",
+      "bytes": 2950,
+      "sha256": "524536e3b528445b1e04b1e90435f92f45ca4de35797f35e07ce2243f818d399"
+    },
+    {
+      "ruta": "docs/AUDITORIA_INICIAL.md",
+      "bytes": 34803,
+      "sha256": "79a03f1aed1d13edf04548b0e37fbaed53968323079a67caafddc103cdf90452"
+    },
+    {
+      "ruta": "docs/AVANCE_IMPLEMENTACION.md",
+      "bytes": 435,
+      "sha256": "92c18691dd84cc68038b42a6d95aa8c8da9d1d64462ff97ea51291f1ff702e41"
+    },
+    {
+      "ruta": "docs/CALIDAD_SOFTWARE.md",
+      "bytes": 4229,
+      "sha256": "7f0e9848f4b148acebd7124e8a73b6877f0967f6f21421aaa4285e7ec69be9d6"
+    },
+    {
+      "ruta": "docs/CIERRE_SSRS.md",
+      "bytes": 1906,
+      "sha256": "f4449e835cfc245723b70eb3936c134d79c914f30a50ac79f52c3c0e8fc8efa5"
+    },
+    {
+      "ruta": "docs/DICCIONARIO_POSTGRES.md",
+      "bytes": 10709,
+      "sha256": "b02271a1aed1a04210adae8ae240f73a366551b7a0036056d601608fe066aa25"
+    },
+    {
+      "ruta": "docs/DICCIONARIO_SQLSERVER.md",
+      "bytes": 11038,
+      "sha256": "51a76dcd020096d3a2d8e82f723321c21ea778ad500bd2a22f54a5f588497265"
+    },
+    {
+      "ruta": "docs/ENTREGA_SONAT_GITBOOK.md",
+      "bytes": 2339,
+      "sha256": "4fa5a7aa26605f29ef254eb6a4ae745c82cbbe6d052e8305d2d22e96c29d99c7"
+    },
+    {
+      "ruta": "docs/EVIDENCIA_VERIFICACION.md",
+      "bytes": 4426,
+      "sha256": "b4a85caf4b510dc2d84e19d18724b9da8023c6c0400c5c0f7032fb550edfe9d4"
+    },
+    {
+      "ruta": "docs/MANUAL_INSTALACION.md",
+      "bytes": 6567,
+      "sha256": "eb57a0c04a425e2bc2db639eb80e6958c3bb3ac3da9e4c7d46086bd3c5ca4b6b"
+    },
+    {
+      "ruta": "docs/MANUAL_TECNICO.md",
+      "bytes": 7718,
+      "sha256": "f737d9ab2bdc1d219774e23895f61241c64183d615b9440ccfd2d2df02d354e8"
+    },
+    {
+      "ruta": "docs/MANUAL_USUARIO.md",
+      "bytes": 5925,
+      "sha256": "a19a271983d4ae7fabb2273e67ce85e4a81547f10d2e4e094af660e6231d07d6"
+    },
+    {
+      "ruta": "docs/MATRIZ_REQUISITOS.md",
+      "bytes": 34689,
+      "sha256": "16e39a4fe1254835bf297a3c1d5dfdb9a22ad43b0f847953301589019f40b35c"
+    },
+    {
+      "ruta": "docs/MER_postgres.mmd",
+      "bytes": 1270,
+      "sha256": "3cb9022413f8d738ef3653fd42520166f1649358268043bb9bb48e830453cc13"
+    },
+    {
+      "ruta": "docs/MER_sqlserver.mmd",
+      "bytes": 1270,
+      "sha256": "1b098eab47be035467c9dbcdd9898f84431d4c6fe9171386eb2c2e06b0fd4cf2"
+    },
+    {
+      "ruta": "docs/MODELO_DATOS.md",
+      "bytes": 5207,
+      "sha256": "0671d6007cf128f953adb33d069066e9e3457a1224b10d89991a082e2d62e47c"
+    },
+    {
+      "ruta": "docs/REPORTES_SSRS.md",
+      "bytes": 4451,
+      "sha256": "4eb1d95d39ed84d5343529741f974a89e6347db53a3827cab11fa6851577c8fe"
+    },
+    {
+      "ruta": "docs/SSRS_INVENTARIO.json",
+      "bytes": 9679,
+      "sha256": "8dc85db02a5ef065d1f24a019beeb8dd80ba372e6746a47e6c40aff2df1cc06e"
+    },
+    {
+      "ruta": "docs/SSRS_INVENTARIO.md",
+      "bytes": 8227,
+      "sha256": "76b24ec91dad268fc4cca5bb283224e5f30d395d827431aac02aad2e61f1ac02"
+    },
+    {
+      "ruta": "gitbook/.gitbook.yaml",
+      "bytes": 66,
+      "sha256": "5db81004b0ba410f5067463fcac2f8e984636944b89c6e92e0ef21438c24a8d9"
+    },
+    {
+      "ruta": "gitbook/README.md",
+      "bytes": 1108,
+      "sha256": "1be1cab31551da7f99fc18115aa8a4401eb90ad2e8b3d527d6e122998ba8ece2"
+    },
+    {
+      "ruta": "gitbook/sincronizar.md",
+      "bytes": 2339,
+      "sha256": "4fa5a7aa26605f29ef254eb6a4ae745c82cbbe6d052e8305d2d22e96c29d99c7"
+    },
+    {
+      "ruta": "gitbook/SUMMARY.md",
+      "bytes": 4006,
+      "sha256": "a99e528cf2f4e30b9213516c34a3b31b9e67c5f65c60231f3d2b936f966ef9a5"
+    },
+    {
+      "ruta": "scripts/bases.ps1",
+      "bytes": 883,
+      "sha256": "24c9976d83133e16e0e571920bc19d37c4b147e5d69741e3741551403543efdb"
+    },
+    {
+      "ruta": "scripts/build.ps1",
+      "bytes": 549,
+      "sha256": "b0b56687d3852b308f27149f7dfd8e29083da5576cac7a87fc9d9c51581fd45d"
+    },
+    {
+      "ruta": "scripts/build_desktop.ps1",
+      "bytes": 1103,
+      "sha256": "db1847cc18bcef95b8ab19e6f3143bcc532a7f90bc12aa56d5a5da903bbfff13"
+    },
+    {
+      "ruta": "scripts/calidad.ps1",
+      "bytes": 1006,
+      "sha256": "7c40f6bd471d4f95ba21434bfc2e311f714604b23de3930598944bf80326ea11"
+    },
+    {
+      "ruta": "scripts/generar_informes.py",
+      "bytes": 6792,
+      "sha256": "dcf4e5248a044085ffc6f7cd236c1cdbd251cc5811f948bcd6fc7e0412718564"
+    },
+    {
+      "ruta": "scripts/iniciar_tomcat.ps1",
+      "bytes": 1055,
+      "sha256": "863ae0f9d267085ac05c9569cd9582ac181ccf97a6699e605ea01985d0e00125"
+    },
+    {
+      "ruta": "scripts/publicar_ssrs.ps1",
+      "bytes": 1631,
+      "sha256": "50efd7b96ad76c93b9280eb89f8a93fa40c112e02152b6f88bb5d1b21a073380"
+    },
+    {
+      "ruta": "scripts/verificar_ssrs.ps1",
+      "bytes": 1538,
+      "sha256": "fae5d59b930d32e2c0ad30535971d65668a82221fc385c04657e66dcd08b9f7f"
+    },
+    {
+      "ruta": "db/queries/01_HistorialCompra.sql",
+      "bytes": 665,
+      "sha256": "f058abf7f662430dbfd6bca60f3e4cf4bafe850e50885b698a74dfa104ab772d"
+    },
+    {
+      "ruta": "db/queries/02_TopProveedores.sql",
+      "bytes": 544,
+      "sha256": "19b621024431ad34b6f1e41644f4613360d8e9f830935b344ad19ba6958194d6"
+    },
+    {
+      "ruta": "db/queries/03_ComparacionOfertas.sql",
+      "bytes": 539,
+      "sha256": "c1e810106c5ad3c835b98c45d4e1e98d747969f9d234aee9c5e7475b3cbbc90c"
+    },
+    {
+      "ruta": "db/queries/04_PedidosSinAsignar.sql",
+      "bytes": 382,
+      "sha256": "252413daa83ff33f4ef36c545a2fd85ef6d4cba0f37a5c9cf5ce91143998cca7"
+    },
+    {
+      "ruta": "db/queries/05_OrdenesAbiertas.sql",
+      "bytes": 110,
+      "sha256": "bd6769b411a3f41f7a9286ca2e7118e1846e5f414c2d10dbbcba999866a4cf27"
+    },
+    {
+      "ruta": "db/queries/06_GastoDepartamento.sql",
+      "bytes": 615,
+      "sha256": "61b3f6366ef3fa71a07daf6176b49a7cbfb4f08d2f71d5bc477eaf758b83aef4"
+    },
+    {
+      "ruta": "db/queries/07_PromedioAdjudicacion.sql",
+      "bytes": 281,
+      "sha256": "55be98116ede3f9efb0915349ed9f815395f95742fd2705f4602c576c39cbfee"
+    },
+    {
+      "ruta": "db/queries/08_EvolucionPrecios.sql",
+      "bytes": 538,
+      "sha256": "7fe21db6930b393ad66a38f8584d46929c68796b38e2e87aa2413bb60fb7ad09"
+    },
+    {
+      "ruta": "db/migrations/postgres/V001__integridad.sql",
+      "bytes": 4005,
+      "sha256": "0ac39692845666a98f843e6e7cef0c3e71a645dc2716cb32c11593068fa1e5bb"
+    },
+    {
+      "ruta": "db/migrations/postgres/V002__historial.sql",
+      "bytes": 3372,
+      "sha256": "450b3a161e983e7a532b47a400414fdd22665eba0094029366914c7cd681e7a4"
+    },
+    {
+      "ruta": "db/migrations/postgres/V003__observaciones.sql",
+      "bytes": 245,
+      "sha256": "7fa4afcf432bfeb2244238ed5ea2411315353d31cb940ca60694999631ad2bb4"
+    },
+    {
+      "ruta": "db/migrations/postgres/V004__periodo_orden_abierta.sql",
+      "bytes": 422,
+      "sha256": "a0e7af0fa6c4063cc1e26cae1a4fa8a01c279eb8e86bd63c595aae453bbf5ede"
+    },
+    {
+      "ruta": "db/migrations/sqlserver/V001__integridad.sql",
+      "bytes": 4229,
+      "sha256": "da8aeb63e35881c857a160da75e3cd499ac71ed1b29ac1edeaf18b06b7a8f6c1"
+    },
+    {
+      "ruta": "db/migrations/sqlserver/V002__historial.sql",
+      "bytes": 3146,
+      "sha256": "b9609f3ac622068c56d3dd260127de8c9098227a22fedf5096d0268042790501"
+    },
+    {
+      "ruta": "db/migrations/sqlserver/V003__observaciones.sql",
+      "bytes": 337,
+      "sha256": "4ab31e4b2e5204fb486bc3a55c5c0e39b1acea9e816810ed8c1a7573390f712d"
+    },
+    {
+      "ruta": "db/migrations/sqlserver/V004__periodo_orden_abierta.sql",
+      "bytes": 446,
+      "sha256": "d755f06ea9c3b6d8c8a85ae6150127357438a3924f76c53c5b0ce45d662819a9"
+    },
+    {
+      "ruta": "desktop/GuateCompras.Desktop/App.xaml",
+      "bytes": 1716,
+      "sha256": "ba0752565d5212f6a7c90dd4bbc33d36dd877f08d187e7ab67608b1c18ffde31"
+    },
+    {
+      "ruta": "desktop/GuateCompras.Desktop/App.xaml.cs",
+      "bytes": 7805,
+      "sha256": "2fb042072584cfcf4d5c13f4a9cc0cc7d5af9698c8dbdb61228219ddc96c2130"
+    },
+    {
+      "ruta": "desktop/GuateCompras.Desktop/GuateCompras.Desktop.csproj",
+      "bytes": 385,
+      "sha256": "64cfd25488f5734a688f37a26f81926bcf5257420acb9a90cb3ba985ba492887"
+    },
+    {
+      "ruta": "desktop/GuateCompras.Desktop/MainWindow.xaml",
+      "bytes": 6317,
+      "sha256": "36fa28dc01ba4e51db4bdabf511557ddf59d0b7a0a9b309f65568c0156d756c7"
+    },
+    {
+      "ruta": "desktop/GuateCompras.Desktop/MainWindow.xaml.cs",
+      "bytes": 6672,
+      "sha256": "a7c22884ac713a6bb304619156fce68c1bf05da60d32b0021f5774ab0a51bd58"
+    },
+    {
+      "ruta": "desktop/GuateCompras.Desktop/Services/ApiClient.cs",
+      "bytes": 2197,
+      "sha256": "8231f09146685c0bb6a6bf1481e7fa45228fe1b4bde90df44f635fb3d4f90632"
+    },
+    {
+      "ruta": "desktop/GuateCompras.Desktop/Services/CsvExporter.cs",
+      "bytes": 742,
+      "sha256": "dc4cf6bef9b8e489366c446ac75aaf43846724c13e44f7dded72027cb5238b07"
+    },
+    {
+      "ruta": "desktop/GuateCompras.Desktop/ViewModels/EditorViewModel.cs",
+      "bytes": 5082,
+      "sha256": "4e42b7a36200f27a4a41aeb611efd0824d9c7dd712c55cecb30f82bc938d06d7"
+    },
+    {
+      "ruta": "desktop/GuateCompras.Desktop/ViewModels/MainViewModel.cs",
+      "bytes": 6835,
+      "sha256": "f5b291b45c7886c9397d62d5bb5f02f0c5de58d48afe27bab5d13aae5babc8f9"
+    },
+    {
+      "ruta": "desktop/GuateCompras.Desktop/ViewModels/ObservableObject.cs",
+      "bytes": 1057,
+      "sha256": "cc32f072f1ef8bd9656c70c0d1ea9de5c4d86844e63c75122d83d6bda7204eda"
+    },
+    {
+      "ruta": "desktop/GuateCompras.Desktop/ViewModels/WorkflowViewModel.cs",
+      "bytes": 5359,
+      "sha256": "98d9a0ce58ee50fe246a4272b1d8dac22d4c9b8b761b42ba579dd6594175b720"
+    },
+    {
+      "ruta": "desktop/GuateCompras.Desktop/Views/EditorWindow.xaml",
+      "bytes": 2973,
+      "sha256": "307b8d7263bf97dcf693ad5bcee485d8e2ccf2e6e4b32718a1a7d3829f024525"
+    },
+    {
+      "ruta": "desktop/GuateCompras.Desktop/Views/EditorWindow.xaml.cs",
+      "bytes": 702,
+      "sha256": "e592b5237b7a53bac4a68e4236302403de600418f11578019660ff00c2605b62"
+    },
+    {
+      "ruta": "desktop/GuateCompras.Desktop/Views/LoginWindow.xaml",
+      "bytes": 1260,
+      "sha256": "5b33850728b7d9cac516aa29d66c2e0c0092b4ec8ec2f7914e8e9f0a7d0286a8"
+    },
+    {
+      "ruta": "desktop/GuateCompras.Desktop/Views/LoginWindow.xaml.cs",
+      "bytes": 901,
+      "sha256": "4e0c96c524de0398324341fd8c9a3db55bca9d24778f528e8a18f67eae47646c"
+    },
+    {
+      "ruta": "desktop/GuateCompras.Desktop/Views/ReportWindow.xaml",
+      "bytes": 2009,
+      "sha256": "aa5ac132a93c17d4e4a558a5da197d2afbeb24d4ba1fff97b9874531e5a1d1d3"
+    },
+    {
+      "ruta": "desktop/GuateCompras.Desktop/Views/ReportWindow.xaml.cs",
+      "bytes": 4055,
+      "sha256": "f71fa18baffa5b5815ad46d9bdd3fa7ec92da8950ad5b581c0433bc0dc6ee598"
+    },
+    {
+      "ruta": "desktop/GuateCompras.Desktop/Views/WorkflowWindow.xaml",
+      "bytes": 3848,
+      "sha256": "e95d3b53478a05d4d1693f72aba32859100f3323dfbeb7b8509560026f97b6e5"
+    },
+    {
+      "ruta": "desktop/GuateCompras.Desktop/Views/WorkflowWindow.xaml.cs",
+      "bytes": 521,
+      "sha256": "88808ae918d7d1bcc7c4697bf48433832530cec70fe778a6366624fd07faebb2"
+    },
+    {
+      "ruta": "docs/evidencias/ProbeContext.java",
+      "bytes": 1251,
+      "sha256": "5361e352c610a1fe26273a36c1660ad4e77acd5cf2984993fc9192960d4d87f5"
+    },
+    {
+      "ruta": "docs/evidencias/ProbeDb.java",
+      "bytes": 1798,
+      "sha256": "597f7ced07a2ab9504770fa6f2020d925a2b7a3e951fa68aa9f0c7a9c80dfb68"
+    },
+    {
+      "ruta": "docs/evidencias/README.md",
+      "bytes": 5332,
+      "sha256": "b4679e47de1f65ae71ebae517eebb63cda9df8f6a124e07d1a2c7397f572bf8b"
+    },
+    {
+      "ruta": "docs/evidencias/war-inspection.json",
+      "bytes": 229,
+      "sha256": "5f992d88fd445baccb353b4a0fd3fa1f29f5e186d89f6a445f243f11c24a2496"
+    },
+    {
+      "ruta": "docs/historico/MATRIZ_AUDITORIA_INICIAL.md",
+      "bytes": 19882,
+      "sha256": "6df657e2d86318bb555155d665b0c005ee7289ec8eed010c2627360c68904029"
+    },
+    {
+      "ruta": "docs/evidencias/calidad/antes-cpd.xml",
+      "bytes": 10237,
+      "sha256": "458780fe5bcc93b1c518d16dcaa39bafb52897b52495f50bed047ef5d4b825af"
+    },
+    {
+      "ruta": "docs/evidencias/calidad/antes-pmd.xml",
+      "bytes": 5437,
+      "sha256": "426cabb22db547413b6d7069147c4f73d834a4ed7dc5c8d362bb8ab06a4dda32"
+    },
+    {
+      "ruta": "docs/evidencias/calidad/despues-cpd.xml",
+      "bytes": 10237,
+      "sha256": "214b4069a2addd2be770d3017ded25391976093bbbfd2fe47af745d005f54f14"
+    },
+    {
+      "ruta": "docs/evidencias/calidad/despues-pmd.xml",
+      "bytes": 2788,
+      "sha256": "d92b4084f27c7ffb277e72ed82f40521cafbad267ff87e35f555e62ad541aac4"
+    },
+    {
+      "ruta": "docs/evidencias/calidad/resumen.json",
+      "bytes": 1474,
+      "sha256": "0dc5247e7b6c596e86695a1da1695797b76d8fb73c38c210ed3983abb2aab350"
+    },
+    {
+      "ruta": "docs/evidencias/cierre/artefactos.json",
+      "bytes": 406,
+      "sha256": "70b5d7de418851a3daa09d781ca17c1b1e3a626d1b7e8e66888915f64fbc5be6"
+    },
+    {
+      "ruta": "docs/evidencias/cierre/conteo-requisitos.json",
+      "bytes": 79,
+      "sha256": "b33e2771c7f1d7ddd4b6ce630834c4e0ede048bb12fb731f0a36cdbdb87489c5"
+    },
+    {
+      "ruta": "docs/evidencias/cierre/documentacion.json",
+      "bytes": 248,
+      "sha256": "3e792608cff9aea7b889f0f4fb68b82193c31039bcf2673c1a80cbdf74ce2be1"
+    },
+    {
+      "ruta": "docs/evidencias/cierre/ssrs-diagnostico.json",
+      "bytes": 511,
+      "sha256": "fe8ebbc666a6f245b0fa874d4ed07fab608fa8bcb4a8c12f5657bc7c144f9686"
+    },
+    {
+      "ruta": "docs/evidencias/final/artefactos.json",
+      "bytes": 406,
+      "sha256": "790cbd2f9fd59847d963b58a09b6be49f3b5553112491e85fdfedd7c2e627a29"
+    },
+    {
+      "ruta": "docs/evidencias/cierre/ssrs/01_HistorialCompra.publicado.rdl",
+      "bytes": 29422,
+      "sha256": "43b99244bb0d0b15c78a51d7cd162760e6930a527c6d1c2b30d2137b24005e16"
+    },
+    {
+      "ruta": "docs/evidencias/cierre/ssrs/02_TopProveedores.publicado.rdl",
+      "bytes": 18787,
+      "sha256": "2da5f2555cdcf9f732a623ad3ec6d5134da217c44c6e7a51acedfcfa2757a1f1"
+    },
+    {
+      "ruta": "docs/evidencias/cierre/ssrs/03_ComparacionOfertas.publicado.rdl",
+      "bytes": 35188,
+      "sha256": "1b00b813126c14ce932ec48974b708b8cb3a758989f823770864781f832f02e1"
+    },
+    {
+      "ruta": "docs/evidencias/cierre/ssrs/04_PedidosSinAsignar.publicado.rdl",
+      "bytes": 27940,
+      "sha256": "38e39771a69f7903bb0115e32690a4020e73cb9090a3d8fedb7baf8df61107b8"
+    },
+    {
+      "ruta": "docs/evidencias/cierre/ssrs/05_OrdenesAbiertas.publicado.rdl",
+      "bytes": 24235,
+      "sha256": "2f4eaf32dc9463491cf94479343f7fa31bd568e6e21b327e48ed833042f02975"
+    },
+    {
+      "ruta": "docs/evidencias/cierre/ssrs/06_GastoDepartamento.publicado.rdl",
+      "bytes": 18940,
+      "sha256": "691c8ce9664baa0fba00f6f9d1d0dd6ab187555c14d26bdc3918fb8314047fb1"
+    },
+    {
+      "ruta": "docs/evidencias/cierre/ssrs/07_PromedioAdjudicacion.publicado.rdl",
+      "bytes": 11802,
+      "sha256": "c2b2142800467eaee3dc386496d1726611ab7970661b627e68d5fcd6e3304162"
+    },
+    {
+      "ruta": "docs/evidencias/cierre/ssrs/08_EvolucionPrecios.publicado.rdl",
+      "bytes": 26254,
+      "sha256": "bc702d276b6ad41e6800639d3a697209dcc4b0f639556e66e0ac175c501f801c"
+    },
+    {
+      "ruta": "docs/evidencias/cierre/ssrs/baseline-consultas.json",
+      "bytes": 76291,
+      "sha256": "283fceb1c487c93377fba7d525a74e60427fbabd58aa05e2ac00457b6e1acf57"
+    },
+    {
+      "ruta": "docs/evidencias/cierre/ssrs/CIERRE_SSRS.md",
+      "bytes": 1906,
+      "sha256": "f4449e835cfc245723b70eb3936c134d79c914f30a50ac79f52c3c0e8fc8efa5"
+    },
+    {
+      "ruta": "docs/evidencias/cierre/ssrs/integracion-backend.json",
+      "bytes": 1334,
+      "sha256": "deae4bc7308f7c5c5d05e9be06cb7b07bd184537ca18fdc8594564f186165b72"
+    },
+    {
+      "ruta": "docs/evidencias/cierre/ssrs/LEEME.md",
+      "bytes": 222,
+      "sha256": "3a455eab68e7760febb3921f6c3533326f01622bdbfd49223a009dc82418d31a"
+    },
+    {
+      "ruta": "docs/evidencias/cierre/ssrs/publicacion-real.json",
+      "bytes": 4335,
+      "sha256": "b85dffd7e6ac51748f6cc89284fa5246ad2c20a07b317e67d976ce1e6084e748"
+    },
+    {
+      "ruta": "docs/evidencias/cierre/ssrs/verificacion-datos.json",
+      "bytes": 3136,
+      "sha256": "620342341d55451283fde109e8eb968ecc06030636da3b1bfa538c4c3efd7bb1"
+    },
+    {
+      "ruta": "docs/evidencias/cierre/ssrs/verificar_datos_pdf.py",
+      "bytes": 2305,
+      "sha256": "8944ff390816ba561a1b99cf263f351dec5dc04e7539d14a222fe828b727a5be"
+    },
+    {
+      "ruta": "gitbook/01-introduccion/alcance.md",
+      "bytes": 338,
+      "sha256": "93e1621859c014a1b965304d90631c7f668a9a2f4830680976d1498f1c345012"
+    },
+    {
+      "ruta": "gitbook/01-introduccion/justificacion.md",
+      "bytes": 342,
+      "sha256": "3359340d2cf385e2d2f0f43fd9c3f7fa63f596083a12760152327c7a7ed09b75"
+    },
+    {
+      "ruta": "gitbook/01-introduccion/objetivo.md",
+      "bytes": 259,
+      "sha256": "45b0f191f517a639aa86466568f5b122404996547137d9e7d0d175ede424f003"
+    },
+    {
+      "ruta": "gitbook/01-introduccion/problema.md",
+      "bytes": 297,
+      "sha256": "d984c89470c90c7fec5888869b5427d3df5715572f31ebdfd21aa81b38fd1f19"
+    },
+    {
+      "ruta": "gitbook/01-introduccion/README.md",
+      "bytes": 358,
+      "sha256": "ebd5e0dea9641884177f95323e156f1dcffc26e2bfad0228956833f74fc596d2"
+    },
+    {
+      "ruta": "gitbook/02-requisitos/funcionales.md",
+      "bytes": 331,
+      "sha256": "1293ff09a9267bae53c2408dd898d52f6b9749c07261ad5c0ca47edba3582be7"
+    },
+    {
+      "ruta": "gitbook/02-requisitos/matriz.md",
+      "bytes": 40643,
+      "sha256": "fe824a279aba6fbfd5a968825f465102db59d71e2f5af88c3bb22b0547b0abe6"
+    },
+    {
+      "ruta": "gitbook/02-requisitos/no-funcionales.md",
+      "bytes": 315,
+      "sha256": "6c61bfa1e836ee76e6f5e02abea2ebc26c97305db035776cfe1901be079b55e1"
+    },
+    {
+      "ruta": "gitbook/02-requisitos/README.md",
+      "bytes": 299,
+      "sha256": "153922a19114723adf399652532e6b60fa74200422a4097926448b1cbaea22f3"
+    },
+    {
+      "ruta": "gitbook/03-arquitectura/backend.md",
+      "bytes": 3513,
+      "sha256": "6d23d062d29a77c68eb685593ff466374536c689c3d4b2168499d6129c492005"
+    },
+    {
+      "ruta": "gitbook/03-arquitectura/comunicacion.md",
+      "bytes": 615,
+      "sha256": "24a4229f717ae03373d2f4f38c609ac5a135763e451367e568018837665a383a"
+    },
+    {
+      "ruta": "gitbook/03-arquitectura/general.md",
+      "bytes": 871,
+      "sha256": "6d68787d759a6e61162645c87a1044da549fa6c8580c8e240be2ae38c2270707"
+    },
+    {
+      "ruta": "gitbook/03-arquitectura/README.md",
+      "bytes": 315,
+      "sha256": "0679d4433edd2e8404a004d28a3ccf25a28a9faa4cc88b46640317e3fbb40d8c"
+    },
+    {
+      "ruta": "gitbook/03-arquitectura/web.md",
+      "bytes": 291,
+      "sha256": "206a77aa544f8915d847b3a51c6bdb3cfe93a89ba1b7da7f2af6c189077c331c"
+    },
+    {
+      "ruta": "gitbook/03-arquitectura/wpf.md",
+      "bytes": 587,
+      "sha256": "db19c43ebd2002e33f1eccc32980e0d700e468a1a2dd9a15671b75895ce802f7"
+    },
+    {
+      "ruta": "gitbook/04-base-datos/integridad.md",
+      "bytes": 369,
+      "sha256": "2478322f7c93a75e4378899323bcdc67947ff9eab6fa172663a29e2265b50f30"
+    },
+    {
+      "ruta": "gitbook/04-base-datos/modelo.md",
+      "bytes": 5267,
+      "sha256": "b820c53a10be3c407ee8822f61d76044bc693d4304192087e3bbf198e4a75fdb"
+    },
+    {
+      "ruta": "gitbook/04-base-datos/postgres.md",
+      "bytes": 278,
+      "sha256": "55b4f0da727939b751de8ccc5bbcd2c16c7832f4d2f771f285d4a23561c99d03"
+    },
+    {
+      "ruta": "gitbook/04-base-datos/README.md",
+      "bytes": 327,
+      "sha256": "91ac9fc234ef6618a9b2208dcc6a1861694b91601a5510d1f6ea3a429ebbb9ef"
+    },
+    {
+      "ruta": "gitbook/04-base-datos/relaciones.md",
+      "bytes": 384,
+      "sha256": "e39e3b246b77f73e500b7da7fdf870a8a340935fd64406bbc7199388c0147838"
+    },
+    {
+      "ruta": "gitbook/04-base-datos/sqlserver.md",
+      "bytes": 296,
+      "sha256": "77ef085c7f0268ee7c1409392595cffe6842146da6165d733c33c508d1499d4a"
+    },
+    {
+      "ruta": "gitbook/04-base-datos/tablas.md",
+      "bytes": 441,
+      "sha256": "574d3823da9fb1edc712c7499bc4b3f1886357c4639f00c507690c5d1b8f1be7"
+    },
+    {
+      "ruta": "gitbook/05-seguridad/auditoria.md",
+      "bytes": 323,
+      "sha256": "453f1eb97fc63e9cbb3a7db33fcd90aceb35eee3d445a8c59b96c1c55e34ce3c"
+    },
+    {
+      "ruta": "gitbook/05-seguridad/autenticacion.md",
+      "bytes": 286,
+      "sha256": "e2d14c3fc625689fda9dabe22571c5b505dca0ff5150f8cd5ce461f907ad333a"
+    },
+    {
+      "ruta": "gitbook/05-seguridad/autorizacion.md",
+      "bytes": 1474,
+      "sha256": "9b12383c35fe5d88e187f914501b5bebdd1695d356c3377dd5b54f1026c09f89"
+    },
+    {
+      "ruta": "gitbook/05-seguridad/bcrypt.md",
+      "bytes": 263,
+      "sha256": "8278a58c8af8355618fc7fa9502a4be97ba02bd9592158b7f6ff8d32929e650f"
+    },
+    {
+      "ruta": "gitbook/05-seguridad/README.md",
+      "bytes": 285,
+      "sha256": "10479981e04d94a243f07258b268f7bc706e476925269cd742f1f1175e09457b"
+    },
+    {
+      "ruta": "gitbook/05-seguridad/roles.md",
+      "bytes": 289,
+      "sha256": "f208395588003c77aaa5a9abfb9724a46589ced334e7801d3c50e80336605a9a"
+    },
+    {
+      "ruta": "gitbook/06-modulos/articulos.md",
+      "bytes": 544,
+      "sha256": "202c7f77e3c8c192a679b711d22173292304d2a287fbd13caffb905586bde138"
+    },
+    {
+      "ruta": "gitbook/06-modulos/compras.md",
+      "bytes": 636,
+      "sha256": "ea608c786787e59530e43b275944d76b0e2caeceef7e23cadf375393918fe6b8"
+    },
+    {
+      "ruta": "gitbook/06-modulos/departamentos.md",
+      "bytes": 514,
+      "sha256": "cff1a8da616c685d6652ea1c21d70502a80e23d557f647fcc5d65d8ed16556d6"
+    },
+    {
+      "ruta": "gitbook/06-modulos/proveedores.md",
+      "bytes": 594,
+      "sha256": "81c09843d73d52eb5706170e55994a7126f3cbcacba4dd3f4164d1c4b6fe5361"
+    },
+    {
+      "ruta": "gitbook/06-modulos/README.md",
+      "bytes": 377,
+      "sha256": "a8cc9e764f3813029995d287457fbbf6ef65a04490f4fe2c596f5c0a618fff1a"
+    },
+    {
+      "ruta": "gitbook/06-modulos/sucursales.md",
+      "bytes": 543,
+      "sha256": "bd11fa57259275fca07df14c447aaf765ea63703271164315f1e17eede2a337a"
+    },
+    {
+      "ruta": "gitbook/06-modulos/usuarios.md",
+      "bytes": 533,
+      "sha256": "e7bcdc999552140d0744c90787e2e55062a901bded1a71786a34a257c754b0c4"
+    },
+    {
+      "ruta": "gitbook/07-dashboard/indicadores.md",
+      "bytes": 424,
+      "sha256": "a2f0e75b69a68c5d6686ccaba3ba932bac391f1f78e745da361bcf902850bfe3"
+    },
+    {
+      "ruta": "gitbook/07-dashboard/README.md",
+      "bytes": 206,
+      "sha256": "bf7ebd2234a321c912fc7ad29e35c213e08d59622b776be3c9b11634dcc89043"
+    },
+    {
+      "ruta": "gitbook/08-reportes/cierre-ssrs.md",
+      "bytes": 1906,
+      "sha256": "f4449e835cfc245723b70eb3936c134d79c914f30a50ac79f52c3c0e8fc8efa5"
+    },
+    {
+      "ruta": "gitbook/08-reportes/inventario.md",
+      "bytes": 8287,
+      "sha256": "a97359614125a96b7aad8044d8389e40393a5c3a8a38a0353a61b75ab08f5b11"
+    },
+    {
+      "ruta": "gitbook/08-reportes/README.md",
+      "bytes": 628,
+      "sha256": "b7534223af95258c26aeb2fd36757ba29cc176903d08772d7ba11653500a5993"
+    },
+    {
+      "ruta": "gitbook/08-reportes/reporte-01.md",
+      "bytes": 1326,
+      "sha256": "6a38d8b5a9545c6b6ec0ea39f0fd0a80cc7aa6187c5bc134c2af25d316cc336d"
+    },
+    {
+      "ruta": "gitbook/08-reportes/reporte-02.md",
+      "bytes": 1183,
+      "sha256": "79868933ea569d4b38ce276257cf6f3510fbf381e320bb513c44236cbc85eb61"
+    },
+    {
+      "ruta": "gitbook/08-reportes/reporte-03.md",
+      "bytes": 1134,
+      "sha256": "d4c09758f19a8e00c4f15b624b3b189b773e88f3cb2a567024087d2052fd7363"
+    },
+    {
+      "ruta": "gitbook/08-reportes/reporte-04.md",
+      "bytes": 952,
+      "sha256": "fabd549916a7bd9fdcc8381023591d827892e946d65ed57fd10e0c459d481c4f"
+    },
+    {
+      "ruta": "gitbook/08-reportes/reporte-05.md",
+      "bytes": 676,
+      "sha256": "2b99de7473496881508b02683f95281d8e52c7d63479fffcbfc07a1ea1adf095"
+    },
+    {
+      "ruta": "gitbook/08-reportes/reporte-06.md",
+      "bytes": 1223,
+      "sha256": "12216d19be144651b292be3fe57808e0f86e1a229b90559e0f208befab8cfb21"
+    },
+    {
+      "ruta": "gitbook/08-reportes/reporte-07.md",
+      "bytes": 932,
+      "sha256": "bca90fb4738072f6593b9d9c131a675c6dd6e6753c0c666a0af39ff90b97ea2f"
+    },
+    {
+      "ruta": "gitbook/08-reportes/reporte-08.md",
+      "bytes": 1221,
+      "sha256": "928bd8ead9ff508c3399ccea7a71be32460b1fe41d9d9a5953e76aa75ce1e3bd"
+    },
+    {
+      "ruta": "gitbook/08-reportes/ssrs.md",
+      "bytes": 4493,
+      "sha256": "178ec61d7d04b642c3cd049c68609984e263c09bc71b36f9b46d92b1ed9b5027"
+    },
+    {
+      "ruta": "gitbook/09-aplicacion-wpf/README.md",
+      "bytes": 171,
+      "sha256": "9e067ff0ee68f43e2388bbc3a0c64810f50ff12f2847ecb84dd98c3843e5c4ed"
+    },
+    {
+      "ruta": "gitbook/09-aplicacion-wpf/uso.md",
+      "bytes": 1005,
+      "sha256": "e3ff3d850c136c5af6ac762f7b4cad94bedf739a79bbf9872783a179a6d5e4a5"
+    },
+    {
+      "ruta": "gitbook/10-frontend-web/README.md",
+      "bytes": 182,
+      "sha256": "8f231a8564dc75317930500d4b887f2114822e095a57223f8ca6c0a2bf72c08f"
+    },
+    {
+      "ruta": "gitbook/10-frontend-web/uso.md",
+      "bytes": 561,
+      "sha256": "4ad651727ef398d7f26becf7244fdcd607ff20caa86e135d272bb46a8bdb317a"
+    },
+    {
+      "ruta": "gitbook/11-pruebas/api.md",
+      "bytes": 297,
+      "sha256": "6fba25cab9ea2cdca3ca21b8b740d32aa1a52a2115ed11bb68166ad41e068e65"
+    },
+    {
+      "ruta": "gitbook/11-pruebas/base-datos.md",
+      "bytes": 266,
+      "sha256": "4690ecd237bc48fadf4a8de7095a9c3aa2c2bb66f834c5f021abf789de4647df"
+    },
+    {
+      "ruta": "gitbook/11-pruebas/integracion.md",
+      "bytes": 333,
+      "sha256": "d3dd66bf546a90f34db380ac73d4661967cc01feae9ca63311871d2b6f2f0418"
+    },
+    {
+      "ruta": "gitbook/11-pruebas/README.md",
+      "bytes": 315,
+      "sha256": "15ec39b5feba8a1cf3d524a1c43baf05cf0bfb84c6fdac0dcf6ff76835ed6eff"
+    },
+    {
+      "ruta": "gitbook/11-pruebas/reportes.md",
+      "bytes": 253,
+      "sha256": "870d54101aa68770861287098dbbd0ae26faa3b64e699e25d58d843cc442f8ad"
+    },
+    {
+      "ruta": "gitbook/11-pruebas/seguridad.md",
+      "bytes": 285,
+      "sha256": "a1c6da1f633aa5fcec36d1c785a24b77a28f291fdc42dd8e953ba6268862d21e"
+    },
+    {
+      "ruta": "gitbook/11-pruebas/unitarias.md",
+      "bytes": 275,
+      "sha256": "31f4015aebb7c88b8ad14764238bc283f4aa417fc243b61336b7764519b787e3"
+    },
+    {
+      "ruta": "gitbook/12-calidad/analisis.md",
+      "bytes": 4303,
+      "sha256": "854bebc8553fbb7a89a51561cba8c36a59dde2a5d7466eaecec75cfaa8f7a10d"
+    },
+    {
+      "ruta": "gitbook/12-calidad/bugs.md",
+      "bytes": 323,
+      "sha256": "283feef0dad795ed8be0b6aa6907ea30cd2f78a46a75e128ff47a95bff8e8ebe"
+    },
+    {
+      "ruta": "gitbook/12-calidad/code-smells.md",
+      "bytes": 338,
+      "sha256": "ce8527bb6205a8a8b7a7ffd62fb5794ab852ffc7ae7908577cef95b5d7af9c2b"
+    },
+    {
+      "ruta": "gitbook/12-calidad/quality-gate.md",
+      "bytes": 307,
+      "sha256": "89329793b5e08d60995c5da741fa28086f4e8e1e2b5a10908f216ead25a59d31"
+    },
+    {
+      "ruta": "gitbook/12-calidad/README.md",
+      "bytes": 329,
+      "sha256": "eee52d54e7b0eccfa0d284d5845050700e73db9de199b528de7e257e56ba6353"
+    },
+    {
+      "ruta": "gitbook/12-calidad/sonar-sonat.md",
+      "bytes": 314,
+      "sha256": "e6d4ff624329c6b69ce6b16b48c66efae604e4deb7eaf20e618e666d1dbdbbdd"
+    },
+    {
+      "ruta": "gitbook/13-instalacion/pasos.md",
+      "bytes": 6777,
+      "sha256": "b09c61dd6db03ff20d9d35d075b7ad2fd265adee72a0f45bc5defc79f4f1e72e"
+    },
+    {
+      "ruta": "gitbook/13-instalacion/README.md",
+      "bytes": 174,
+      "sha256": "cb74a2b425b77889bc8fdc0e839850bf8be9e7416b8aca781e4d13934d5216c0"
+    },
+    {
+      "ruta": "gitbook/14-usuario/operacion.md",
+      "bytes": 6003,
+      "sha256": "03c8a761821f03e4f74e35bb39bdb35bbd0f7f299a000cc470a1e0c9894e9d25"
+    },
+    {
+      "ruta": "gitbook/14-usuario/README.md",
+      "bytes": 160,
+      "sha256": "5f8e9acb2854f8e10184dd2b5e89bf445008c59c59e82bcc39a9206195260d3d"
+    },
+    {
+      "ruta": "gitbook/15-evidencias/archivos.md",
+      "bytes": 534,
+      "sha256": "fd05bbd778a4651828132f33afd5151522430bf4f25d32019fe2c187b84aa6c4"
+    },
+    {
+      "ruta": "gitbook/15-evidencias/README.md",
+      "bytes": 230,
+      "sha256": "8780bdf74d51428ecba1df9f71efae4493ac3ee0c715d8989273b49f2d10c0f4"
+    },
+    {
+      "ruta": "gitbook/15-evidencias/verificacion.md",
+      "bytes": 4642,
+      "sha256": "7beca8fdc4518ca3838b9475ae0bc8e6bb27424aaeeefac108c27074c9376a25"
+    },
+    {
+      "ruta": "gitbook/16-auditoria/estado.md",
+      "bytes": 3038,
+      "sha256": "e92196eb859d50f456de6d0f66c1e5693cdee09ac65c43f37da074bfb204f355"
+    },
+    {
+      "ruta": "gitbook/16-auditoria/README.md",
+      "bytes": 150,
+      "sha256": "bf54618d6eff3f72762502a0226215de8a3b179ed10c2e689ea0d43b32858b44"
+    },
+    {
+      "ruta": "gitbook/anexos/diccionario-postgres.md",
+      "bytes": 11129,
+      "sha256": "64ed5ca057c1b7fd070c9b965e8a81a4f97c6875f217f6efdced532639de2be3"
+    },
+    {
+      "ruta": "gitbook/anexos/diccionario-sqlserver.md",
+      "bytes": 11458,
+      "sha256": "f6210a272f024b3378057de4ec0874eaa9388396873ed274532a98c591819465"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/pom.xml",
+      "bytes": 8012,
+      "sha256": "7aea0845978d6feaad0b2facd0906e2455bcf22ea62ee6048908a2ce44de9bca"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/schema.sql",
+      "bytes": 9950,
+      "sha256": "82f236520a171703ac38244007c70372e8864bfb7ce40a13c1be8cf41d70c5ce"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/calidad/antes-cpd.xml",
+      "bytes": 10237,
+      "sha256": "458780fe5bcc93b1c518d16dcaa39bafb52897b52495f50bed047ef5d4b825af"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/calidad/antes-pmd.xml",
+      "bytes": 5437,
+      "sha256": "426cabb22db547413b6d7069147c4f73d834a4ed7dc5c8d362bb8ab06a4dda32"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/calidad/despues-cpd.xml",
+      "bytes": 10237,
+      "sha256": "214b4069a2addd2be770d3017ded25391976093bbbfd2fe47af745d005f54f14"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/calidad/despues-pmd.xml",
+      "bytes": 2788,
+      "sha256": "d92b4084f27c7ffb277e72ed82f40521cafbad267ff87e35f555e62ad541aac4"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/calidad/resumen.json",
+      "bytes": 1474,
+      "sha256": "0dc5247e7b6c596e86695a1da1695797b76d8fb73c38c210ed3983abb2aab350"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/cierre/artefactos.json",
+      "bytes": 406,
+      "sha256": "70b5d7de418851a3daa09d781ca17c1b1e3a626d1b7e8e66888915f64fbc5be6"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/cierre/conteo-requisitos.json",
+      "bytes": 79,
+      "sha256": "b33e2771c7f1d7ddd4b6ce630834c4e0ede048bb12fb731f0a36cdbdb87489c5"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/cierre/documentacion.json",
+      "bytes": 248,
+      "sha256": "3e792608cff9aea7b889f0f4fb68b82193c31039bcf2673c1a80cbdf74ce2be1"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/cierre/ssrs-diagnostico.json",
+      "bytes": 511,
+      "sha256": "fe8ebbc666a6f245b0fa874d4ed07fab608fa8bcb4a8c12f5657bc7c144f9686"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/final/artefactos.json",
+      "bytes": 406,
+      "sha256": "790cbd2f9fd59847d963b58a09b6be49f3b5553112491e85fdfedd7c2e627a29"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/cierre/ssrs/01_HistorialCompra.publicado.rdl",
+      "bytes": 29422,
+      "sha256": "43b99244bb0d0b15c78a51d7cd162760e6930a527c6d1c2b30d2137b24005e16"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/cierre/ssrs/02_TopProveedores.publicado.rdl",
+      "bytes": 18787,
+      "sha256": "2da5f2555cdcf9f732a623ad3ec6d5134da217c44c6e7a51acedfcfa2757a1f1"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/cierre/ssrs/03_ComparacionOfertas.publicado.rdl",
+      "bytes": 35188,
+      "sha256": "1b00b813126c14ce932ec48974b708b8cb3a758989f823770864781f832f02e1"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/cierre/ssrs/04_PedidosSinAsignar.publicado.rdl",
+      "bytes": 27940,
+      "sha256": "38e39771a69f7903bb0115e32690a4020e73cb9090a3d8fedb7baf8df61107b8"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/cierre/ssrs/05_OrdenesAbiertas.publicado.rdl",
+      "bytes": 24235,
+      "sha256": "2f4eaf32dc9463491cf94479343f7fa31bd568e6e21b327e48ed833042f02975"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/cierre/ssrs/06_GastoDepartamento.publicado.rdl",
+      "bytes": 18940,
+      "sha256": "691c8ce9664baa0fba00f6f9d1d0dd6ab187555c14d26bdc3918fb8314047fb1"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/cierre/ssrs/07_PromedioAdjudicacion.publicado.rdl",
+      "bytes": 11802,
+      "sha256": "c2b2142800467eaee3dc386496d1726611ab7970661b627e68d5fcd6e3304162"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/cierre/ssrs/08_EvolucionPrecios.publicado.rdl",
+      "bytes": 26254,
+      "sha256": "bc702d276b6ad41e6800639d3a697209dcc4b0f639556e66e0ac175c501f801c"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/cierre/ssrs/baseline-consultas.json",
+      "bytes": 76291,
+      "sha256": "283fceb1c487c93377fba7d525a74e60427fbabd58aa05e2ac00457b6e1acf57"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/cierre/ssrs/CIERRE_SSRS.md",
+      "bytes": 1906,
+      "sha256": "f4449e835cfc245723b70eb3936c134d79c914f30a50ac79f52c3c0e8fc8efa5"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/cierre/ssrs/integracion-backend.json",
+      "bytes": 1334,
+      "sha256": "deae4bc7308f7c5c5d05e9be06cb7b07bd184537ca18fdc8594564f186165b72"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/cierre/ssrs/LEEME.md",
+      "bytes": 222,
+      "sha256": "3a455eab68e7760febb3921f6c3533326f01622bdbfd49223a009dc82418d31a"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/cierre/ssrs/publicacion-real.json",
+      "bytes": 4335,
+      "sha256": "b85dffd7e6ac51748f6cc89284fa5246ad2c20a07b317e67d976ce1e6084e748"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/cierre/ssrs/verificacion-datos.json",
+      "bytes": 3136,
+      "sha256": "620342341d55451283fde109e8eb968ecc06030636da3b1bfa538c4c3efd7bb1"
+    },
+    {
+      "ruta": "gitbook/assets/evidencias/cierre/ssrs/verificar_datos_pdf.py",
+      "bytes": 2305,
+      "sha256": "8944ff390816ba561a1b99cf263f351dec5dc04e7539d14a222fe828b727a5be"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/config/db.example.properties",
+      "bytes": 320,
+      "sha256": "a31e6a348c5b92f553a44efc33c2ea9493439585f3d01f9a8706309dfbc583ca"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/db/schema_postgres.sql",
+      "bytes": 7304,
+      "sha256": "19dbae2f0ecb84910f4030aaa458abb06c2e0de7454cde3ab4d2aa62060afa8c"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/desktop/GuateCompras.sln",
+      "bytes": 934,
+      "sha256": "6e5207821e1d34c86a81d9af493a451634a4ae395bead7b28efe33949372829f"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/scripts/build.ps1",
+      "bytes": 549,
+      "sha256": "b0b56687d3852b308f27149f7dfd8e29083da5576cac7a87fc9d9c51581fd45d"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/scripts/generar_informes.py",
+      "bytes": 6792,
+      "sha256": "dcf4e5248a044085ffc6f7cd236c1cdbd251cc5811f948bcd6fc7e0412718564"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/scripts/publicar_ssrs.ps1",
+      "bytes": 1631,
+      "sha256": "50efd7b96ad76c93b9280eb89f8a93fa40c112e02152b6f88bb5d1b21a073380"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/scripts/verificar_ssrs.ps1",
+      "bytes": 1538,
+      "sha256": "fae5d59b930d32e2c0ad30535971d65668a82221fc385c04657e66dcd08b9f7f"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/db/queries/01_HistorialCompra.sql",
+      "bytes": 665,
+      "sha256": "f058abf7f662430dbfd6bca60f3e4cf4bafe850e50885b698a74dfa104ab772d"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/db/migrations/postgres/V001__integridad.sql",
+      "bytes": 4005,
+      "sha256": "0ac39692845666a98f843e6e7cef0c3e71a645dc2716cb32c11593068fa1e5bb"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/db/migrations/postgres/V002__historial.sql",
+      "bytes": 3372,
+      "sha256": "450b3a161e983e7a532b47a400414fdd22665eba0094029366914c7cd681e7a4"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/db/migrations/sqlserver/V001__integridad.sql",
+      "bytes": 4229,
+      "sha256": "da8aeb63e35881c857a160da75e3cd499ac71ed1b29ac1edeaf18b06b7a8f6c1"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/db/migrations/sqlserver/V002__historial.sql",
+      "bytes": 3146,
+      "sha256": "b9609f3ac622068c56d3dd260127de8c9098227a22fedf5096d0268042790501"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/desktop/GuateCompras.Desktop/GuateCompras.Desktop.csproj",
+      "bytes": 385,
+      "sha256": "64cfd25488f5734a688f37a26f81926bcf5257420acb9a90cb3ba985ba492887"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/reports/ssrs/01_HistorialCompra.rdl",
+      "bytes": 29422,
+      "sha256": "43b99244bb0d0b15c78a51d7cd162760e6930a527c6d1c2b30d2137b24005e16"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/src/main/webapp/portal.html",
+      "bytes": 2157,
+      "sha256": "dd7c1f3ce9cc833d1d9bddf91a811edcada5f1aae9525f54ead3d78678abfcd0"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/src/main/java/com/adquisiciones/conexion/AplicacionLifecycle.java",
+      "bytes": 392,
+      "sha256": "e88bd5aa21bf18afe69ab1497b45673a0410cdc83dda8c27894db0f81615c91a"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/src/main/java/com/adquisiciones/conexion/ConexionManager.java",
+      "bytes": 3266,
+      "sha256": "a48bd2c4bcb379f60057f19636ba3958ada121f47d4dead937846119b588cdd3"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/src/main/java/com/adquisiciones/dao/SqlDAO.java",
+      "bytes": 2027,
+      "sha256": "ac18b9ccc8acfceadd407b6f3314b31e59246464b5186063d98b98fcc2920aaf"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/src/main/java/com/adquisiciones/modelo/Modulo.java",
+      "bytes": 5271,
+      "sha256": "d2461e741ad9162aa04c305ccfe92bf0df453ab417b3e1be0f02e464af4c967e"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/src/main/java/com/adquisiciones/recurso/AuditoriaRecurso.java",
+      "bytes": 853,
+      "sha256": "91ddb610d2861acdbf6817fd4e067fb2a438278ef7c3400b9df47725659118ef"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/src/main/java/com/adquisiciones/recurso/DashboardRecurso.java",
+      "bytes": 563,
+      "sha256": "51b1fd9cbe62b08eb658bb8232c0eb61cf250b60291900d4446a9c8af3e493e8"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/src/main/java/com/adquisiciones/servicio/AdquisicionServicio.java",
+      "bytes": 16815,
+      "sha256": "255163ca68a8415b4489aa5743d8c7bf4083722029848c89b67fd4bb8f5d5cc9"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/src/main/java/com/adquisiciones/servicio/CatalogoServicio.java",
+      "bytes": 16406,
+      "sha256": "ae3c6746f30407a81a61ddd5e55a0175d3ad95fbc8bd81a1ad31c207b6311e11"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/src/main/java/com/adquisiciones/servicio/ReportesServicio.java",
+      "bytes": 8600,
+      "sha256": "d0825f224e20c7922f6b969eeb0fbe612f225bbfea5cacfa888492807cf2f3bc"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/src/main/webapp/js/api.js",
+      "bytes": 1746,
+      "sha256": "e82b66d6d8db35deb016914e888d5eb96b9ca71b2edd3a285861e39414c5a12a"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/src/main/webapp/js/portal.js",
+      "bytes": 27379,
+      "sha256": "9e91cbdda768d8d19bc06913c3fcbce022fcb8d9d4f47edd40430c2e0ca30dd0"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/tests/integration/run.py",
+      "bytes": 371,
+      "sha256": "c73e4e3186a306b3469cd98dd9ec3252a697897aa425ac66c12e4eab2096b48e"
+    },
+    {
+      "ruta": "gitbook/assets/referencia/tests/integration/test_edge_cases.py",
+      "bytes": 2688,
+      "sha256": "731b404bc9c590c14479f568ff2b9300b08583c60f1779a7a8fa3546b0906a82"
+    },
+    {
+      "ruta": "reports/ssrs/01_HistorialCompra.rdl",
+      "bytes": 29422,
+      "sha256": "43b99244bb0d0b15c78a51d7cd162760e6930a527c6d1c2b30d2137b24005e16"
+    },
+    {
+      "ruta": "reports/ssrs/02_TopProveedores.rdl",
+      "bytes": 18787,
+      "sha256": "2da5f2555cdcf9f732a623ad3ec6d5134da217c44c6e7a51acedfcfa2757a1f1"
+    },
+    {
+      "ruta": "reports/ssrs/03_ComparacionOfertas.rdl",
+      "bytes": 35188,
+      "sha256": "1b00b813126c14ce932ec48974b708b8cb3a758989f823770864781f832f02e1"
+    },
+    {
+      "ruta": "reports/ssrs/04_PedidosSinAsignar.rdl",
+      "bytes": 27940,
+      "sha256": "38e39771a69f7903bb0115e32690a4020e73cb9090a3d8fedb7baf8df61107b8"
+    },
+    {
+      "ruta": "reports/ssrs/05_OrdenesAbiertas.rdl",
+      "bytes": 24235,
+      "sha256": "2f4eaf32dc9463491cf94479343f7fa31bd568e6e21b327e48ed833042f02975"
+    },
+    {
+      "ruta": "reports/ssrs/06_GastoDepartamento.rdl",
+      "bytes": 18940,
+      "sha256": "691c8ce9664baa0fba00f6f9d1d0dd6ab187555c14d26bdc3918fb8314047fb1"
+    },
+    {
+      "ruta": "reports/ssrs/07_PromedioAdjudicacion.rdl",
+      "bytes": 11802,
+      "sha256": "c2b2142800467eaee3dc386496d1726611ab7970661b627e68d5fcd6e3304162"
+    },
+    {
+      "ruta": "reports/ssrs/08_EvolucionPrecios.rdl",
+      "bytes": 26254,
+      "sha256": "bc702d276b6ad41e6800639d3a697209dcc4b0f639556e66e0ac175c501f801c"
+    },
+    {
+      "ruta": "reports/ssrs/GuateComprasSQL.rds",
+      "bytes": 403,
+      "sha256": "eb81269df4f3b859ab841d20a85665e2c917094a75cfc5f961b7570673bec94b"
+    },
+    {
+      "ruta": "src/main/webapp/articulos.html",
+      "bytes": 4533,
+      "sha256": "d39b5cf633e10c2270245f1d05a675d763788afaaa9522db1546c2d1ad9858b1"
+    },
+    {
+      "ruta": "src/main/webapp/departamentos.html",
+      "bytes": 4466,
+      "sha256": "bfc4daa388995ad8a4eff2a57aebc547ddb4be9687e6ad0aebf40a9ed4a360f4"
+    },
+    {
+      "ruta": "src/main/webapp/index.html",
+      "bytes": 1218,
+      "sha256": "c2f272a2f5ef228cba343a661d5fd4d55db051333cb86d2c2fd055cabe726251"
+    },
+    {
+      "ruta": "src/main/webapp/login.html",
+      "bytes": 2952,
+      "sha256": "35e0f48de351dd29edd282b6d992283a86f550eb7443cc25d63c81f49cbb9df6"
+    },
+    {
+      "ruta": "src/main/webapp/portal.html",
+      "bytes": 2157,
+      "sha256": "dd7c1f3ce9cc833d1d9bddf91a811edcada5f1aae9525f54ead3d78678abfcd0"
+    },
+    {
+      "ruta": "src/main/webapp/proveedorarticulos.html",
+      "bytes": 5710,
+      "sha256": "b0f6e5c22c775c2ba5afdcf954f00eef0fea2336d30d1d7086fc99ca12fc2c54"
+    },
+    {
+      "ruta": "src/main/webapp/proveedores.html",
+      "bytes": 5055,
+      "sha256": "c1d07b63e99b0aba686a0fd05929a876e30aa59d901db5f1c9f6e53797a186ab"
+    },
+    {
+      "ruta": "src/main/webapp/sucursales.html",
+      "bytes": 4027,
+      "sha256": "8bf727ca4a9c4015b1738cfbfc61fdb9d1b86c1f2fac2bc98b91b45c2970646c"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/conexion/AplicacionLifecycle.java",
+      "bytes": 392,
+      "sha256": "e88bd5aa21bf18afe69ab1497b45673a0410cdc83dda8c27894db0f81615c91a"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/conexion/ConexionManager.java",
+      "bytes": 3266,
+      "sha256": "a48bd2c4bcb379f60057f19636ba3958ada121f47d4dead937846119b588cdd3"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/conexion/PruebaConexion2.java",
+      "bytes": 705,
+      "sha256": "cfc3b5e770a12d6eff96d4b91d0f345b34b26eb886133ba740ed6d498bea2c5b"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/conexion/PruebasConexion.java",
+      "bytes": 707,
+      "sha256": "d06cdf28896cccfc50fce7eee2d6bff01e76357d19fbae71e3f5e4cce477fc2f"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/dao/ArticuloDAO.java",
+      "bytes": 3239,
+      "sha256": "f6c65494530ae36a8cb9c69ed600f4c02df54a331ffbad43833366cc15ee8fc1"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/dao/DepartamentoDAO.java",
+      "bytes": 3787,
+      "sha256": "911c02af17862fab7cd55457839d6d6ba3af9e48238e703ce93869070b14787f"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/dao/ProveedorArticuloDAO.java",
+      "bytes": 3091,
+      "sha256": "c4bc898879a2cd4de747ee84deed8dbc9877182f90fd793d8816f40a3af2fc10"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/dao/ProveedorDAO.java",
+      "bytes": 3718,
+      "sha256": "40b52ffd765287702dc6bdf53475851845e4113d498f1e64828a404a5068aa6f"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/dao/SqlDAO.java",
+      "bytes": 2027,
+      "sha256": "ac18b9ccc8acfceadd407b6f3314b31e59246464b5186063d98b98fcc2920aaf"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/dao/SucursalDAO.java",
+      "bytes": 3677,
+      "sha256": "dfa4fcaa4fcc12f0dc4459b2bfe2025c772452af8e091430cde76aa621970242"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/dao/UsuarioDAO.java",
+      "bytes": 1842,
+      "sha256": "fa73d72cad2c817bab416de4ca844579c07e07f180827dc13507143f62e57f6b"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/filtro/AuthFilter.java",
+      "bytes": 3731,
+      "sha256": "895dd10769198018372774b910d857210b4bc51a6b867ed98a2dc3a2988ed7e8"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/modelo/Articulo.java",
+      "bytes": 747,
+      "sha256": "e421e39b3757bd9aabaf4c9efb6a8ff50d298a2ea912cbf07e022cd66110dbd2"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/modelo/Departamento.java",
+      "bytes": 1013,
+      "sha256": "953a1b839075f002c8a59be6ff065abfdc153a13cfbc1b555a9af908e79b0f64"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/modelo/Modulo.java",
+      "bytes": 5271,
+      "sha256": "d2461e741ad9162aa04c305ccfe92bf0df453ab417b3e1be0f02e464af4c967e"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/modelo/Proveedor.java",
+      "bytes": 1134,
+      "sha256": "cdeb82a3dd30d6990c490966fd12326219dd72ba2c24332fc5ced2fc944cfb09"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/modelo/ProveedorArticulo.java",
+      "bytes": 1087,
+      "sha256": "44c682c3ac95385cfe1c161bf9e783a2c582bee27a34ce1ae3f963d05e1560ca"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/modelo/Sucursal.java",
+      "bytes": 1061,
+      "sha256": "63376160f26b37a510a72a02608e70a00d05299a2ff2befd794d69938cc192c2"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/modelo/Usuario.java",
+      "bytes": 1673,
+      "sha256": "71427df1b90a39ad282caad2d26f871f24038dcf154f7c4e7a4bd286a5f84539"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/recurso/AdjudicacionRecurso.java",
+      "bytes": 1481,
+      "sha256": "6f68cf610284b4c4ce55704f28a722049524e668de680bd2865804d0d1ac5a49"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/recurso/ArticuloRecurso.java",
+      "bytes": 4242,
+      "sha256": "5ee17748c0a1edd6ec42492a3e31799e419ac20cdb2f589cdea3e271e2e5b103"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/recurso/AuditoriaRecurso.java",
+      "bytes": 853,
+      "sha256": "91ddb610d2861acdbf6817fd4e067fb2a438278ef7c3400b9df47725659118ef"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/recurso/ConexionRecurso.java",
+      "bytes": 1131,
+      "sha256": "86cac453e85ce24a4a5f1b40fc8a4acd4cb4c18ca6842d9a19c4bdaa59b70371"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/recurso/DashboardRecurso.java",
+      "bytes": 563,
+      "sha256": "51b1fd9cbe62b08eb658bb8232c0eb61cf250b60291900d4446a9c8af3e493e8"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/recurso/DepartamentoRecurso.java",
+      "bytes": 3549,
+      "sha256": "6dcb700d8877216cb8ea9dc1a091b2fd4c595146cfd7917235e5352134581630"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/recurso/ErroresApi.java",
+      "bytes": 1517,
+      "sha256": "3c9423a9f197c8a96e378745e4d57b9456324bd52e60eda08300c912808f45f7"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/recurso/GestionRecurso.java",
+      "bytes": 2068,
+      "sha256": "0a0a36041f8866900c69a85d72905c181a1818c1ee521953c6106c04bdae963f"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/recurso/HelloRecurso.java",
+      "bytes": 342,
+      "sha256": "fd188d1bdf8a47a63421ca02211c7e9a401104111e2be093015a0fe0c18b749f"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/recurso/LoginRecurso.java",
+      "bytes": 3188,
+      "sha256": "42f46a3067aad078f0b5d2c00d088aa374cf198755e1d72512bb54f15045510c"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/recurso/OrdenRecurso.java",
+      "bytes": 1613,
+      "sha256": "6fbdab87df9572184695bee2b478ae6c15efdb26331a528ea93975a3f1cbdd53"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/recurso/ProveedorArticuloRecurso.java",
+      "bytes": 3479,
+      "sha256": "ee720e62590fa474d2257416913f0f5146dd4de73faf8db4d9b2b5b8b7abd349"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/recurso/ProveedorRecurso.java",
+      "bytes": 4270,
+      "sha256": "a6cf2ee8f0e5237b520783892f33a745776ad28d9d82cd562b778371ae48e6ce"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/recurso/ReportesRecurso.java",
+      "bytes": 1599,
+      "sha256": "a242805b5ea8d80d751bdacb5525c2092079892b181b02db8b6159933e70e5fa"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/recurso/SucursalRecurso.java",
+      "bytes": 2891,
+      "sha256": "8a8e2aa00a4c00df51727aa54eabfd59380463a23e51ea7706e9da1c66af954c"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/servicio/AdquisicionServicio.java",
+      "bytes": 16815,
+      "sha256": "255163ca68a8415b4489aa5743d8c7bf4083722029848c89b67fd4bb8f5d5cc9"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/servicio/ArticuloServicio.java",
+      "bytes": 1796,
+      "sha256": "6c6d2354204bfcc09ca17c08fab2add6406df18dfdf75dae1948d56c1bc66de6"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/servicio/CatalogoServicio.java",
+      "bytes": 16406,
+      "sha256": "ae3c6746f30407a81a61ddd5e55a0175d3ad95fbc8bd81a1ad31c207b6311e11"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/servicio/DepartamentoServicio.java",
+      "bytes": 1304,
+      "sha256": "25ddb76579cab7f477f99812f6eb55ad7a3056ea13196f0918dc4e0fd1835174"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/servicio/LoginServicio.java",
+      "bytes": 706,
+      "sha256": "b79aed7c88162dc17209b10795242aed484b59a099c22b19ed74f766dd048f77"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/servicio/ProveedorArticuloServicio.java",
+      "bytes": 2050,
+      "sha256": "3adfbd4fede40dbb7aca4a05a19fa86626dec045c8dccc99dfc2b552e775aa21"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/servicio/ProveedorServicio.java",
+      "bytes": 2524,
+      "sha256": "1d77262331d727f6d520bf82563db8b63fbddbdf6be4cbd14fca9df8d7449a23"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/servicio/ReportesServicio.java",
+      "bytes": 8600,
+      "sha256": "d0825f224e20c7922f6b969eeb0fbe612f225bbfea5cacfa888492807cf2f3bc"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/servicio/SeguridadServicio.java",
+      "bytes": 2246,
+      "sha256": "a869867fdbc833c0667be103b7259022ebc8a8d2026b5f5d18c56fe40725ee55"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/servicio/SucursalServicio.java",
+      "bytes": 1731,
+      "sha256": "691723f637fc4e71835c17afa4af24c25f1e7be69396a2a5279339d22eccd562"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/util/GenerarHash.java",
+      "bytes": 795,
+      "sha256": "2f8d61b7ddbbf0a1b3ba7ad91e15f5176f4b0c31ce63d76e75f5e6a898b4828d"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/util/MigrarBases.java",
+      "bytes": 3174,
+      "sha256": "bd2066f31812b0f5d743cfc14dc0ebb77ea328b2e7e574d5015b87449f495806"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/util/PasswordUtil.java",
+      "bytes": 394,
+      "sha256": "e3506bfe15b3c12d976388516eda58c06d972b81572f8b9376edf50c8df4beed"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/util/SemillaDemo.java",
+      "bytes": 13489,
+      "sha256": "71db16c23bb8fa18ec9892b190c20a43978379c78bd8e69407e453b32c75eb90"
+    },
+    {
+      "ruta": "src/main/java/com/adquisiciones/util/VerificarBases.java",
+      "bytes": 4231,
+      "sha256": "d079e155421eae72baef337958fa693bedcebc81ccab74e775fc1be2f922cda9"
+    },
+    {
+      "ruta": "src/main/webapp/css/portal.css",
+      "bytes": 9280,
+      "sha256": "18beb03df5ff26d0b7805b978f678c0e2abced6ffe82080779f0e85cc1c71fb6"
+    },
+    {
+      "ruta": "src/main/webapp/js/api.js",
+      "bytes": 1746,
+      "sha256": "e82b66d6d8db35deb016914e888d5eb96b9ca71b2edd3a285861e39414c5a12a"
+    },
+    {
+      "ruta": "src/main/webapp/js/portal.js",
+      "bytes": 27379,
+      "sha256": "9e91cbdda768d8d19bc06913c3fcbce022fcb8d9d4f47edd40430c2e0ca30dd0"
+    },
+    {
+      "ruta": "src/main/webapp/WEB-INF/web.xml",
+      "bytes": 1399,
+      "sha256": "b0591649b3bad6ba70ac29f88057bb37359c46e7d0ca2bd8a227873b1c303ea7"
+    },
+    {
+      "ruta": "tests/integration/run.py",
+      "bytes": 371,
+      "sha256": "c73e4e3186a306b3469cd98dd9ec3252a697897aa425ac66c12e4eab2096b48e"
+    },
+    {
+      "ruta": "tests/integration/support.py",
+      "bytes": 1224,
+      "sha256": "2f765914d354ac1857636480acf2dcef0fa013dafa60116b845fae797301fe51"
+    },
+    {
+      "ruta": "tests/integration/test_acquisitions.py",
+      "bytes": 7745,
+      "sha256": "6e024fc1931a0530a3f7af5bee74e24bd2b128a3bcc48b63f546c3357b8cb17e"
+    },
+    {
+      "ruta": "tests/integration/test_crud.py",
+      "bytes": 5572,
+      "sha256": "c9b699528f7e654246f70e7166cd92786dc92fc934f0b4dfa9ec29f44e04e390"
+    },
+    {
+      "ruta": "tests/integration/test_edge_cases.py",
+      "bytes": 2688,
+      "sha256": "731b404bc9c590c14479f568ff2b9300b08583c60f1779a7a8fa3546b0906a82"
+    },
+    {
+      "ruta": "tests/integration/test_reports.py",
+      "bytes": 2065,
+      "sha256": "6364727c692bf2870921ce9b2754a611d96669f05f6c9fe4dcd4a34b96b5c1c8"
+    },
+    {
+      "ruta": "tests/integration/test_security.py",
+      "bytes": 2763,
+      "sha256": "7bacc476d62b1f637a6d84d6f88955b866343cc19f9b7922523581c9a1891d60"
+    }
+  ],
+  "clases": [
+    {
+      "clase": "AplicacionLifecycle",
+      "paquete": "com.adquisiciones.conexion",
+      "ruta": "src/main/java/com/adquisiciones/conexion/AplicacionLifecycle.java"
+    },
+    {
+      "clase": "ConexionManager",
+      "paquete": "com.adquisiciones.conexion",
+      "ruta": "src/main/java/com/adquisiciones/conexion/ConexionManager.java"
+    },
+    {
+      "clase": "PruebaConexion2",
+      "paquete": "com.adquisiciones.conexion",
+      "ruta": "src/main/java/com/adquisiciones/conexion/PruebaConexion2.java"
+    },
+    {
+      "clase": "PruebasConexion",
+      "paquete": "com.adquisiciones.conexion",
+      "ruta": "src/main/java/com/adquisiciones/conexion/PruebasConexion.java"
+    },
+    {
+      "clase": "ArticuloDAO",
+      "paquete": "com.adquisiciones.dao",
+      "ruta": "src/main/java/com/adquisiciones/dao/ArticuloDAO.java"
+    },
+    {
+      "clase": "DepartamentoDAO",
+      "paquete": "com.adquisiciones.dao",
+      "ruta": "src/main/java/com/adquisiciones/dao/DepartamentoDAO.java"
+    },
+    {
+      "clase": "ProveedorArticuloDAO",
+      "paquete": "com.adquisiciones.dao",
+      "ruta": "src/main/java/com/adquisiciones/dao/ProveedorArticuloDAO.java"
+    },
+    {
+      "clase": "ProveedorDAO",
+      "paquete": "com.adquisiciones.dao",
+      "ruta": "src/main/java/com/adquisiciones/dao/ProveedorDAO.java"
+    },
+    {
+      "clase": "SqlDAO",
+      "paquete": "com.adquisiciones.dao",
+      "ruta": "src/main/java/com/adquisiciones/dao/SqlDAO.java"
+    },
+    {
+      "clase": "SucursalDAO",
+      "paquete": "com.adquisiciones.dao",
+      "ruta": "src/main/java/com/adquisiciones/dao/SucursalDAO.java"
+    },
+    {
+      "clase": "UsuarioDAO",
+      "paquete": "com.adquisiciones.dao",
+      "ruta": "src/main/java/com/adquisiciones/dao/UsuarioDAO.java"
+    },
+    {
+      "clase": "AuthFilter",
+      "paquete": "com.adquisiciones.filtro",
+      "ruta": "src/main/java/com/adquisiciones/filtro/AuthFilter.java"
+    },
+    {
+      "clase": "Articulo",
+      "paquete": "com.adquisiciones.modelo",
+      "ruta": "src/main/java/com/adquisiciones/modelo/Articulo.java"
+    },
+    {
+      "clase": "Departamento",
+      "paquete": "com.adquisiciones.modelo",
+      "ruta": "src/main/java/com/adquisiciones/modelo/Departamento.java"
+    },
+    {
+      "clase": "Modulo",
+      "paquete": "com.adquisiciones.modelo",
+      "ruta": "src/main/java/com/adquisiciones/modelo/Modulo.java"
+    },
+    {
+      "clase": "Proveedor",
+      "paquete": "com.adquisiciones.modelo",
+      "ruta": "src/main/java/com/adquisiciones/modelo/Proveedor.java"
+    },
+    {
+      "clase": "ProveedorArticulo",
+      "paquete": "com.adquisiciones.modelo",
+      "ruta": "src/main/java/com/adquisiciones/modelo/ProveedorArticulo.java"
+    },
+    {
+      "clase": "Sucursal",
+      "paquete": "com.adquisiciones.modelo",
+      "ruta": "src/main/java/com/adquisiciones/modelo/Sucursal.java"
+    },
+    {
+      "clase": "Usuario",
+      "paquete": "com.adquisiciones.modelo",
+      "ruta": "src/main/java/com/adquisiciones/modelo/Usuario.java"
+    },
+    {
+      "clase": "AdjudicacionRecurso",
+      "paquete": "com.adquisiciones.recurso",
+      "ruta": "src/main/java/com/adquisiciones/recurso/AdjudicacionRecurso.java"
+    },
+    {
+      "clase": "ArticuloRecurso",
+      "paquete": "com.adquisiciones.recurso",
+      "ruta": "src/main/java/com/adquisiciones/recurso/ArticuloRecurso.java"
+    },
+    {
+      "clase": "AuditoriaRecurso",
+      "paquete": "com.adquisiciones.recurso",
+      "ruta": "src/main/java/com/adquisiciones/recurso/AuditoriaRecurso.java"
+    },
+    {
+      "clase": "ConexionRecurso",
+      "paquete": "com.adquisiciones.recurso",
+      "ruta": "src/main/java/com/adquisiciones/recurso/ConexionRecurso.java"
+    },
+    {
+      "clase": "DashboardRecurso",
+      "paquete": "com.adquisiciones.recurso",
+      "ruta": "src/main/java/com/adquisiciones/recurso/DashboardRecurso.java"
+    },
+    {
+      "clase": "DepartamentoRecurso",
+      "paquete": "com.adquisiciones.recurso",
+      "ruta": "src/main/java/com/adquisiciones/recurso/DepartamentoRecurso.java"
+    },
+    {
+      "clase": "ErroresApi",
+      "paquete": "com.adquisiciones.recurso",
+      "ruta": "src/main/java/com/adquisiciones/recurso/ErroresApi.java"
+    },
+    {
+      "clase": "GestionRecurso",
+      "paquete": "com.adquisiciones.recurso",
+      "ruta": "src/main/java/com/adquisiciones/recurso/GestionRecurso.java"
+    },
+    {
+      "clase": "HelloRecurso",
+      "paquete": "com.adquisiciones.recurso",
+      "ruta": "src/main/java/com/adquisiciones/recurso/HelloRecurso.java"
+    },
+    {
+      "clase": "LoginRecurso",
+      "paquete": "com.adquisiciones.recurso",
+      "ruta": "src/main/java/com/adquisiciones/recurso/LoginRecurso.java"
+    },
+    {
+      "clase": "OrdenRecurso",
+      "paquete": "com.adquisiciones.recurso",
+      "ruta": "src/main/java/com/adquisiciones/recurso/OrdenRecurso.java"
+    },
+    {
+      "clase": "ProveedorArticuloRecurso",
+      "paquete": "com.adquisiciones.recurso",
+      "ruta": "src/main/java/com/adquisiciones/recurso/ProveedorArticuloRecurso.java"
+    },
+    {
+      "clase": "ProveedorRecurso",
+      "paquete": "com.adquisiciones.recurso",
+      "ruta": "src/main/java/com/adquisiciones/recurso/ProveedorRecurso.java"
+    },
+    {
+      "clase": "ReportesRecurso",
+      "paquete": "com.adquisiciones.recurso",
+      "ruta": "src/main/java/com/adquisiciones/recurso/ReportesRecurso.java"
+    },
+    {
+      "clase": "SucursalRecurso",
+      "paquete": "com.adquisiciones.recurso",
+      "ruta": "src/main/java/com/adquisiciones/recurso/SucursalRecurso.java"
+    },
+    {
+      "clase": "AdquisicionServicio",
+      "paquete": "com.adquisiciones.servicio",
+      "ruta": "src/main/java/com/adquisiciones/servicio/AdquisicionServicio.java"
+    },
+    {
+      "clase": "ArticuloServicio",
+      "paquete": "com.adquisiciones.servicio",
+      "ruta": "src/main/java/com/adquisiciones/servicio/ArticuloServicio.java"
+    },
+    {
+      "clase": "CatalogoServicio",
+      "paquete": "com.adquisiciones.servicio",
+      "ruta": "src/main/java/com/adquisiciones/servicio/CatalogoServicio.java"
+    },
+    {
+      "clase": "DepartamentoServicio",
+      "paquete": "com.adquisiciones.servicio",
+      "ruta": "src/main/java/com/adquisiciones/servicio/DepartamentoServicio.java"
+    },
+    {
+      "clase": "LoginServicio",
+      "paquete": "com.adquisiciones.servicio",
+      "ruta": "src/main/java/com/adquisiciones/servicio/LoginServicio.java"
+    },
+    {
+      "clase": "ProveedorArticuloServicio",
+      "paquete": "com.adquisiciones.servicio",
+      "ruta": "src/main/java/com/adquisiciones/servicio/ProveedorArticuloServicio.java"
+    },
+    {
+      "clase": "ProveedorServicio",
+      "paquete": "com.adquisiciones.servicio",
+      "ruta": "src/main/java/com/adquisiciones/servicio/ProveedorServicio.java"
+    },
+    {
+      "clase": "ReportesServicio",
+      "paquete": "com.adquisiciones.servicio",
+      "ruta": "src/main/java/com/adquisiciones/servicio/ReportesServicio.java"
+    },
+    {
+      "clase": "SeguridadServicio",
+      "paquete": "com.adquisiciones.servicio",
+      "ruta": "src/main/java/com/adquisiciones/servicio/SeguridadServicio.java"
+    },
+    {
+      "clase": "SucursalServicio",
+      "paquete": "com.adquisiciones.servicio",
+      "ruta": "src/main/java/com/adquisiciones/servicio/SucursalServicio.java"
+    },
+    {
+      "clase": "GenerarHash",
+      "paquete": "com.adquisiciones.util",
+      "ruta": "src/main/java/com/adquisiciones/util/GenerarHash.java"
+    },
+    {
+      "clase": "MigrarBases",
+      "paquete": "com.adquisiciones.util",
+      "ruta": "src/main/java/com/adquisiciones/util/MigrarBases.java"
+    },
+    {
+      "clase": "PasswordUtil",
+      "paquete": "com.adquisiciones.util",
+      "ruta": "src/main/java/com/adquisiciones/util/PasswordUtil.java"
+    },
+    {
+      "clase": "SemillaDemo",
+      "paquete": "com.adquisiciones.util",
+      "ruta": "src/main/java/com/adquisiciones/util/SemillaDemo.java"
+    },
+    {
+      "clase": "VerificarBases",
+      "paquete": "com.adquisiciones.util",
+      "ruta": "src/main/java/com/adquisiciones/util/VerificarBases.java"
+    }
+  ],
+  "rutas": [
+    {
+      "metodo": "GET",
+      "ruta": "/api/adjudicaciones",
+      "clase": "AdjudicacionRecurso",
+      "firma": "Map<String,Object> list()throws SQLException",
+      "archivo": "src/main/java/com/adquisiciones/recurso/AdjudicacionRecurso.java"
+    },
+    {
+      "metodo": "GET",
+      "ruta": "/api/adjudicaciones/{id}",
+      "clase": "AdjudicacionRecurso",
+      "firma": "Map<String,Object> get(@PathParam(\"id\")int id)throws SQLException",
+      "archivo": "src/main/java/com/adquisiciones/recurso/AdjudicacionRecurso.java"
+    },
+    {
+      "metodo": "POST",
+      "ruta": "/api/adjudicaciones",
+      "clase": "AdjudicacionRecurso",
+      "firma": "Response create(Map<String,Object> body,@Context HttpServletRequest r)throws SQLException",
+      "archivo": "src/main/java/com/adquisiciones/recurso/AdjudicacionRecurso.java"
+    },
+    {
+      "metodo": "PUT",
+      "ruta": "/api/adjudicaciones/{id}",
+      "clase": "AdjudicacionRecurso",
+      "firma": "Map<String,Object> update(@PathParam(\"id\")int id,Map<String,Object> body,@Context HttpServletRequest r)throws SQLException",
+      "archivo": "src/main/java/com/adquisiciones/recurso/AdjudicacionRecurso.java"
+    },
+    {
+      "metodo": "DELETE",
+      "ruta": "/api/adjudicaciones/{id}",
+      "clase": "AdjudicacionRecurso",
+      "firma": "Response delete(@PathParam(\"id\")int id,@Context HttpServletRequest r)throws SQLException",
+      "archivo": "src/main/java/com/adquisiciones/recurso/AdjudicacionRecurso.java"
+    },
+    {
+      "metodo": "GET",
+      "ruta": "/api/articulos",
+      "clase": "ArticuloRecurso",
+      "firma": "Response listar()",
+      "archivo": "src/main/java/com/adquisiciones/recurso/ArticuloRecurso.java"
+    },
+    {
+      "metodo": "GET",
+      "ruta": "/api/articulos/{id}",
+      "clase": "ArticuloRecurso",
+      "firma": "Response obtener(@PathParam(\"id\") int id)",
+      "archivo": "src/main/java/com/adquisiciones/recurso/ArticuloRecurso.java"
+    },
+    {
+      "metodo": "POST",
+      "ruta": "/api/articulos",
+      "clase": "ArticuloRecurso",
+      "firma": "Response crear(Articulo articulo)",
+      "archivo": "src/main/java/com/adquisiciones/recurso/ArticuloRecurso.java"
+    },
+    {
+      "metodo": "PUT",
+      "ruta": "/api/articulos/{id}",
+      "clase": "ArticuloRecurso",
+      "firma": "Response actualizar(@PathParam(\"id\") int id, Articulo articulo)",
+      "archivo": "src/main/java/com/adquisiciones/recurso/ArticuloRecurso.java"
+    },
+    {
+      "metodo": "DELETE",
+      "ruta": "/api/articulos/{id}",
+      "clase": "ArticuloRecurso",
+      "firma": "Response eliminar(@PathParam(\"id\") int id)",
+      "archivo": "src/main/java/com/adquisiciones/recurso/ArticuloRecurso.java"
+    },
+    {
+      "metodo": "GET",
+      "ruta": "/api/auditoria",
+      "clase": "AuditoriaRecurso",
+      "firma": "Map<String,Object> list(@QueryParam(\"page\")@DefaultValue(\"1\")int page)throws SQLException",
+      "archivo": "src/main/java/com/adquisiciones/recurso/AuditoriaRecurso.java"
+    },
+    {
+      "metodo": "GET",
+      "ruta": "/api/conexion/test",
+      "clase": "ConexionRecurso",
+      "firma": "Map<String,Object> probarConexiones()",
+      "archivo": "src/main/java/com/adquisiciones/recurso/ConexionRecurso.java"
+    },
+    {
+      "metodo": "GET",
+      "ruta": "/api/dashboard",
+      "clase": "DashboardRecurso",
+      "firma": "Map<String,Object> dashboard(@Context HttpServletRequest r)throws SQLException",
+      "archivo": "src/main/java/com/adquisiciones/recurso/DashboardRecurso.java"
+    },
+    {
+      "metodo": "GET",
+      "ruta": "/api/departamentos",
+      "clase": "DepartamentoRecurso",
+      "firma": "Response listar()",
+      "archivo": "src/main/java/com/adquisiciones/recurso/DepartamentoRecurso.java"
+    },
+    {
+      "metodo": "GET",
+      "ruta": "/api/departamentos/{id}",
+      "clase": "DepartamentoRecurso",
+      "firma": "Response obtener(@PathParam(\"id\") int id)",
+      "archivo": "src/main/java/com/adquisiciones/recurso/DepartamentoRecurso.java"
+    },
+    {
+      "metodo": "POST",
+      "ruta": "/api/departamentos",
+      "clase": "DepartamentoRecurso",
+      "firma": "Response crear(Departamento departamento)",
+      "archivo": "src/main/java/com/adquisiciones/recurso/DepartamentoRecurso.java"
+    },
+    {
+      "metodo": "PUT",
+      "ruta": "/api/departamentos/{id}",
+      "clase": "DepartamentoRecurso",
+      "firma": "Response actualizar(@PathParam(\"id\") int id, Departamento departamento)",
+      "archivo": "src/main/java/com/adquisiciones/recurso/DepartamentoRecurso.java"
+    },
+    {
+      "metodo": "DELETE",
+      "ruta": "/api/departamentos/{id}",
+      "clase": "DepartamentoRecurso",
+      "firma": "Response eliminar(@PathParam(\"id\") int id)",
+      "archivo": "src/main/java/com/adquisiciones/recurso/DepartamentoRecurso.java"
+    },
+    {
+      "metodo": "GET",
+      "ruta": "/api/gestion/{modulo}/schema",
+      "clase": "GestionRecurso",
+      "firma": "Modulo schema(@PathParam(\"modulo\")String name)",
+      "archivo": "src/main/java/com/adquisiciones/recurso/GestionRecurso.java"
+    },
+    {
+      "metodo": "GET",
+      "ruta": "/api/gestion/{modulo}",
+      "clase": "GestionRecurso",
+      "firma": "Map<String,Object> list(@PathParam(\"modulo\")String name,@QueryParam(\"page\")@DefaultValue(\"1\")int page,@QueryParam(\"pageSize\")@DefaultValue(\"20\")int size,@QueryParam(\"q\")String q,@Context HttpServletRequest r)throws SQLException",
+      "archivo": "src/main/java/com/adquisiciones/recurso/GestionRecurso.java"
+    },
+    {
+      "metodo": "GET",
+      "ruta": "/api/gestion/{modulo}/{key}",
+      "clase": "GestionRecurso",
+      "firma": "Map<String,Object> get(@PathParam(\"modulo\")String name,@PathParam(\"key\")String key,@Context HttpServletRequest r)throws SQLException",
+      "archivo": "src/main/java/com/adquisiciones/recurso/GestionRecurso.java"
+    },
+    {
+      "metodo": "POST",
+      "ruta": "/api/gestion/{modulo}",
+      "clase": "GestionRecurso",
+      "firma": "Response create(@PathParam(\"modulo\")String name,Map<String,Object> body,@Context HttpServletRequest r)throws SQLException",
+      "archivo": "src/main/java/com/adquisiciones/recurso/GestionRecurso.java"
+    },
+    {
+      "metodo": "PUT",
+      "ruta": "/api/gestion/{modulo}/{key}",
+      "clase": "GestionRecurso",
+      "firma": "Map<String,Object> update(@PathParam(\"modulo\")String name,@PathParam(\"key\")String key,Map<String,Object> body,@Context HttpServletRequest r)throws SQLException",
+      "archivo": "src/main/java/com/adquisiciones/recurso/GestionRecurso.java"
+    },
+    {
+      "metodo": "DELETE",
+      "ruta": "/api/gestion/{modulo}/{key}",
+      "clase": "GestionRecurso",
+      "firma": "Response delete(@PathParam(\"modulo\")String name,@PathParam(\"key\")String key,@Context HttpServletRequest r)throws SQLException",
+      "archivo": "src/main/java/com/adquisiciones/recurso/GestionRecurso.java"
+    },
+    {
+      "metodo": "GET",
+      "ruta": "/api/hello",
+      "clase": "HelloRecurso",
+      "firma": "String saludo()",
+      "archivo": "src/main/java/com/adquisiciones/recurso/HelloRecurso.java"
+    },
+    {
+      "metodo": "POST",
+      "ruta": "/api/login",
+      "clase": "LoginRecurso",
+      "firma": "Response login(Map<String,String> credentials,@Context HttpServletRequest request)",
+      "archivo": "src/main/java/com/adquisiciones/recurso/LoginRecurso.java"
+    },
+    {
+      "metodo": "GET",
+      "ruta": "/api/login/me",
+      "clase": "LoginRecurso",
+      "firma": "Response me(@Context HttpServletRequest request)throws java.sql.SQLException",
+      "archivo": "src/main/java/com/adquisiciones/recurso/LoginRecurso.java"
+    },
+    {
+      "metodo": "POST",
+      "ruta": "/api/login/logout",
+      "clase": "LoginRecurso",
+      "firma": "Response logout(@Context HttpServletRequest request)",
+      "archivo": "src/main/java/com/adquisiciones/recurso/LoginRecurso.java"
+    },
+    {
+      "metodo": "GET",
+      "ruta": "/api/ordenes",
+      "clase": "OrdenRecurso",
+      "firma": "Map<String,Object> list(@QueryParam(\"page\")@DefaultValue(\"1\")int page,@QueryParam(\"pageSize\")@DefaultValue(\"20\")int size,@Context HttpServletRequest r)throws SQLException",
+      "archivo": "src/main/java/com/adquisiciones/recurso/OrdenRecurso.java"
+    },
+    {
+      "metodo": "GET",
+      "ruta": "/api/ordenes/{id}",
+      "clase": "OrdenRecurso",
+      "firma": "Map<String,Object> get(@PathParam(\"id\")int id,@Context HttpServletRequest r)throws SQLException",
+      "archivo": "src/main/java/com/adquisiciones/recurso/OrdenRecurso.java"
+    },
+    {
+      "metodo": "POST",
+      "ruta": "/api/ordenes",
+      "clase": "OrdenRecurso",
+      "firma": "Response create(Map<String,Object> body,@Context HttpServletRequest r)throws SQLException",
+      "archivo": "src/main/java/com/adquisiciones/recurso/OrdenRecurso.java"
+    },
+    {
+      "metodo": "PUT",
+      "ruta": "/api/ordenes/{id}",
+      "clase": "OrdenRecurso",
+      "firma": "Map<String,Object> update(@PathParam(\"id\")int id,Map<String,Object> body,@Context HttpServletRequest r)throws SQLException",
+      "archivo": "src/main/java/com/adquisiciones/recurso/OrdenRecurso.java"
+    },
+    {
+      "metodo": "DELETE",
+      "ruta": "/api/ordenes/{id}",
+      "clase": "OrdenRecurso",
+      "firma": "Response delete(@PathParam(\"id\")int id,@Context HttpServletRequest r)throws SQLException",
+      "archivo": "src/main/java/com/adquisiciones/recurso/OrdenRecurso.java"
+    },
+    {
+      "metodo": "GET",
+      "ruta": "/api/proveedores/{idProveedor}/articulos",
+      "clase": "ProveedorArticuloRecurso",
+      "firma": "Response listar(@PathParam(\"idProveedor\") int idProveedor)",
+      "archivo": "src/main/java/com/adquisiciones/recurso/ProveedorArticuloRecurso.java"
+    },
+    {
+      "metodo": "POST",
+      "ruta": "/api/proveedores/{idProveedor}/articulos",
+      "clase": "ProveedorArticuloRecurso",
+      "firma": "Response crear(@PathParam(\"idProveedor\") int idProveedor, ProveedorArticulo proveedorArticulo)",
+      "archivo": "src/main/java/com/adquisiciones/recurso/ProveedorArticuloRecurso.java"
+    },
+    {
+      "metodo": "PUT",
+      "ruta": "/api/proveedores/{idProveedor}/articulos/{idArticulo}",
+      "clase": "ProveedorArticuloRecurso",
+      "firma": "Response actualizar(@PathParam(\"idProveedor\") int idProveedor,",
+      "archivo": "src/main/java/com/adquisiciones/recurso/ProveedorArticuloRecurso.java"
+    },
+    {
+      "metodo": "DELETE",
+      "ruta": "/api/proveedores/{idProveedor}/articulos/{idArticulo}",
+      "clase": "ProveedorArticuloRecurso",
+      "firma": "Response eliminar(@PathParam(\"idProveedor\") int idProveedor, @PathParam(\"idArticulo\") int idArticulo)",
+      "archivo": "src/main/java/com/adquisiciones/recurso/ProveedorArticuloRecurso.java"
+    },
+    {
+      "metodo": "GET",
+      "ruta": "/api/proveedores",
+      "clase": "ProveedorRecurso",
+      "firma": "Response listar()",
+      "archivo": "src/main/java/com/adquisiciones/recurso/ProveedorRecurso.java"
+    },
+    {
+      "metodo": "GET",
+      "ruta": "/api/proveedores/{id}",
+      "clase": "ProveedorRecurso",
+      "firma": "Response obtener(@PathParam(\"id\") int id)",
+      "archivo": "src/main/java/com/adquisiciones/recurso/ProveedorRecurso.java"
+    },
+    {
+      "metodo": "POST",
+      "ruta": "/api/proveedores",
+      "clase": "ProveedorRecurso",
+      "firma": "Response crear(Proveedor proveedor)",
+      "archivo": "src/main/java/com/adquisiciones/recurso/ProveedorRecurso.java"
+    },
+    {
+      "metodo": "PUT",
+      "ruta": "/api/proveedores/{id}",
+      "clase": "ProveedorRecurso",
+      "firma": "Response actualizar(@PathParam(\"id\") int id, Proveedor proveedor)",
+      "archivo": "src/main/java/com/adquisiciones/recurso/ProveedorRecurso.java"
+    },
+    {
+      "metodo": "DELETE",
+      "ruta": "/api/proveedores/{id}",
+      "clase": "ProveedorRecurso",
+      "firma": "Response eliminar(@PathParam(\"id\") int id)",
+      "archivo": "src/main/java/com/adquisiciones/recurso/ProveedorRecurso.java"
+    },
+    {
+      "metodo": "GET",
+      "ruta": "/api/reportes",
+      "clase": "ReportesRecurso",
+      "firma": "Map<String,Object> catalogo()",
+      "archivo": "src/main/java/com/adquisiciones/recurso/ReportesRecurso.java"
+    },
+    {
+      "metodo": "GET",
+      "ruta": "/api/reportes/{id}",
+      "clase": "ReportesRecurso",
+      "firma": "Map<String,Object> informe(@PathParam(\"id\")int id,@QueryParam(\"articulo\")@DefaultValue(\"0\")int article,@QueryParam(\"proveedor\")@DefaultValue(\"0\")int provider,@QueryParam(\"orden\")@DefaultValue(\"0\")int order,@QueryParam(\"sucursal\")@DefaultValue(\"0\")int branch,@QueryParam(\"anio\")int year,@QueryParam(\"desde\")String from,@QueryParam(\"hasta\")String to,@Context HttpServletRequest r)throws SQLException",
+      "archivo": "src/main/java/com/adquisiciones/recurso/ReportesRecurso.java"
+    },
+    {
+      "metodo": "GET",
+      "ruta": "/api/sucursales",
+      "clase": "SucursalRecurso",
+      "firma": "Response listar()",
+      "archivo": "src/main/java/com/adquisiciones/recurso/SucursalRecurso.java"
+    },
+    {
+      "metodo": "GET",
+      "ruta": "/api/sucursales/{id}",
+      "clase": "SucursalRecurso",
+      "firma": "Response obtener(@PathParam(\"id\") int id)",
+      "archivo": "src/main/java/com/adquisiciones/recurso/SucursalRecurso.java"
+    },
+    {
+      "metodo": "POST",
+      "ruta": "/api/sucursales",
+      "clase": "SucursalRecurso",
+      "firma": "Response crear(Sucursal sucursal)",
+      "archivo": "src/main/java/com/adquisiciones/recurso/SucursalRecurso.java"
+    },
+    {
+      "metodo": "PUT",
+      "ruta": "/api/sucursales/{id}",
+      "clase": "SucursalRecurso",
+      "firma": "Response actualizar(@PathParam(\"id\") int id, Sucursal sucursal)",
+      "archivo": "src/main/java/com/adquisiciones/recurso/SucursalRecurso.java"
+    },
+    {
+      "metodo": "DELETE",
+      "ruta": "/api/sucursales/{id}",
+      "clase": "SucursalRecurso",
+      "firma": "Response eliminar(@PathParam(\"id\") int id)",
+      "archivo": "src/main/java/com/adquisiciones/recurso/SucursalRecurso.java"
+    }
+  ],
+  "modulos": [
+    {
+      "modulo": "sucursales",
+      "tabla": "Sucursal",
+      "claves": [
+        "id_sucursal"
+      ]
+    },
+    {
+      "modulo": "departamentos",
+      "tabla": "Departamento",
+      "claves": [
+        "id_departamento"
+      ]
+    },
+    {
+      "modulo": "articulos",
+      "tabla": "Articulo",
+      "claves": [
+        "id_articulo"
+      ]
+    },
+    {
+      "modulo": "proveedores",
+      "tabla": "Proveedor",
+      "claves": [
+        "id_proveedor"
+      ]
+    },
+    {
+      "modulo": "proveedorarticulos",
+      "tabla": "ProveedorArticulo",
+      "claves": [
+        "id_proveedor",
+        "id_articulo"
+      ]
+    },
+    {
+      "modulo": "telefonos",
+      "tabla": "SucursalTelefono",
+      "claves": [
+        "id_sucursal",
+        "telefono"
+      ]
+    },
+    {
+      "modulo": "rubros",
+      "tabla": "ProveedorRubro",
+      "claves": [
+        "id_proveedor",
+        "rubro"
+      ]
+    },
+    {
+      "modulo": "relaciones",
+      "tabla": "RelacionComercial",
+      "claves": [
+        "id_relacion_comercial"
+      ]
+    },
+    {
+      "modulo": "tiposorden",
+      "tabla": "TipoOrden",
+      "claves": [
+        "id_tipo"
+      ]
+    },
+    {
+      "modulo": "subtiposorden",
+      "tabla": "SubtipoOrden",
+      "claves": [
+        "id_subtipo"
+      ]
+    },
+    {
+      "modulo": "roles",
+      "tabla": "Rol",
+      "claves": [
+        "id_rol"
+      ]
+    },
+    {
+      "modulo": "pantallas",
+      "tabla": "Pantalla",
+      "claves": [
+        "id_pantalla"
+      ]
+    },
+    {
+      "modulo": "permisos",
+      "tabla": "Permiso",
+      "claves": [
+        "id_rol",
+        "id_pantalla"
+      ]
+    },
+    {
+      "modulo": "usuarios",
+      "tabla": "Usuario",
+      "claves": [
+        "id_usuario"
+      ]
+    },
+    {
+      "modulo": "pedidos",
+      "tabla": "Pedido",
+      "claves": [
+        "id_pedido"
+      ]
+    },
+    {
+      "modulo": "ofertas",
+      "tabla": "Oferta",
+      "claves": [
+        "id_oferta"
+      ]
+    },
+    {
+      "modulo": "evaluaciones",
+      "tabla": "EvaluacionProveedor",
+      "claves": [
+        "id_evaluacion"
+      ]
+    }
+  ],
+  "rdl": [
+    {
+      "archivo": "reports/ssrs/01_HistorialCompra.rdl",
+      "nombre": "01_HistorialCompra",
+      "parametros": [
+        {
+          "nombre": "Articulo",
+          "tipo": "Integer",
+          "predeterminado": "0"
+        },
+        {
+          "nombre": "Desde",
+          "tipo": "DateTime",
+          "predeterminado": "=DateAdd(\"yyyy\",-1,Today())"
+        },
+        {
+          "nombre": "Hasta",
+          "tipo": "DateTime",
+          "predeterminado": "=Today()"
+        }
+      ],
+      "sql": "SELECT ar.codigo_articulo,ar.nombre AS articulo,v.nombre_comercial AS proveedor,a.fecha_resolucion,d.cantidad_final,d.precio_acordado,CAST(d.cantidad_final*d.precio_acordado AS DECIMAL(18,2)) AS monto FROM DetalleAdjudicacion d JOIN Adjudicacion a ON a.id_adjudicacion=d.id_adjudicacion JOIN Pedido p ON p.id_pedido=d.id_pedido JOIN Articulo ar ON ar.id_articulo=p.id_articulo JOIN Oferta f ON f.id_oferta=d.id_oferta JOIN Proveedor v ON v.id_proveedor=f.id_proveedor WHERE (@Articulo=0 OR ar.id_articulo=@Articulo) AND a.fecha_resolucion BETWEEN @Desde AND @Hasta  ORDER BY ar.nombre,a.fecha_resolucion,v.nombre_comercial",
+      "tablas": [
+        "Adjudicacion",
+        "Articulo",
+        "DetalleAdjudicacion",
+        "Oferta",
+        "Pedido",
+        "Proveedor"
+      ],
+      "campos": [
+        "codigo_articulo",
+        "articulo",
+        "proveedor",
+        "fecha_resolucion",
+        "cantidad_final",
+        "precio_acordado",
+        "monto"
+      ],
+      "grupos": 0
+    },
+    {
+      "archivo": "reports/ssrs/02_TopProveedores.rdl",
+      "nombre": "02_TopProveedores",
+      "parametros": [
+        {
+          "nombre": "Desde",
+          "tipo": "DateTime",
+          "predeterminado": "=DateAdd(\"yyyy\",-1,Today())"
+        },
+        {
+          "nombre": "Hasta",
+          "tipo": "DateTime",
+          "predeterminado": "=Today()"
+        }
+      ],
+      "sql": "SELECT TOP(5) v.codigo_proveedor,v.nombre_comercial AS proveedor,SUM(CAST(d.cantidad_final*d.precio_acordado AS DECIMAL(18,2))) AS monto_adjudicado,COUNT(DISTINCT a.id_orden) AS ordenes FROM DetalleAdjudicacion d JOIN Adjudicacion a ON a.id_adjudicacion=d.id_adjudicacion JOIN Oferta f ON f.id_oferta=d.id_oferta JOIN Proveedor v ON v.id_proveedor=f.id_proveedor WHERE a.fecha_resolucion BETWEEN @Desde AND @Hasta  GROUP BY v.codigo_proveedor,v.nombre_comercial ORDER BY monto_adjudicado DESC,v.codigo_proveedor",
+      "tablas": [
+        "Adjudicacion",
+        "DetalleAdjudicacion",
+        "Oferta",
+        "Proveedor"
+      ],
+      "campos": [
+        "codigo_proveedor",
+        "proveedor",
+        "monto_adjudicado",
+        "ordenes"
+      ],
+      "grupos": 0
+    },
+    {
+      "archivo": "reports/ssrs/03_ComparacionOfertas.rdl",
+      "nombre": "03_ComparacionOfertas",
+      "parametros": [
+        {
+          "nombre": "Orden",
+          "tipo": "Integer",
+          "predeterminado": null
+        }
+      ],
+      "sql": "SELECT p.id_pedido,ar.nombre AS articulo,p.cantidad,v.nombre_comercial AS proveedor,f.precio_unitario,f.fecha_oferta,CAST(CASE WHEN d.id_oferta IS NULL THEN 0 ELSE 1 END AS BIT) AS ganadora,d.cantidad_final,d.precio_acordado FROM Oferta f JOIN Pedido p ON p.id_pedido=f.id_pedido JOIN Articulo ar ON ar.id_articulo=p.id_articulo JOIN Proveedor v ON v.id_proveedor=f.id_proveedor LEFT JOIN DetalleAdjudicacion d ON d.id_oferta=f.id_oferta WHERE p.id_orden=@Orden  ORDER BY p.id_pedido,f.precio_unitario,f.id_oferta",
+      "tablas": [
+        "Articulo",
+        "DetalleAdjudicacion",
+        "Oferta",
+        "Pedido",
+        "Proveedor"
+      ],
+      "campos": [
+        "id_pedido",
+        "articulo",
+        "cantidad",
+        "proveedor",
+        "precio_unitario",
+        "fecha_oferta",
+        "ganadora",
+        "cantidad_final",
+        "precio_acordado"
+      ],
+      "grupos": 0
+    },
+    {
+      "archivo": "reports/ssrs/04_PedidosSinAsignar.rdl",
+      "nombre": "04_PedidosSinAsignar",
+      "parametros": [],
+      "sql": "SELECT p.id_pedido,s.codigo_sucursal,d.nombre AS departamento,a.nombre AS articulo,p.cantidad,p.fecha_solicitud,p.fecha_necesaria FROM Pedido p JOIN Departamento d ON d.id_departamento=p.id_departamento JOIN Sucursal s ON s.id_sucursal=d.id_sucursal JOIN Articulo a ON a.id_articulo=p.id_articulo WHERE p.id_orden IS NULL  ORDER BY p.fecha_necesaria,p.id_pedido",
+      "tablas": [
+        "Articulo",
+        "Departamento",
+        "Pedido",
+        "Sucursal"
+      ],
+      "campos": [
+        "id_pedido",
+        "codigo_sucursal",
+        "departamento",
+        "articulo",
+        "cantidad",
+        "fecha_solicitud",
+        "fecha_necesaria"
+      ],
+      "grupos": 0
+    },
+    {
+      "archivo": "reports/ssrs/05_OrdenesAbiertas.rdl",
+      "nombre": "05_OrdenesAbiertas",
+      "parametros": [],
+      "sql": "SELECT o.* FROM vw_OrdenesAbiertas o WHERE 1=1  ORDER BY o.fecha_limite_oferta,o.id_orden",
+      "tablas": [
+        "vw_OrdenesAbiertas"
+      ],
+      "campos": [
+        "id_orden",
+        "descripcion",
+        "fecha_creacion",
+        "fecha_limite_oferta",
+        "tipo",
+        "subtipo"
+      ],
+      "grupos": 0
+    },
+    {
+      "archivo": "reports/ssrs/06_GastoDepartamento.rdl",
+      "nombre": "06_GastoDepartamento",
+      "parametros": [
+        {
+          "nombre": "Sucursal",
+          "tipo": "Integer",
+          "predeterminado": "0"
+        },
+        {
+          "nombre": "Anio",
+          "tipo": "Integer",
+          "predeterminado": "=Year(Today())"
+        }
+      ],
+      "sql": "SELECT s.codigo_sucursal,s.ciudad,de.nombre AS departamento,SUM(CAST(d.cantidad_final*d.precio_acordado AS DECIMAL(18,2))) AS gasto FROM DetalleAdjudicacion d JOIN Adjudicacion a ON a.id_adjudicacion=d.id_adjudicacion JOIN Pedido p ON p.id_pedido=d.id_pedido JOIN Departamento de ON de.id_departamento=p.id_departamento JOIN Sucursal s ON s.id_sucursal=de.id_sucursal WHERE (@Sucursal=0 OR s.id_sucursal=@Sucursal) AND a.fecha_resolucion>=@InicioAnio AND a.fecha_resolucion<@FinAnio GROUP BY s.codigo_sucursal,s.ciudad,de.nombre ORDER BY s.codigo_sucursal,de.nombre",
+      "tablas": [
+        "Adjudicacion",
+        "Departamento",
+        "DetalleAdjudicacion",
+        "Pedido",
+        "Sucursal"
+      ],
+      "campos": [
+        "codigo_sucursal",
+        "ciudad",
+        "departamento",
+        "gasto"
+      ],
+      "grupos": 0
+    },
+    {
+      "archivo": "reports/ssrs/07_PromedioAdjudicacion.rdl",
+      "nombre": "07_PromedioAdjudicacion",
+      "parametros": [
+        {
+          "nombre": "Desde",
+          "tipo": "DateTime",
+          "predeterminado": "=DateAdd(\"yyyy\",-1,Today())"
+        },
+        {
+          "nombre": "Hasta",
+          "tipo": "DateTime",
+          "predeterminado": "=Today()"
+        }
+      ],
+      "sql": "SELECT COUNT(*) AS ordenes_adjudicadas,AVG(CAST(DATEDIFF(DAY,o.fecha_creacion,a.fecha_resolucion) AS DECIMAL(10,2))) AS promedio_dias FROM Adjudicacion a JOIN OrdenCompra o ON o.id_orden=a.id_orden WHERE a.fecha_resolucion BETWEEN @Desde AND @Hasta",
+      "tablas": [
+        "Adjudicacion",
+        "OrdenCompra"
+      ],
+      "campos": [
+        "ordenes_adjudicadas",
+        "promedio_dias"
+      ],
+      "grupos": 0
+    },
+    {
+      "archivo": "reports/ssrs/08_EvolucionPrecios.rdl",
+      "nombre": "08_EvolucionPrecios",
+      "parametros": [
+        {
+          "nombre": "Articulo",
+          "tipo": "Integer",
+          "predeterminado": "0"
+        },
+        {
+          "nombre": "Proveedor",
+          "tipo": "Integer",
+          "predeterminado": "0"
+        },
+        {
+          "nombre": "Desde",
+          "tipo": "DateTime",
+          "predeterminado": "=DateAdd(\"yyyy\",-1,Today())"
+        },
+        {
+          "nombre": "Hasta",
+          "tipo": "DateTime",
+          "predeterminado": "=Today()"
+        }
+      ],
+      "sql": "SELECT ar.codigo_articulo,ar.nombre AS articulo,v.nombre_comercial AS proveedor,f.fecha_oferta,f.precio_unitario,p.id_orden FROM Oferta f JOIN Pedido p ON p.id_pedido=f.id_pedido JOIN Articulo ar ON ar.id_articulo=p.id_articulo JOIN Proveedor v ON v.id_proveedor=f.id_proveedor WHERE (@Articulo=0 OR ar.id_articulo=@Articulo) AND (@Proveedor=0 OR f.id_proveedor=@Proveedor) AND f.fecha_oferta BETWEEN @Desde AND @Hasta  ORDER BY ar.nombre,v.nombre_comercial,f.fecha_oferta,f.id_oferta",
+      "tablas": [
+        "Articulo",
+        "Oferta",
+        "Pedido",
+        "Proveedor"
+      ],
+      "campos": [
+        "codigo_articulo",
+        "articulo",
+        "proveedor",
+        "fecha_oferta",
+        "precio_unitario",
+        "id_orden"
+      ],
+      "grupos": 0
+    }
+  ],
+  "tablas": [
+    "Adjudicacion",
+    "Articulo",
+    "Auditoria",
+    "Departamento",
+    "DetalleAdjudicacion",
+    "EvaluacionProveedor",
+    "Oferta",
+    "OrdenCompra",
+    "Pantalla",
+    "Pedido",
+    "Permiso",
+    "Proveedor",
+    "ProveedorArticulo",
+    "ProveedorRubro",
+    "RelacionComercial",
+    "Rol",
+    "SchemaVersion",
+    "SubtipoOrden",
+    "Sucursal",
+    "SucursalTelefono",
+    "TipoOrden",
+    "Usuario"
+  ],
+  "historialGit": "",
+  "ausencias": {
+    "jasper": true,
+    "githubActions": true,
+    "docusaurus": true
+  },
+  "fase": "Inventario inicial, antes de generar y corregir documentación",
+  "privadosExcluidos": true
+}

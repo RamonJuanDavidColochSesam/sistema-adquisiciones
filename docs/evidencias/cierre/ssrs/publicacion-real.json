@@ -1,0 +1,74 @@
+{
+  "fecha": "2026-10-06T01:57:03.0131614-06:00",
+  "servidor": "http://localhost/ReportServer",
+  "orden": 10,
+  "desde": "2025-01-01",
+  "hasta": "2026-12-31",
+  "informes": [
+    {
+      "nombre": "01_HistorialCompra",
+      "ruta": "/GuateCompras/01_HistorialCompra",
+      "sha256Local": "43b99244bb0d0b15c78a51d7cd162760e6930a527c6d1c2b30d2137b24005e16",
+      "sha256Servidor": "43b99244bb0d0b15c78a51d7cd162760e6930a527c6d1c2b30d2137b24005e16",
+      "pdf": "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\outputs\\SSRS\\01_HistorialCompra.pdf",
+      "sha256PDF": "51742fa6142f93a6dd896533aadece69fbd09576b441e8e7f369e6a24f1577ce"
+    },
+    {
+      "nombre": "02_TopProveedores",
+      "ruta": "/GuateCompras/02_TopProveedores",
+      "sha256Local": "2da5f2555cdcf9f732a623ad3ec6d5134da217c44c6e7a51acedfcfa2757a1f1",
+      "sha256Servidor": "2da5f2555cdcf9f732a623ad3ec6d5134da217c44c6e7a51acedfcfa2757a1f1",
+      "pdf": "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\outputs\\SSRS\\02_TopProveedores.pdf",
+      "sha256PDF": "602b9654321412451e492cfca45e9bcdc3c9019e7467c584037faaad0bd3f1e1"
+    },
+    {
+      "nombre": "03_ComparacionOfertas",
+      "ruta": "/GuateCompras/03_ComparacionOfertas",
+      "sha256Local": "1b00b813126c14ce932ec48974b708b8cb3a758989f823770864781f832f02e1",
+      "sha256Servidor": "1b00b813126c14ce932ec48974b708b8cb3a758989f823770864781f832f02e1",
+      "pdf": "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\outputs\\SSRS\\03_ComparacionOfertas.pdf",
+      "sha256PDF": "082a004cf9d67b5f58e9321b936394b73881fa823da6cbbe47f5895193643491"
+    },
+    {
+      "nombre": "04_PedidosSinAsignar",
+      "ruta": "/GuateCompras/04_PedidosSinAsignar",
+      "sha256Local": "38e39771a69f7903bb0115e32690a4020e73cb9090a3d8fedb7baf8df61107b8",
+      "sha256Servidor": "38e39771a69f7903bb0115e32690a4020e73cb9090a3d8fedb7baf8df61107b8",
+      "pdf": "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\outputs\\SSRS\\04_PedidosSinAsignar.pdf",
+      "sha256PDF": "fb51c637fb8cb8076ec3a32e958ffdeb231a4e42320134d28129ac22157e7e0c"
+    },
+    {
+      "nombre": "05_OrdenesAbiertas",
+      "ruta": "/GuateCompras/05_OrdenesAbiertas",
+      "sha256Local": "2f4eaf32dc9463491cf94479343f7fa31bd568e6e21b327e48ed833042f02975",
+      "sha256Servidor": "2f4eaf32dc9463491cf94479343f7fa31bd568e6e21b327e48ed833042f02975",
+      "pdf": "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\outputs\\SSRS\\05_OrdenesAbiertas.pdf",
+      "sha256PDF": "9b7940a090026c7f2c7cc7deffea9a4318018d3fe2c9b23677fc64075a21bef7"
+    },
+    {
+      "nombre": "06_GastoDepartamento",
+      "ruta": "/GuateCompras/06_GastoDepartamento",
+      "sha256Local": "691c8ce9664baa0fba00f6f9d1d0dd6ab187555c14d26bdc3918fb8314047fb1",
+      "sha256Servidor": "691c8ce9664baa0fba00f6f9d1d0dd6ab187555c14d26bdc3918fb8314047fb1",
+      "pdf": "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\outputs\\SSRS\\06_GastoDepartamento.pdf",
+      "sha256PDF": "4c35a3b43225a5befafb85c8dd623f2ef39b59ee1eb062c375634394deb3df96"
+    },
+    {
+      "nombre": "07_PromedioAdjudicacion",
+      "ruta": "/GuateCompras/07_PromedioAdjudicacion",
+      "sha256Local": "c2b2142800467eaee3dc386496d1726611ab7970661b627e68d5fcd6e3304162",
+      "sha256Servidor": "c2b2142800467eaee3dc386496d1726611ab7970661b627e68d5fcd6e3304162",
+      "pdf": "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\outputs\\SSRS\\07_PromedioAdjudicacion.pdf",
+      "sha256PDF": "4830bd1c6a8d04162ce1e0a80affa3c0d873a14919ca0316b0dcf056f89d60c7"
+    },
+    {
+      "nombre": "08_EvolucionPrecios",
+      "ruta": "/GuateCompras/08_EvolucionPrecios",
+      "sha256Local": "bc702d276b6ad41e6800639d3a697209dcc4b0f639556e66e0ac175c501f801c",
+      "sha256Servidor": "bc702d276b6ad41e6800639d3a697209dcc4b0f639556e66e0ac175c501f801c",
+      "pdf": "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\outputs\\SSRS\\08_EvolucionPrecios.pdf",
+      "sha256PDF": "9817a54f8b1cce14c3025b34e289db60deedc5407262e3acbf594458a72ae03e"
+    }
+  ],
+  "revisionVisualPendiente": false
+}

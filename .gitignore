@@ -13,3 +13,16 @@ Thumbs.db
 
 # Credenciales - cada quien tiene las suyas, nunca se suben
 src/main/resources/db.properties
+config/local-db.properties
+config/demo-access.properties
+.env
+*.log
+desktop/**/bin/
+desktop/**/obj/
+desktop/.nuget/
+desktop/.vs/
+.vs/
+
+desktop/.build-environment/
+__pycache__/
+*.pyc

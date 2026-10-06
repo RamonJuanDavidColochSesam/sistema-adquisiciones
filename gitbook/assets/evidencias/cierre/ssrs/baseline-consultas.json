@@ -1,0 +1,2414 @@
+{
+  "orden": 10,
+  "desde": "2025-01-01",
+  "hasta": "2026-12-31",
+  "informes": {
+    "1": {
+      "moneda": "GTQ",
+      "total": 30,
+      "nombre": "Historial de compra de artículos",
+      "items": [
+        {
+          "codigo_articulo": "ART-009",
+          "articulo": "Archivador palanca",
+          "proveedor": "Tecnología Maya",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 15,
+          "precio_acordado": 27.0,
+          "monto": 405.0
+        },
+        {
+          "codigo_articulo": "ART-003",
+          "articulo": "Bolígrafo azul",
+          "proveedor": "Papelería del Valle",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 15,
+          "precio_acordado": 9.0,
+          "monto": 135.0
+        },
+        {
+          "codigo_articulo": "ART-004",
+          "articulo": "Bolígrafo negro",
+          "proveedor": "Suministros Verapaz",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 5,
+          "precio_acordado": 14.0,
+          "monto": 70.0
+        },
+        {
+          "codigo_articulo": "ART-011",
+          "articulo": "Caja grapas",
+          "proveedor": "Equipos del Norte",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 10,
+          "precio_acordado": 34.0,
+          "monto": 340.0
+        },
+        {
+          "codigo_articulo": "ART-008",
+          "articulo": "Carpeta oficio",
+          "proveedor": "Tecnología Maya",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 10,
+          "precio_acordado": 25.0,
+          "monto": 250.0
+        },
+        {
+          "codigo_articulo": "ART-014",
+          "articulo": "Cinta adhesiva",
+          "proveedor": "Ofimática Central",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 10,
+          "precio_acordado": 43.0,
+          "monto": 430.0
+        },
+        {
+          "codigo_articulo": "ART-021",
+          "articulo": "Computadora escritorio",
+          "proveedor": "Muebles Los Pinos",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 15,
+          "precio_acordado": 253.0,
+          "monto": 3795.0
+        },
+        {
+          "codigo_articulo": "ART-020",
+          "articulo": "Corrector líquido",
+          "proveedor": "Muebles Los Pinos",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 10,
+          "precio_acordado": 46.0,
+          "monto": 460.0
+        },
+        {
+          "codigo_articulo": "ART-016",
+          "articulo": "Cuaderno universitario",
+          "proveedor": "Distribuidora Quetzal",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 5,
+          "precio_acordado": 35.0,
+          "monto": 175.0
+        },
+        {
+          "codigo_articulo": "ART-028",
+          "articulo": "Disco SSD 512 GB",
+          "proveedor": "Insumos del Sur",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 5,
+          "precio_acordado": 1487.0,
+          "monto": 7435.0
+        },
+        {
+          "codigo_articulo": "ART-010",
+          "articulo": "Grapadora",
+          "proveedor": "Equipos del Norte",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 5,
+          "precio_acordado": 32.0,
+          "monto": 160.0
+        },
+        {
+          "codigo_articulo": "ART-026",
+          "articulo": "Impresora láser",
+          "proveedor": "Comercial Tikal",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 10,
+          "precio_acordado": 1134.0,
+          "monto": 11340.0
+        },
+        {
+          "codigo_articulo": "ART-005",
+          "articulo": "Lápiz grafito",
+          "proveedor": "Suministros Verapaz",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 10,
+          "precio_acordado": 16.0,
+          "monto": 160.0
+        },
+        {
+          "codigo_articulo": "ART-022",
+          "articulo": "Laptop administrativa",
+          "proveedor": "Servicios del Altiplano",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 5,
+          "precio_acordado": 431.0,
+          "monto": 2155.0
+        },
+        {
+          "codigo_articulo": "ART-006",
+          "articulo": "Marcador permanente",
+          "proveedor": "Suministros Verapaz",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 15,
+          "precio_acordado": 18.0,
+          "monto": 270.0
+        },
+        {
+          "codigo_articulo": "ART-007",
+          "articulo": "Marcador pizarra",
+          "proveedor": "Tecnología Maya",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 5,
+          "precio_acordado": 23.0,
+          "monto": 115.0
+        },
+        {
+          "codigo_articulo": "ART-029",
+          "articulo": "Memoria USB 64 GB",
+          "proveedor": "Insumos del Sur",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 10,
+          "precio_acordado": 1662.0,
+          "monto": 16620.0
+        },
+        {
+          "codigo_articulo": "ART-023",
+          "articulo": "Monitor 24 pulgadas",
+          "proveedor": "Servicios del Altiplano",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 10,
+          "precio_acordado": 606.0,
+          "monto": 6060.0
+        },
+        {
+          "codigo_articulo": "ART-025",
+          "articulo": "Mouse óptico",
+          "proveedor": "Comercial Tikal",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 5,
+          "precio_acordado": 959.0,
+          "monto": 4795.0
+        },
+        {
+          "codigo_articulo": "ART-018",
+          "articulo": "Notas adhesivas",
+          "proveedor": "Distribuidora Quetzal",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 15,
+          "precio_acordado": 39.0,
+          "monto": 585.0
+        },
+        {
+          "codigo_articulo": "ART-015",
+          "articulo": "Pegamento barra",
+          "proveedor": "Ofimática Central",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 15,
+          "precio_acordado": 45.0,
+          "monto": 675.0
+        },
+        {
+          "codigo_articulo": "ART-012",
+          "articulo": "Perforadora",
+          "proveedor": "Equipos del Norte",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 15,
+          "precio_acordado": 36.0,
+          "monto": 540.0
+        },
+        {
+          "codigo_articulo": "ART-019",
+          "articulo": "Regla 30 cm",
+          "proveedor": "Muebles Los Pinos",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 5,
+          "precio_acordado": 44.0,
+          "monto": 220.0
+        },
+        {
+          "codigo_articulo": "ART-001",
+          "articulo": "Resma papel carta",
+          "proveedor": "Papelería del Valle",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 5,
+          "precio_acordado": 5.0,
+          "monto": 25.0
+        },
+        {
+          "codigo_articulo": "ART-002",
+          "articulo": "Resma papel oficio",
+          "proveedor": "Papelería del Valle",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 10,
+          "precio_acordado": 7.0,
+          "monto": 70.0
+        },
+        {
+          "codigo_articulo": "ART-017",
+          "articulo": "Sobre manila",
+          "proveedor": "Distribuidora Quetzal",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 10,
+          "precio_acordado": 37.0,
+          "monto": 370.0
+        },
+        {
+          "codigo_articulo": "ART-024",
+          "articulo": "Teclado USB",
+          "proveedor": "Servicios del Altiplano",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 15,
+          "precio_acordado": 781.0,
+          "monto": 11715.0
+        },
+        {
+          "codigo_articulo": "ART-013",
+          "articulo": "Tijera oficina",
+          "proveedor": "Ofimática Central",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 5,
+          "precio_acordado": 41.0,
+          "monto": 205.0
+        },
+        {
+          "codigo_articulo": "ART-027",
+          "articulo": "Tóner negro",
+          "proveedor": "Comercial Tikal",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 15,
+          "precio_acordado": 1309.0,
+          "monto": 19635.0
+        },
+        {
+          "codigo_articulo": "ART-030",
+          "articulo": "UPS 1000 VA",
+          "proveedor": "Insumos del Sur",
+          "fecha_resolucion": "2026-09-02",
+          "cantidad_final": 15,
+          "precio_acordado": 1837.0,
+          "monto": 27555.0
+        }
+      ],
+      "id": 1
+    },
+    "2": {
+      "moneda": "GTQ",
+      "total": 5,
+      "nombre": "Top 5 proveedores por monto adjudicado",
+      "items": [
+        {
+          "codigo_proveedor": "PRV-010",
+          "proveedor": "Insumos del Sur",
+          "monto_adjudicado": 51610.0,
+          "ordenes": 1
+        },
+        {
+          "codigo_proveedor": "PRV-009",
+          "proveedor": "Comercial Tikal",
+          "monto_adjudicado": 35770.0,
+          "ordenes": 1
+        },
+        {
+          "codigo_proveedor": "PRV-008",
+          "proveedor": "Servicios del Altiplano",
+          "monto_adjudicado": 19930.0,
+          "ordenes": 1
+        },
+        {
+          "codigo_proveedor": "PRV-007",
+          "proveedor": "Muebles Los Pinos",
+          "monto_adjudicado": 4475.0,
+          "ordenes": 1
+        },
+        {
+          "codigo_proveedor": "PRV-005",
+          "proveedor": "Ofimática Central",
+          "monto_adjudicado": 1310.0,
+          "ordenes": 1
+        }
+      ],
+      "id": 2
+    },
+    "3": {
+      "moneda": "GTQ",
+      "total": 9,
+      "nombre": "Comparación de ofertas y ganadora por orden",
+      "items": [
+        {
+          "id_pedido": 28,
+          "articulo": "Disco SSD 512 GB",
+          "cantidad": 5,
+          "proveedor": "Soluciones Digitales GT",
+          "precio_unitario": 1475.0,
+          "fecha_oferta": "2026-08-23",
+          "ganadora": false,
+          "cantidad_final": null,
+          "precio_acordado": null
+        },
+        {
+          "id_pedido": 28,
+          "articulo": "Disco SSD 512 GB",
+          "cantidad": 5,
+          "proveedor": "Redes y Sistemas",
+          "precio_unitario": 1478.0,
+          "fecha_oferta": "2026-08-24",
+          "ganadora": false,
+          "cantidad_final": null,
+          "precio_acordado": null
+        },
+        {
+          "id_pedido": 28,
+          "articulo": "Disco SSD 512 GB",
+          "cantidad": 5,
+          "proveedor": "Insumos del Sur",
+          "precio_unitario": 1487.0,
+          "fecha_oferta": "2026-08-22",
+          "ganadora": true,
+          "cantidad_final": 5,
+          "precio_acordado": 1487.0
+        },
+        {
+          "id_pedido": 29,
+          "articulo": "Memoria USB 64 GB",
+          "cantidad": 10,
+          "proveedor": "Soluciones Digitales GT",
+          "precio_unitario": 1650.0,
+          "fecha_oferta": "2026-08-23",
+          "ganadora": false,
+          "cantidad_final": null,
+          "precio_acordado": null
+        },
+        {
+          "id_pedido": 29,
+          "articulo": "Memoria USB 64 GB",
+          "cantidad": 10,
+          "proveedor": "Redes y Sistemas",
+          "precio_unitario": 1653.0,
+          "fecha_oferta": "2026-08-24",
+          "ganadora": false,
+          "cantidad_final": null,
+          "precio_acordado": null
+        },
+        {
+          "id_pedido": 29,
+          "articulo": "Memoria USB 64 GB",
+          "cantidad": 10,
+          "proveedor": "Insumos del Sur",
+          "precio_unitario": 1662.0,
+          "fecha_oferta": "2026-08-22",
+          "ganadora": true,
+          "cantidad_final": 10,
+          "precio_acordado": 1662.0
+        },
+        {
+          "id_pedido": 30,
+          "articulo": "UPS 1000 VA",
+          "cantidad": 15,
+          "proveedor": "Soluciones Digitales GT",
+          "precio_unitario": 1825.0,
+          "fecha_oferta": "2026-08-23",
+          "ganadora": false,
+          "cantidad_final": null,
+          "precio_acordado": null
+        },
+        {
+          "id_pedido": 30,
+          "articulo": "UPS 1000 VA",
+          "cantidad": 15,
+          "proveedor": "Redes y Sistemas",
+          "precio_unitario": 1828.0,
+          "fecha_oferta": "2026-08-24",
+          "ganadora": false,
+          "cantidad_final": null,
+          "precio_acordado": null
+        },
+        {
+          "id_pedido": 30,
+          "articulo": "UPS 1000 VA",
+          "cantidad": 15,
+          "proveedor": "Insumos del Sur",
+          "precio_unitario": 1837.0,
+          "fecha_oferta": "2026-08-22",
+          "ganadora": true,
+          "cantidad_final": 15,
+          "precio_acordado": 1837.0
+        }
+      ],
+      "id": 3
+    },
+    "4": {
+      "moneda": "GTQ",
+      "total": 40,
+      "nombre": "Pedidos sin asignación",
+      "items": [
+        {
+          "id_pedido": 61,
+          "codigo_sucursal": "GC1",
+          "departamento": "Administración",
+          "articulo": "Resma papel carta",
+          "cantidad": 10,
+          "fecha_solicitud": "2026-10-02",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 62,
+          "codigo_sucursal": "GC1",
+          "departamento": "Operaciones",
+          "articulo": "Resma papel oficio",
+          "cantidad": 11,
+          "fecha_solicitud": "2026-10-01",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 63,
+          "codigo_sucursal": "GC2",
+          "departamento": "Administración",
+          "articulo": "Bolígrafo azul",
+          "cantidad": 12,
+          "fecha_solicitud": "2026-09-30",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 64,
+          "codigo_sucursal": "GC2",
+          "departamento": "Operaciones",
+          "articulo": "Bolígrafo negro",
+          "cantidad": 13,
+          "fecha_solicitud": "2026-10-02",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 65,
+          "codigo_sucursal": "GC3",
+          "departamento": "Administración",
+          "articulo": "Lápiz grafito",
+          "cantidad": 14,
+          "fecha_solicitud": "2026-10-01",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 66,
+          "codigo_sucursal": "GC3",
+          "departamento": "Operaciones",
+          "articulo": "Marcador permanente",
+          "cantidad": 15,
+          "fecha_solicitud": "2026-09-30",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 67,
+          "codigo_sucursal": "GC4",
+          "departamento": "Administración",
+          "articulo": "Marcador pizarra",
+          "cantidad": 16,
+          "fecha_solicitud": "2026-10-02",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 68,
+          "codigo_sucursal": "GC4",
+          "departamento": "Operaciones",
+          "articulo": "Carpeta oficio",
+          "cantidad": 17,
+          "fecha_solicitud": "2026-10-01",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 69,
+          "codigo_sucursal": "GC5",
+          "departamento": "Administración",
+          "articulo": "Archivador palanca",
+          "cantidad": 18,
+          "fecha_solicitud": "2026-09-30",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 70,
+          "codigo_sucursal": "GC5",
+          "departamento": "Operaciones",
+          "articulo": "Grapadora",
+          "cantidad": 19,
+          "fecha_solicitud": "2026-10-02",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 71,
+          "codigo_sucursal": "GC1",
+          "departamento": "Administración",
+          "articulo": "Caja grapas",
+          "cantidad": 10,
+          "fecha_solicitud": "2026-10-01",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 72,
+          "codigo_sucursal": "GC1",
+          "departamento": "Operaciones",
+          "articulo": "Perforadora",
+          "cantidad": 11,
+          "fecha_solicitud": "2026-09-30",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 73,
+          "codigo_sucursal": "GC2",
+          "departamento": "Administración",
+          "articulo": "Tijera oficina",
+          "cantidad": 12,
+          "fecha_solicitud": "2026-10-02",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 74,
+          "codigo_sucursal": "GC2",
+          "departamento": "Operaciones",
+          "articulo": "Cinta adhesiva",
+          "cantidad": 13,
+          "fecha_solicitud": "2026-10-01",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 75,
+          "codigo_sucursal": "GC3",
+          "departamento": "Administración",
+          "articulo": "Pegamento barra",
+          "cantidad": 14,
+          "fecha_solicitud": "2026-09-30",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 76,
+          "codigo_sucursal": "GC3",
+          "departamento": "Operaciones",
+          "articulo": "Cuaderno universitario",
+          "cantidad": 15,
+          "fecha_solicitud": "2026-10-02",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 77,
+          "codigo_sucursal": "GC4",
+          "departamento": "Administración",
+          "articulo": "Sobre manila",
+          "cantidad": 16,
+          "fecha_solicitud": "2026-10-01",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 78,
+          "codigo_sucursal": "GC4",
+          "departamento": "Operaciones",
+          "articulo": "Notas adhesivas",
+          "cantidad": 17,
+          "fecha_solicitud": "2026-09-30",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 79,
+          "codigo_sucursal": "GC5",
+          "departamento": "Administración",
+          "articulo": "Regla 30 cm",
+          "cantidad": 18,
+          "fecha_solicitud": "2026-10-02",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 80,
+          "codigo_sucursal": "GC5",
+          "departamento": "Operaciones",
+          "articulo": "Corrector líquido",
+          "cantidad": 19,
+          "fecha_solicitud": "2026-10-01",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 81,
+          "codigo_sucursal": "GC1",
+          "departamento": "Administración",
+          "articulo": "Computadora escritorio",
+          "cantidad": 10,
+          "fecha_solicitud": "2026-09-30",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 82,
+          "codigo_sucursal": "GC1",
+          "departamento": "Operaciones",
+          "articulo": "Laptop administrativa",
+          "cantidad": 11,
+          "fecha_solicitud": "2026-10-02",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 83,
+          "codigo_sucursal": "GC2",
+          "departamento": "Administración",
+          "articulo": "Monitor 24 pulgadas",
+          "cantidad": 12,
+          "fecha_solicitud": "2026-10-01",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 84,
+          "codigo_sucursal": "GC2",
+          "departamento": "Operaciones",
+          "articulo": "Teclado USB",
+          "cantidad": 13,
+          "fecha_solicitud": "2026-09-30",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 85,
+          "codigo_sucursal": "GC3",
+          "departamento": "Administración",
+          "articulo": "Mouse óptico",
+          "cantidad": 14,
+          "fecha_solicitud": "2026-10-02",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 86,
+          "codigo_sucursal": "GC3",
+          "departamento": "Operaciones",
+          "articulo": "Impresora láser",
+          "cantidad": 15,
+          "fecha_solicitud": "2026-10-01",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 87,
+          "codigo_sucursal": "GC4",
+          "departamento": "Administración",
+          "articulo": "Tóner negro",
+          "cantidad": 16,
+          "fecha_solicitud": "2026-09-30",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 88,
+          "codigo_sucursal": "GC4",
+          "departamento": "Operaciones",
+          "articulo": "Disco SSD 512 GB",
+          "cantidad": 17,
+          "fecha_solicitud": "2026-10-02",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 89,
+          "codigo_sucursal": "GC5",
+          "departamento": "Administración",
+          "articulo": "Memoria USB 64 GB",
+          "cantidad": 18,
+          "fecha_solicitud": "2026-10-01",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 90,
+          "codigo_sucursal": "GC5",
+          "departamento": "Operaciones",
+          "articulo": "UPS 1000 VA",
+          "cantidad": 19,
+          "fecha_solicitud": "2026-09-30",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 91,
+          "codigo_sucursal": "GC1",
+          "departamento": "Administración",
+          "articulo": "Router inalámbrico",
+          "cantidad": 10,
+          "fecha_solicitud": "2026-10-02",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 92,
+          "codigo_sucursal": "GC1",
+          "departamento": "Operaciones",
+          "articulo": "Switch 24 puertos",
+          "cantidad": 11,
+          "fecha_solicitud": "2026-10-01",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 93,
+          "codigo_sucursal": "GC2",
+          "departamento": "Administración",
+          "articulo": "Cable red Cat6",
+          "cantidad": 12,
+          "fecha_solicitud": "2026-09-30",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 94,
+          "codigo_sucursal": "GC2",
+          "departamento": "Operaciones",
+          "articulo": "Webcam HD",
+          "cantidad": 13,
+          "fecha_solicitud": "2026-10-02",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 95,
+          "codigo_sucursal": "GC3",
+          "departamento": "Administración",
+          "articulo": "Proyector multimedia",
+          "cantidad": 14,
+          "fecha_solicitud": "2026-10-01",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 96,
+          "codigo_sucursal": "GC3",
+          "departamento": "Operaciones",
+          "articulo": "Silla ergonómica",
+          "cantidad": 15,
+          "fecha_solicitud": "2026-09-30",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 97,
+          "codigo_sucursal": "GC4",
+          "departamento": "Administración",
+          "articulo": "Escritorio ejecutivo",
+          "cantidad": 16,
+          "fecha_solicitud": "2026-10-02",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 98,
+          "codigo_sucursal": "GC4",
+          "departamento": "Operaciones",
+          "articulo": "Archivador metálico",
+          "cantidad": 17,
+          "fecha_solicitud": "2026-10-01",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 99,
+          "codigo_sucursal": "GC5",
+          "departamento": "Administración",
+          "articulo": "Mesa reuniones",
+          "cantidad": 18,
+          "fecha_solicitud": "2026-09-30",
+          "fecha_necesaria": "2026-10-20"
+        },
+        {
+          "id_pedido": 100,
+          "codigo_sucursal": "GC5",
+          "departamento": "Operaciones",
+          "articulo": "Estantería metálica",
+          "cantidad": 19,
+          "fecha_solicitud": "2026-10-02",
+          "fecha_necesaria": "2026-10-20"
+        }
+      ],
+      "id": 4
+    },
+    "5": {
+      "moneda": "GTQ",
+      "total": 10,
+      "nombre": "Órdenes abiertas para ofertas (VIEW)",
+      "items": [
+        {
+          "id_orden": 11,
+          "descripcion": "DEMO Orden 11 - abastecimiento institucional",
+          "fecha_creacion": "2026-09-28",
+          "fecha_limite_oferta": "2026-10-15",
+          "tipo": "Grande",
+          "subtipo": "Normal"
+        },
+        {
+          "id_orden": 12,
+          "descripcion": "DEMO Orden 12 - abastecimiento institucional",
+          "fecha_creacion": "2026-09-28",
+          "fecha_limite_oferta": "2026-10-15",
+          "tipo": "Chica",
+          "subtipo": "Normal"
+        },
+        {
+          "id_orden": 13,
+          "descripcion": "DEMO Orden 13 - abastecimiento institucional",
+          "fecha_creacion": "2026-09-28",
+          "fecha_limite_oferta": "2026-10-15",
+          "tipo": "Grande",
+          "subtipo": "Normal"
+        },
+        {
+          "id_orden": 14,
+          "descripcion": "DEMO Orden 14 - abastecimiento institucional",
+          "fecha_creacion": "2026-09-28",
+          "fecha_limite_oferta": "2026-10-15",
+          "tipo": "Chica",
+          "subtipo": "Normal"
+        },
+        {
+          "id_orden": 15,
+          "descripcion": "DEMO Orden 15 - abastecimiento institucional",
+          "fecha_creacion": "2026-09-28",
+          "fecha_limite_oferta": "2026-10-15",
+          "tipo": "Grande",
+          "subtipo": "Normal"
+        },
+        {
+          "id_orden": 16,
+          "descripcion": "DEMO Orden 16 - abastecimiento institucional",
+          "fecha_creacion": "2026-09-28",
+          "fecha_limite_oferta": "2026-10-15",
+          "tipo": "Chica",
+          "subtipo": "Normal"
+        },
+        {
+          "id_orden": 17,
+          "descripcion": "DEMO Orden 17 - abastecimiento institucional",
+          "fecha_creacion": "2026-09-28",
+          "fecha_limite_oferta": "2026-10-15",
+          "tipo": "Grande",
+          "subtipo": "Normal"
+        },
+        {
+          "id_orden": 18,
+          "descripcion": "DEMO Orden 18 - abastecimiento institucional",
+          "fecha_creacion": "2026-09-28",
+          "fecha_limite_oferta": "2026-10-15",
+          "tipo": "Chica",
+          "subtipo": "Normal"
+        },
+        {
+          "id_orden": 19,
+          "descripcion": "DEMO Orden 19 - abastecimiento institucional",
+          "fecha_creacion": "2026-09-28",
+          "fecha_limite_oferta": "2026-10-15",
+          "tipo": "Grande",
+          "subtipo": "Normal"
+        },
+        {
+          "id_orden": 20,
+          "descripcion": "DEMO Orden 20 - abastecimiento institucional",
+          "fecha_creacion": "2026-09-28",
+          "fecha_limite_oferta": "2026-10-15",
+          "tipo": "Chica",
+          "subtipo": "Normal"
+        }
+      ],
+      "id": 5
+    },
+    "6": {
+      "moneda": "GTQ",
+      "total": 10,
+      "nombre": "Gasto por departamento, sucursal y año",
+      "items": [
+        {
+          "codigo_sucursal": "GC1",
+          "ciudad": "Guatemala",
+          "departamento": "Administración",
+          "gasto": 36280.0
+        },
+        {
+          "codigo_sucursal": "GC1",
+          "ciudad": "Guatemala",
+          "departamento": "Operaciones",
+          "gasto": 27695.0
+        },
+        {
+          "codigo_sucursal": "GC2",
+          "ciudad": "Salamá",
+          "departamento": "Administración",
+          "gasto": 410.0
+        },
+        {
+          "codigo_sucursal": "GC2",
+          "ciudad": "Salamá",
+          "departamento": "Operaciones",
+          "gasto": 680.0
+        },
+        {
+          "codigo_sucursal": "GC3",
+          "ciudad": "Cobán",
+          "departamento": "Administración",
+          "gasto": 950.0
+        },
+        {
+          "codigo_sucursal": "GC3",
+          "ciudad": "Cobán",
+          "departamento": "Operaciones",
+          "gasto": 1145.0
+        },
+        {
+          "codigo_sucursal": "GC4",
+          "ciudad": "Quetzaltenango",
+          "departamento": "Administración",
+          "gasto": 1265.0
+        },
+        {
+          "codigo_sucursal": "GC4",
+          "ciudad": "Quetzaltenango",
+          "departamento": "Operaciones",
+          "gasto": 3200.0
+        },
+        {
+          "codigo_sucursal": "GC5",
+          "ciudad": "Flores",
+          "departamento": "Administración",
+          "gasto": 14650.0
+        },
+        {
+          "codigo_sucursal": "GC5",
+          "ciudad": "Flores",
+          "departamento": "Operaciones",
+          "gasto": 30490.0
+        }
+      ],
+      "id": 6
+    },
+    "7": {
+      "moneda": "GTQ",
+      "total": 1,
+      "nombre": "Promedio de días entre creación y adjudicación",
+      "items": [
+        {
+          "ordenes_adjudicadas": 10,
+          "promedio_dias": 12.0
+        }
+      ],
+      "id": 7
+    },
+    "8": {
+      "moneda": "GTQ",
+      "total": 180,
+      "nombre": "Evolución de precios ofrecidos por artículo y proveedor",
+      "items": [
+        {
+          "codigo_articulo": "ART-041",
+          "articulo": "Alcohol desinfectante",
+          "proveedor": "Distribuidora El Roble",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 187.0,
+          "id_orden": 14
+        },
+        {
+          "codigo_articulo": "ART-041",
+          "articulo": "Alcohol desinfectante",
+          "proveedor": "Equipo Profesional",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 175.0,
+          "id_orden": 14
+        },
+        {
+          "codigo_articulo": "ART-041",
+          "articulo": "Alcohol desinfectante",
+          "proveedor": "Papeles y Más",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 184.0,
+          "id_orden": 14
+        },
+        {
+          "codigo_articulo": "ART-038",
+          "articulo": "Archivador metálico",
+          "proveedor": "Distribuidora El Roble",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 97.0,
+          "id_orden": 13
+        },
+        {
+          "codigo_articulo": "ART-038",
+          "articulo": "Archivador metálico",
+          "proveedor": "Limpieza Integral",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 91.0,
+          "id_orden": 13
+        },
+        {
+          "codigo_articulo": "ART-038",
+          "articulo": "Archivador metálico",
+          "proveedor": "Papeles y Más",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 94.0,
+          "id_orden": 13
+        },
+        {
+          "codigo_articulo": "ART-009",
+          "articulo": "Archivador palanca",
+          "proveedor": "Equipos del Norte",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 30.0,
+          "id_orden": 3
+        },
+        {
+          "codigo_articulo": "ART-009",
+          "articulo": "Archivador palanca",
+          "proveedor": "Ofimática Central",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 33.0,
+          "id_orden": 3
+        },
+        {
+          "codigo_articulo": "ART-009",
+          "articulo": "Archivador palanca",
+          "proveedor": "Papelería del Valle",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 21.0,
+          "id_orden": 20
+        },
+        {
+          "codigo_articulo": "ART-009",
+          "articulo": "Archivador palanca",
+          "proveedor": "Suministros del Lago",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 33.0,
+          "id_orden": 20
+        },
+        {
+          "codigo_articulo": "ART-009",
+          "articulo": "Archivador palanca",
+          "proveedor": "Suministros Verapaz",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 24.0,
+          "id_orden": 20
+        },
+        {
+          "codigo_articulo": "ART-009",
+          "articulo": "Archivador palanca",
+          "proveedor": "Tecnología Maya",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 27.0,
+          "id_orden": 3
+        },
+        {
+          "codigo_articulo": "ART-003",
+          "articulo": "Bolígrafo azul",
+          "proveedor": "Abastecimientos Motagua",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 15.0,
+          "id_orden": 18
+        },
+        {
+          "codigo_articulo": "ART-003",
+          "articulo": "Bolígrafo azul",
+          "proveedor": "Innovación Regional",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 18.0,
+          "id_orden": 18
+        },
+        {
+          "codigo_articulo": "ART-003",
+          "articulo": "Bolígrafo azul",
+          "proveedor": "Papelería del Valle",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 9.0,
+          "id_orden": 1
+        },
+        {
+          "codigo_articulo": "ART-003",
+          "articulo": "Bolígrafo azul",
+          "proveedor": "Suministros del Lago",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 21.0,
+          "id_orden": 18
+        },
+        {
+          "codigo_articulo": "ART-003",
+          "articulo": "Bolígrafo azul",
+          "proveedor": "Suministros Verapaz",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 12.0,
+          "id_orden": 1
+        },
+        {
+          "codigo_articulo": "ART-003",
+          "articulo": "Bolígrafo azul",
+          "proveedor": "Tecnología Maya",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 15.0,
+          "id_orden": 1
+        },
+        {
+          "codigo_articulo": "ART-004",
+          "articulo": "Bolígrafo negro",
+          "proveedor": "Abastecimientos Motagua",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 17.0,
+          "id_orden": 18
+        },
+        {
+          "codigo_articulo": "ART-004",
+          "articulo": "Bolígrafo negro",
+          "proveedor": "Equipos del Norte",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 20.0,
+          "id_orden": 2
+        },
+        {
+          "codigo_articulo": "ART-004",
+          "articulo": "Bolígrafo negro",
+          "proveedor": "Innovación Regional",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 20.0,
+          "id_orden": 18
+        },
+        {
+          "codigo_articulo": "ART-004",
+          "articulo": "Bolígrafo negro",
+          "proveedor": "Suministros del Lago",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 23.0,
+          "id_orden": 18
+        },
+        {
+          "codigo_articulo": "ART-004",
+          "articulo": "Bolígrafo negro",
+          "proveedor": "Suministros Verapaz",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 14.0,
+          "id_orden": 2
+        },
+        {
+          "codigo_articulo": "ART-004",
+          "articulo": "Bolígrafo negro",
+          "proveedor": "Tecnología Maya",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 17.0,
+          "id_orden": 2
+        },
+        {
+          "codigo_articulo": "ART-047",
+          "articulo": "Bolsa basura",
+          "proveedor": "Abastecimientos Motagua",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 361.0,
+          "id_orden": 16
+        },
+        {
+          "codigo_articulo": "ART-047",
+          "articulo": "Bolsa basura",
+          "proveedor": "Comercial La Ceiba",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 358.0,
+          "id_orden": 16
+        },
+        {
+          "codigo_articulo": "ART-047",
+          "articulo": "Bolsa basura",
+          "proveedor": "Equipo Profesional",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 355.0,
+          "id_orden": 16
+        },
+        {
+          "codigo_articulo": "ART-033",
+          "articulo": "Cable red Cat6",
+          "proveedor": "Limpieza Integral",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 2356.0,
+          "id_orden": 11
+        },
+        {
+          "codigo_articulo": "ART-033",
+          "articulo": "Cable red Cat6",
+          "proveedor": "Redes y Sistemas",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 2353.0,
+          "id_orden": 11
+        },
+        {
+          "codigo_articulo": "ART-033",
+          "articulo": "Cable red Cat6",
+          "proveedor": "Soluciones Digitales GT",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 2350.0,
+          "id_orden": 11
+        },
+        {
+          "codigo_articulo": "ART-011",
+          "articulo": "Caja grapas",
+          "proveedor": "Distribuidora Quetzal",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 25.0,
+          "id_orden": 4
+        },
+        {
+          "codigo_articulo": "ART-011",
+          "articulo": "Caja grapas",
+          "proveedor": "Equipos del Norte",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 34.0,
+          "id_orden": 4
+        },
+        {
+          "codigo_articulo": "ART-011",
+          "articulo": "Caja grapas",
+          "proveedor": "Ofimática Central",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 37.0,
+          "id_orden": 4
+        },
+        {
+          "codigo_articulo": "ART-008",
+          "articulo": "Carpeta oficio",
+          "proveedor": "Equipos del Norte",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 28.0,
+          "id_orden": 3
+        },
+        {
+          "codigo_articulo": "ART-008",
+          "articulo": "Carpeta oficio",
+          "proveedor": "Ofimática Central",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 31.0,
+          "id_orden": 3
+        },
+        {
+          "codigo_articulo": "ART-008",
+          "articulo": "Carpeta oficio",
+          "proveedor": "Papelería del Valle",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 19.0,
+          "id_orden": 20
+        },
+        {
+          "codigo_articulo": "ART-008",
+          "articulo": "Carpeta oficio",
+          "proveedor": "Suministros del Lago",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 31.0,
+          "id_orden": 20
+        },
+        {
+          "codigo_articulo": "ART-008",
+          "articulo": "Carpeta oficio",
+          "proveedor": "Suministros Verapaz",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 22.0,
+          "id_orden": 20
+        },
+        {
+          "codigo_articulo": "ART-008",
+          "articulo": "Carpeta oficio",
+          "proveedor": "Tecnología Maya",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 25.0,
+          "id_orden": 3
+        },
+        {
+          "codigo_articulo": "ART-014",
+          "articulo": "Cinta adhesiva",
+          "proveedor": "Distribuidora Quetzal",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 31.0,
+          "id_orden": 5
+        },
+        {
+          "codigo_articulo": "ART-014",
+          "articulo": "Cinta adhesiva",
+          "proveedor": "Muebles Los Pinos",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 34.0,
+          "id_orden": 5
+        },
+        {
+          "codigo_articulo": "ART-014",
+          "articulo": "Cinta adhesiva",
+          "proveedor": "Ofimática Central",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 43.0,
+          "id_orden": 5
+        },
+        {
+          "codigo_articulo": "ART-021",
+          "articulo": "Computadora escritorio",
+          "proveedor": "Comercial Tikal",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 259.0,
+          "id_orden": 7
+        },
+        {
+          "codigo_articulo": "ART-021",
+          "articulo": "Computadora escritorio",
+          "proveedor": "Muebles Los Pinos",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 253.0,
+          "id_orden": 7
+        },
+        {
+          "codigo_articulo": "ART-021",
+          "articulo": "Computadora escritorio",
+          "proveedor": "Servicios del Altiplano",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 256.0,
+          "id_orden": 7
+        },
+        {
+          "codigo_articulo": "ART-020",
+          "articulo": "Corrector líquido",
+          "proveedor": "Comercial Tikal",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 52.0,
+          "id_orden": 7
+        },
+        {
+          "codigo_articulo": "ART-020",
+          "articulo": "Corrector líquido",
+          "proveedor": "Muebles Los Pinos",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 46.0,
+          "id_orden": 7
+        },
+        {
+          "codigo_articulo": "ART-020",
+          "articulo": "Corrector líquido",
+          "proveedor": "Servicios del Altiplano",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 49.0,
+          "id_orden": 7
+        },
+        {
+          "codigo_articulo": "ART-016",
+          "articulo": "Cuaderno universitario",
+          "proveedor": "Distribuidora Quetzal",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 35.0,
+          "id_orden": 6
+        },
+        {
+          "codigo_articulo": "ART-016",
+          "articulo": "Cuaderno universitario",
+          "proveedor": "Muebles Los Pinos",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 38.0,
+          "id_orden": 6
+        },
+        {
+          "codigo_articulo": "ART-016",
+          "articulo": "Cuaderno universitario",
+          "proveedor": "Servicios del Altiplano",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 41.0,
+          "id_orden": 6
+        },
+        {
+          "codigo_articulo": "ART-048",
+          "articulo": "Detergente",
+          "proveedor": "Abastecimientos Motagua",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 391.0,
+          "id_orden": 16
+        },
+        {
+          "codigo_articulo": "ART-048",
+          "articulo": "Detergente",
+          "proveedor": "Comercial La Ceiba",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 388.0,
+          "id_orden": 16
+        },
+        {
+          "codigo_articulo": "ART-048",
+          "articulo": "Detergente",
+          "proveedor": "Equipo Profesional",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 385.0,
+          "id_orden": 16
+        },
+        {
+          "codigo_articulo": "ART-028",
+          "articulo": "Disco SSD 512 GB",
+          "proveedor": "Insumos del Sur",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 1487.0,
+          "id_orden": 10
+        },
+        {
+          "codigo_articulo": "ART-028",
+          "articulo": "Disco SSD 512 GB",
+          "proveedor": "Redes y Sistemas",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 1478.0,
+          "id_orden": 10
+        },
+        {
+          "codigo_articulo": "ART-028",
+          "articulo": "Disco SSD 512 GB",
+          "proveedor": "Soluciones Digitales GT",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 1475.0,
+          "id_orden": 10
+        },
+        {
+          "codigo_articulo": "ART-045",
+          "articulo": "Escoba",
+          "proveedor": "Comercial La Ceiba",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 298.0,
+          "id_orden": 15
+        },
+        {
+          "codigo_articulo": "ART-045",
+          "articulo": "Escoba",
+          "proveedor": "Distribuidora El Roble",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 307.0,
+          "id_orden": 15
+        },
+        {
+          "codigo_articulo": "ART-045",
+          "articulo": "Escoba",
+          "proveedor": "Equipo Profesional",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 295.0,
+          "id_orden": 15
+        },
+        {
+          "codigo_articulo": "ART-037",
+          "articulo": "Escritorio ejecutivo",
+          "proveedor": "Distribuidora El Roble",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 67.0,
+          "id_orden": 13
+        },
+        {
+          "codigo_articulo": "ART-037",
+          "articulo": "Escritorio ejecutivo",
+          "proveedor": "Limpieza Integral",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 61.0,
+          "id_orden": 13
+        },
+        {
+          "codigo_articulo": "ART-037",
+          "articulo": "Escritorio ejecutivo",
+          "proveedor": "Papeles y Más",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 64.0,
+          "id_orden": 13
+        },
+        {
+          "codigo_articulo": "ART-040",
+          "articulo": "Estantería metálica",
+          "proveedor": "Distribuidora El Roble",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 157.0,
+          "id_orden": 14
+        },
+        {
+          "codigo_articulo": "ART-040",
+          "articulo": "Estantería metálica",
+          "proveedor": "Equipo Profesional",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 145.0,
+          "id_orden": 14
+        },
+        {
+          "codigo_articulo": "ART-040",
+          "articulo": "Estantería metálica",
+          "proveedor": "Papeles y Más",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 154.0,
+          "id_orden": 14
+        },
+        {
+          "codigo_articulo": "ART-050",
+          "articulo": "Extintor ABC",
+          "proveedor": "Abastecimientos Motagua",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 451.0,
+          "id_orden": 17
+        },
+        {
+          "codigo_articulo": "ART-050",
+          "articulo": "Extintor ABC",
+          "proveedor": "Comercial La Ceiba",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 448.0,
+          "id_orden": 17
+        },
+        {
+          "codigo_articulo": "ART-050",
+          "articulo": "Extintor ABC",
+          "proveedor": "Innovación Regional",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 454.0,
+          "id_orden": 17
+        },
+        {
+          "codigo_articulo": "ART-010",
+          "articulo": "Grapadora",
+          "proveedor": "Distribuidora Quetzal",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 23.0,
+          "id_orden": 4
+        },
+        {
+          "codigo_articulo": "ART-010",
+          "articulo": "Grapadora",
+          "proveedor": "Equipos del Norte",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 32.0,
+          "id_orden": 4
+        },
+        {
+          "codigo_articulo": "ART-010",
+          "articulo": "Grapadora",
+          "proveedor": "Ofimática Central",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 35.0,
+          "id_orden": 4
+        },
+        {
+          "codigo_articulo": "ART-010",
+          "articulo": "Grapadora",
+          "proveedor": "Papelería del Valle",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 23.0,
+          "id_orden": 20
+        },
+        {
+          "codigo_articulo": "ART-010",
+          "articulo": "Grapadora",
+          "proveedor": "Suministros del Lago",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 35.0,
+          "id_orden": 20
+        },
+        {
+          "codigo_articulo": "ART-010",
+          "articulo": "Grapadora",
+          "proveedor": "Suministros Verapaz",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 26.0,
+          "id_orden": 20
+        },
+        {
+          "codigo_articulo": "ART-049",
+          "articulo": "Guantes limpieza",
+          "proveedor": "Abastecimientos Motagua",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 421.0,
+          "id_orden": 17
+        },
+        {
+          "codigo_articulo": "ART-049",
+          "articulo": "Guantes limpieza",
+          "proveedor": "Comercial La Ceiba",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 418.0,
+          "id_orden": 17
+        },
+        {
+          "codigo_articulo": "ART-049",
+          "articulo": "Guantes limpieza",
+          "proveedor": "Innovación Regional",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 424.0,
+          "id_orden": 17
+        },
+        {
+          "codigo_articulo": "ART-026",
+          "articulo": "Impresora láser",
+          "proveedor": "Comercial Tikal",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 1134.0,
+          "id_orden": 9
+        },
+        {
+          "codigo_articulo": "ART-026",
+          "articulo": "Impresora láser",
+          "proveedor": "Insumos del Sur",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 1137.0,
+          "id_orden": 9
+        },
+        {
+          "codigo_articulo": "ART-026",
+          "articulo": "Impresora láser",
+          "proveedor": "Soluciones Digitales GT",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 1125.0,
+          "id_orden": 9
+        },
+        {
+          "codigo_articulo": "ART-042",
+          "articulo": "Jabón líquido",
+          "proveedor": "Distribuidora El Roble",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 217.0,
+          "id_orden": 14
+        },
+        {
+          "codigo_articulo": "ART-042",
+          "articulo": "Jabón líquido",
+          "proveedor": "Equipo Profesional",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 205.0,
+          "id_orden": 14
+        },
+        {
+          "codigo_articulo": "ART-042",
+          "articulo": "Jabón líquido",
+          "proveedor": "Papeles y Más",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 214.0,
+          "id_orden": 14
+        },
+        {
+          "codigo_articulo": "ART-005",
+          "articulo": "Lápiz grafito",
+          "proveedor": "Equipos del Norte",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 22.0,
+          "id_orden": 2
+        },
+        {
+          "codigo_articulo": "ART-005",
+          "articulo": "Lápiz grafito",
+          "proveedor": "Innovación Regional",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 22.0,
+          "id_orden": 19
+        },
+        {
+          "codigo_articulo": "ART-005",
+          "articulo": "Lápiz grafito",
+          "proveedor": "Papelería del Valle",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 13.0,
+          "id_orden": 19
+        },
+        {
+          "codigo_articulo": "ART-005",
+          "articulo": "Lápiz grafito",
+          "proveedor": "Suministros del Lago",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 25.0,
+          "id_orden": 19
+        },
+        {
+          "codigo_articulo": "ART-005",
+          "articulo": "Lápiz grafito",
+          "proveedor": "Suministros Verapaz",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 16.0,
+          "id_orden": 2
+        },
+        {
+          "codigo_articulo": "ART-005",
+          "articulo": "Lápiz grafito",
+          "proveedor": "Tecnología Maya",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 19.0,
+          "id_orden": 2
+        },
+        {
+          "codigo_articulo": "ART-022",
+          "articulo": "Laptop administrativa",
+          "proveedor": "Comercial Tikal",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 434.0,
+          "id_orden": 8
+        },
+        {
+          "codigo_articulo": "ART-022",
+          "articulo": "Laptop administrativa",
+          "proveedor": "Insumos del Sur",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 437.0,
+          "id_orden": 8
+        },
+        {
+          "codigo_articulo": "ART-022",
+          "articulo": "Laptop administrativa",
+          "proveedor": "Servicios del Altiplano",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 431.0,
+          "id_orden": 8
+        },
+        {
+          "codigo_articulo": "ART-006",
+          "articulo": "Marcador permanente",
+          "proveedor": "Equipos del Norte",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 24.0,
+          "id_orden": 2
+        },
+        {
+          "codigo_articulo": "ART-006",
+          "articulo": "Marcador permanente",
+          "proveedor": "Innovación Regional",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 24.0,
+          "id_orden": 19
+        },
+        {
+          "codigo_articulo": "ART-006",
+          "articulo": "Marcador permanente",
+          "proveedor": "Papelería del Valle",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 15.0,
+          "id_orden": 19
+        },
+        {
+          "codigo_articulo": "ART-006",
+          "articulo": "Marcador permanente",
+          "proveedor": "Suministros del Lago",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 27.0,
+          "id_orden": 19
+        },
+        {
+          "codigo_articulo": "ART-006",
+          "articulo": "Marcador permanente",
+          "proveedor": "Suministros Verapaz",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 18.0,
+          "id_orden": 2
+        },
+        {
+          "codigo_articulo": "ART-006",
+          "articulo": "Marcador permanente",
+          "proveedor": "Tecnología Maya",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 21.0,
+          "id_orden": 2
+        },
+        {
+          "codigo_articulo": "ART-007",
+          "articulo": "Marcador pizarra",
+          "proveedor": "Equipos del Norte",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 26.0,
+          "id_orden": 3
+        },
+        {
+          "codigo_articulo": "ART-007",
+          "articulo": "Marcador pizarra",
+          "proveedor": "Innovación Regional",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 26.0,
+          "id_orden": 19
+        },
+        {
+          "codigo_articulo": "ART-007",
+          "articulo": "Marcador pizarra",
+          "proveedor": "Ofimática Central",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 29.0,
+          "id_orden": 3
+        },
+        {
+          "codigo_articulo": "ART-007",
+          "articulo": "Marcador pizarra",
+          "proveedor": "Papelería del Valle",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 17.0,
+          "id_orden": 19
+        },
+        {
+          "codigo_articulo": "ART-007",
+          "articulo": "Marcador pizarra",
+          "proveedor": "Suministros del Lago",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 29.0,
+          "id_orden": 19
+        },
+        {
+          "codigo_articulo": "ART-007",
+          "articulo": "Marcador pizarra",
+          "proveedor": "Tecnología Maya",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 23.0,
+          "id_orden": 3
+        },
+        {
+          "codigo_articulo": "ART-029",
+          "articulo": "Memoria USB 64 GB",
+          "proveedor": "Insumos del Sur",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 1662.0,
+          "id_orden": 10
+        },
+        {
+          "codigo_articulo": "ART-029",
+          "articulo": "Memoria USB 64 GB",
+          "proveedor": "Redes y Sistemas",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 1653.0,
+          "id_orden": 10
+        },
+        {
+          "codigo_articulo": "ART-029",
+          "articulo": "Memoria USB 64 GB",
+          "proveedor": "Soluciones Digitales GT",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 1650.0,
+          "id_orden": 10
+        },
+        {
+          "codigo_articulo": "ART-039",
+          "articulo": "Mesa reuniones",
+          "proveedor": "Distribuidora El Roble",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 127.0,
+          "id_orden": 13
+        },
+        {
+          "codigo_articulo": "ART-039",
+          "articulo": "Mesa reuniones",
+          "proveedor": "Limpieza Integral",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 121.0,
+          "id_orden": 13
+        },
+        {
+          "codigo_articulo": "ART-039",
+          "articulo": "Mesa reuniones",
+          "proveedor": "Papeles y Más",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 124.0,
+          "id_orden": 13
+        },
+        {
+          "codigo_articulo": "ART-023",
+          "articulo": "Monitor 24 pulgadas",
+          "proveedor": "Comercial Tikal",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 609.0,
+          "id_orden": 8
+        },
+        {
+          "codigo_articulo": "ART-023",
+          "articulo": "Monitor 24 pulgadas",
+          "proveedor": "Insumos del Sur",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 612.0,
+          "id_orden": 8
+        },
+        {
+          "codigo_articulo": "ART-023",
+          "articulo": "Monitor 24 pulgadas",
+          "proveedor": "Servicios del Altiplano",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 606.0,
+          "id_orden": 8
+        },
+        {
+          "codigo_articulo": "ART-025",
+          "articulo": "Mouse óptico",
+          "proveedor": "Comercial Tikal",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 959.0,
+          "id_orden": 9
+        },
+        {
+          "codigo_articulo": "ART-025",
+          "articulo": "Mouse óptico",
+          "proveedor": "Insumos del Sur",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 962.0,
+          "id_orden": 9
+        },
+        {
+          "codigo_articulo": "ART-025",
+          "articulo": "Mouse óptico",
+          "proveedor": "Soluciones Digitales GT",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 950.0,
+          "id_orden": 9
+        },
+        {
+          "codigo_articulo": "ART-018",
+          "articulo": "Notas adhesivas",
+          "proveedor": "Distribuidora Quetzal",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 39.0,
+          "id_orden": 6
+        },
+        {
+          "codigo_articulo": "ART-018",
+          "articulo": "Notas adhesivas",
+          "proveedor": "Muebles Los Pinos",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 42.0,
+          "id_orden": 6
+        },
+        {
+          "codigo_articulo": "ART-018",
+          "articulo": "Notas adhesivas",
+          "proveedor": "Servicios del Altiplano",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 45.0,
+          "id_orden": 6
+        },
+        {
+          "codigo_articulo": "ART-043",
+          "articulo": "Papel higiénico",
+          "proveedor": "Comercial La Ceiba",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 238.0,
+          "id_orden": 15
+        },
+        {
+          "codigo_articulo": "ART-043",
+          "articulo": "Papel higiénico",
+          "proveedor": "Distribuidora El Roble",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 247.0,
+          "id_orden": 15
+        },
+        {
+          "codigo_articulo": "ART-043",
+          "articulo": "Papel higiénico",
+          "proveedor": "Equipo Profesional",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 235.0,
+          "id_orden": 15
+        },
+        {
+          "codigo_articulo": "ART-015",
+          "articulo": "Pegamento barra",
+          "proveedor": "Distribuidora Quetzal",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 33.0,
+          "id_orden": 5
+        },
+        {
+          "codigo_articulo": "ART-015",
+          "articulo": "Pegamento barra",
+          "proveedor": "Muebles Los Pinos",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 36.0,
+          "id_orden": 5
+        },
+        {
+          "codigo_articulo": "ART-015",
+          "articulo": "Pegamento barra",
+          "proveedor": "Ofimática Central",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 45.0,
+          "id_orden": 5
+        },
+        {
+          "codigo_articulo": "ART-012",
+          "articulo": "Perforadora",
+          "proveedor": "Distribuidora Quetzal",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 27.0,
+          "id_orden": 4
+        },
+        {
+          "codigo_articulo": "ART-012",
+          "articulo": "Perforadora",
+          "proveedor": "Equipos del Norte",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 36.0,
+          "id_orden": 4
+        },
+        {
+          "codigo_articulo": "ART-012",
+          "articulo": "Perforadora",
+          "proveedor": "Ofimática Central",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 39.0,
+          "id_orden": 4
+        },
+        {
+          "codigo_articulo": "ART-035",
+          "articulo": "Proyector multimedia",
+          "proveedor": "Limpieza Integral",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 2706.0,
+          "id_orden": 12
+        },
+        {
+          "codigo_articulo": "ART-035",
+          "articulo": "Proyector multimedia",
+          "proveedor": "Papeles y Más",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 2709.0,
+          "id_orden": 12
+        },
+        {
+          "codigo_articulo": "ART-035",
+          "articulo": "Proyector multimedia",
+          "proveedor": "Redes y Sistemas",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 2703.0,
+          "id_orden": 12
+        },
+        {
+          "codigo_articulo": "ART-019",
+          "articulo": "Regla 30 cm",
+          "proveedor": "Comercial Tikal",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 50.0,
+          "id_orden": 7
+        },
+        {
+          "codigo_articulo": "ART-019",
+          "articulo": "Regla 30 cm",
+          "proveedor": "Muebles Los Pinos",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 44.0,
+          "id_orden": 7
+        },
+        {
+          "codigo_articulo": "ART-019",
+          "articulo": "Regla 30 cm",
+          "proveedor": "Servicios del Altiplano",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 47.0,
+          "id_orden": 7
+        },
+        {
+          "codigo_articulo": "ART-001",
+          "articulo": "Resma papel carta",
+          "proveedor": "Abastecimientos Motagua",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 11.0,
+          "id_orden": 17
+        },
+        {
+          "codigo_articulo": "ART-001",
+          "articulo": "Resma papel carta",
+          "proveedor": "Comercial La Ceiba",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 8.0,
+          "id_orden": 17
+        },
+        {
+          "codigo_articulo": "ART-001",
+          "articulo": "Resma papel carta",
+          "proveedor": "Innovación Regional",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 14.0,
+          "id_orden": 17
+        },
+        {
+          "codigo_articulo": "ART-001",
+          "articulo": "Resma papel carta",
+          "proveedor": "Papelería del Valle",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 5.0,
+          "id_orden": 1
+        },
+        {
+          "codigo_articulo": "ART-001",
+          "articulo": "Resma papel carta",
+          "proveedor": "Suministros Verapaz",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 8.0,
+          "id_orden": 1
+        },
+        {
+          "codigo_articulo": "ART-001",
+          "articulo": "Resma papel carta",
+          "proveedor": "Tecnología Maya",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 11.0,
+          "id_orden": 1
+        },
+        {
+          "codigo_articulo": "ART-002",
+          "articulo": "Resma papel oficio",
+          "proveedor": "Abastecimientos Motagua",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 13.0,
+          "id_orden": 18
+        },
+        {
+          "codigo_articulo": "ART-002",
+          "articulo": "Resma papel oficio",
+          "proveedor": "Innovación Regional",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 16.0,
+          "id_orden": 18
+        },
+        {
+          "codigo_articulo": "ART-002",
+          "articulo": "Resma papel oficio",
+          "proveedor": "Papelería del Valle",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 7.0,
+          "id_orden": 1
+        },
+        {
+          "codigo_articulo": "ART-002",
+          "articulo": "Resma papel oficio",
+          "proveedor": "Suministros del Lago",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 19.0,
+          "id_orden": 18
+        },
+        {
+          "codigo_articulo": "ART-002",
+          "articulo": "Resma papel oficio",
+          "proveedor": "Suministros Verapaz",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 10.0,
+          "id_orden": 1
+        },
+        {
+          "codigo_articulo": "ART-002",
+          "articulo": "Resma papel oficio",
+          "proveedor": "Tecnología Maya",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 13.0,
+          "id_orden": 1
+        },
+        {
+          "codigo_articulo": "ART-031",
+          "articulo": "Router inalámbrico",
+          "proveedor": "Limpieza Integral",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 2006.0,
+          "id_orden": 11
+        },
+        {
+          "codigo_articulo": "ART-031",
+          "articulo": "Router inalámbrico",
+          "proveedor": "Redes y Sistemas",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 2003.0,
+          "id_orden": 11
+        },
+        {
+          "codigo_articulo": "ART-031",
+          "articulo": "Router inalámbrico",
+          "proveedor": "Soluciones Digitales GT",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 2000.0,
+          "id_orden": 11
+        },
+        {
+          "codigo_articulo": "ART-036",
+          "articulo": "Silla ergonómica",
+          "proveedor": "Limpieza Integral",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 31.0,
+          "id_orden": 12
+        },
+        {
+          "codigo_articulo": "ART-036",
+          "articulo": "Silla ergonómica",
+          "proveedor": "Papeles y Más",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 34.0,
+          "id_orden": 12
+        },
+        {
+          "codigo_articulo": "ART-036",
+          "articulo": "Silla ergonómica",
+          "proveedor": "Redes y Sistemas",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 28.0,
+          "id_orden": 12
+        },
+        {
+          "codigo_articulo": "ART-017",
+          "articulo": "Sobre manila",
+          "proveedor": "Distribuidora Quetzal",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 37.0,
+          "id_orden": 6
+        },
+        {
+          "codigo_articulo": "ART-017",
+          "articulo": "Sobre manila",
+          "proveedor": "Muebles Los Pinos",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 40.0,
+          "id_orden": 6
+        },
+        {
+          "codigo_articulo": "ART-017",
+          "articulo": "Sobre manila",
+          "proveedor": "Servicios del Altiplano",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 43.0,
+          "id_orden": 6
+        },
+        {
+          "codigo_articulo": "ART-032",
+          "articulo": "Switch 24 puertos",
+          "proveedor": "Limpieza Integral",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 2181.0,
+          "id_orden": 11
+        },
+        {
+          "codigo_articulo": "ART-032",
+          "articulo": "Switch 24 puertos",
+          "proveedor": "Redes y Sistemas",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 2178.0,
+          "id_orden": 11
+        },
+        {
+          "codigo_articulo": "ART-032",
+          "articulo": "Switch 24 puertos",
+          "proveedor": "Soluciones Digitales GT",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 2175.0,
+          "id_orden": 11
+        },
+        {
+          "codigo_articulo": "ART-024",
+          "articulo": "Teclado USB",
+          "proveedor": "Comercial Tikal",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 784.0,
+          "id_orden": 8
+        },
+        {
+          "codigo_articulo": "ART-024",
+          "articulo": "Teclado USB",
+          "proveedor": "Insumos del Sur",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 787.0,
+          "id_orden": 8
+        },
+        {
+          "codigo_articulo": "ART-024",
+          "articulo": "Teclado USB",
+          "proveedor": "Servicios del Altiplano",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 781.0,
+          "id_orden": 8
+        },
+        {
+          "codigo_articulo": "ART-013",
+          "articulo": "Tijera oficina",
+          "proveedor": "Distribuidora Quetzal",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 29.0,
+          "id_orden": 5
+        },
+        {
+          "codigo_articulo": "ART-013",
+          "articulo": "Tijera oficina",
+          "proveedor": "Muebles Los Pinos",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 32.0,
+          "id_orden": 5
+        },
+        {
+          "codigo_articulo": "ART-013",
+          "articulo": "Tijera oficina",
+          "proveedor": "Ofimática Central",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 41.0,
+          "id_orden": 5
+        },
+        {
+          "codigo_articulo": "ART-044",
+          "articulo": "Toalla de papel",
+          "proveedor": "Comercial La Ceiba",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 268.0,
+          "id_orden": 15
+        },
+        {
+          "codigo_articulo": "ART-044",
+          "articulo": "Toalla de papel",
+          "proveedor": "Distribuidora El Roble",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 277.0,
+          "id_orden": 15
+        },
+        {
+          "codigo_articulo": "ART-044",
+          "articulo": "Toalla de papel",
+          "proveedor": "Equipo Profesional",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 265.0,
+          "id_orden": 15
+        },
+        {
+          "codigo_articulo": "ART-027",
+          "articulo": "Tóner negro",
+          "proveedor": "Comercial Tikal",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 1309.0,
+          "id_orden": 9
+        },
+        {
+          "codigo_articulo": "ART-027",
+          "articulo": "Tóner negro",
+          "proveedor": "Insumos del Sur",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 1312.0,
+          "id_orden": 9
+        },
+        {
+          "codigo_articulo": "ART-027",
+          "articulo": "Tóner negro",
+          "proveedor": "Soluciones Digitales GT",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 1300.0,
+          "id_orden": 9
+        },
+        {
+          "codigo_articulo": "ART-046",
+          "articulo": "Trapeador",
+          "proveedor": "Abastecimientos Motagua",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 331.0,
+          "id_orden": 16
+        },
+        {
+          "codigo_articulo": "ART-046",
+          "articulo": "Trapeador",
+          "proveedor": "Comercial La Ceiba",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 328.0,
+          "id_orden": 16
+        },
+        {
+          "codigo_articulo": "ART-046",
+          "articulo": "Trapeador",
+          "proveedor": "Equipo Profesional",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 325.0,
+          "id_orden": 16
+        },
+        {
+          "codigo_articulo": "ART-030",
+          "articulo": "UPS 1000 VA",
+          "proveedor": "Insumos del Sur",
+          "fecha_oferta": "2026-08-22",
+          "precio_unitario": 1837.0,
+          "id_orden": 10
+        },
+        {
+          "codigo_articulo": "ART-030",
+          "articulo": "UPS 1000 VA",
+          "proveedor": "Redes y Sistemas",
+          "fecha_oferta": "2026-08-24",
+          "precio_unitario": 1828.0,
+          "id_orden": 10
+        },
+        {
+          "codigo_articulo": "ART-030",
+          "articulo": "UPS 1000 VA",
+          "proveedor": "Soluciones Digitales GT",
+          "fecha_oferta": "2026-08-23",
+          "precio_unitario": 1825.0,
+          "id_orden": 10
+        },
+        {
+          "codigo_articulo": "ART-034",
+          "articulo": "Webcam HD",
+          "proveedor": "Limpieza Integral",
+          "fecha_oferta": "2026-09-30",
+          "precio_unitario": 2531.0,
+          "id_orden": 12
+        },
+        {
+          "codigo_articulo": "ART-034",
+          "articulo": "Webcam HD",
+          "proveedor": "Papeles y Más",
+          "fecha_oferta": "2026-10-01",
+          "precio_unitario": 2534.0,
+          "id_orden": 12
+        },
+        {
+          "codigo_articulo": "ART-034",
+          "articulo": "Webcam HD",
+          "proveedor": "Redes y Sistemas",
+          "fecha_oferta": "2026-09-29",
+          "precio_unitario": 2528.0,
+          "id_orden": 12
+        }
+      ],
+      "id": 8
+    }
+  }
+}

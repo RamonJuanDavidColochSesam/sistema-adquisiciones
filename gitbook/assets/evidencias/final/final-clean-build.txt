@@ -1,0 +1,48 @@
+Acceso denegado.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< com.adquisiciones:sistema-adquisiciones >---------------
+[INFO] Building sistema-adquisiciones 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ sistema-adquisiciones ---
+[INFO] Deleting C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\target
+[INFO] 
+[INFO] --- dependency:3.6.1:unpack-dependencies (compiler-dependencies) @ sistema-adquisiciones ---
+[INFO] 
+[INFO] --- dependency:3.6.1:copy (eclipse-compiler) @ sistema-adquisiciones ---
+[INFO] Configured Artifact: org.eclipse.jdt:ecj:3.36.0:jar
+[INFO] Copying ecj-3.36.0.jar to C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\target\compiler\ecj.jar
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ sistema-adquisiciones ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ sistema-adquisiciones ---
+[INFO] Not compiling main sources
+[INFO] 
+[INFO] --- antrun:3.1.0:run (compile-eclipse) @ sistema-adquisiciones ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ sistema-adquisiciones ---
+[INFO] skip non existing resourceDirectory C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ sistema-adquisiciones ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ sistema-adquisiciones ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- war:3.4.0:war (default-war) @ sistema-adquisiciones ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [sistema-adquisiciones] in [C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\target\sistema-adquisiciones]
+[INFO] Processing war project
+[INFO] Copying webapp resources [C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\webapp]
+[INFO] Building war: C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\target\sistema-adquisiciones.war
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  37.244 s
+[INFO] Finished at: 2026-10-05T23:43:06-06:00
+[INFO] ------------------------------------------------------------------------

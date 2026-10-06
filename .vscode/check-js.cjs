@@ -1,0 +1,5 @@
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
+const root=path.resolve(__dirname,'../src/main/webapp');let checked=0,errors=0;
+function check(source,name){try{new vm.Script(source,{filename:name});checked++;}catch(e){errors++;console.error(e.stack);}}
+function visit(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,entry.name);if(entry.isDirectory()){if(entry.name!=='node_modules')visit(file);continue;}const name=path.relative(root,file);if(entry.name.endsWith('.js'))check(fs.readFileSync(file,'utf8'),name);else if(entry.name.endsWith('.html')){let i=0;for(const [,attrs,source] of fs.readFileSync(file,'utf8').matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)){i++;if(/\bsrc\s*=/i.test(attrs)||!source.trim())continue;if(/\btype\s*=\s*["'](?:application\/ld\+json|application\/json|importmap|module)["']/i.test(attrs))continue;check(source,name+':script-'+i);}}}}
+visit(root);console.log(checked+' bloques JavaScript comprobados; '+errors+' errores de sintaxis.');process.exitCode=errors?1:0;

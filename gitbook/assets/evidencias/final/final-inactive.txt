@@ -1,0 +1,5 @@
+PASS sesi�n temporal previa a desactivaci�n 200
+PASS cuenta de prueba desactivada, historial conservado 200
+PASS cuenta inactiva invalida sesi�n existente 401
+PASS cuenta inactiva no inicia sesi�n 401
+PASS cuatro cuentas demo intactas; fixture visual inactivo y eventos conservados

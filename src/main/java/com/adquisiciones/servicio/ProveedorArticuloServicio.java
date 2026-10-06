@@ -35,6 +35,7 @@ public class ProveedorArticuloServicio {
     }
 
     private void validar(ProveedorArticulo pa) {
+        if (pa == null) throw new IllegalArgumentException("Debe enviar los datos del registro");
         if (pa.getIdProveedor() <= 0)
             throw new IllegalArgumentException("Debe seleccionar un proveedor");
         if (pa.getPrecio() == null)

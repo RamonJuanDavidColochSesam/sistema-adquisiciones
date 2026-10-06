@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/api.js"></script>
 <meta charset="UTF-8">
-<title>Login - Sistema de Adquisiciones</title>
+<title>Iniciar sesión · GuateCompras</title>
+<link rel="stylesheet" href="css/portal.css">
 <style>
-  body { font-family: Arial, sans-serif; max-width: 320px; margin: 100px auto; }
-  input { display: block; width: 100%; margin-bottom: 10px; padding: 8px; box-sizing: border-box; }
-  button { width: 100%; padding: 8px; }
-  #error { color: red; }
+  body { min-height:100vh;display:grid;place-items:center;background:linear-gradient(125deg,#0b283c,#20576a);padding:20px; }
+  .login-card { width:min(440px,100%);background:white;padding:40px;border-radius:15px;box-shadow:0 25px 80px #00182955; }
+  .login-mark { color:#087e83;font-size:26px;font-weight:700;letter-spacing:-.7px;margin-bottom:28px; }
+  .login-card h1 { font-size:24px;margin:10px 0; }
+  .login-card p { margin-bottom:25px; }
+  .login-card label { margin:18px 0; }
+  .login-card button { width:100%;margin-top:9px; }
+  #error { color:#ac313a;font-size:12px;min-height:18px;margin:14px 0 0; }
+  .login-footer { color:#7b8d9b;font-size:10px;margin-top:28px;text-align:center; }
 </style>
 </head>
 <body>
-  <h2>Iniciar sesión</h2>
-  <input type="text" id="nombreUsuario" placeholder="Usuario">
-  <input type="password" id="contrasena" placeholder="Contraseña">
-  <button onclick="iniciarSesion()">Entrar</button>
-  <p id="error"></p>
+  <main class="login-card">
+    <div class="login-mark">GuateCompras</div><div class="eyebrow">GESTIÓN INSTITUCIONAL</div>
+    <h1>Bienvenido a su espacio de trabajo</h1><p>Acceda para gestionar solicitudes, proveedores y adquisiciones.</p>
+    <form onsubmit="event.preventDefault(); iniciarSesion()">
+      <label for="nombreUsuario">Usuario<input type="text" id="nombreUsuario" maxlength="30" autocomplete="username" required placeholder="Su nombre de usuario"></label>
+      <label for="contrasena">Contraseña<input type="password" id="contrasena" maxlength="128" autocomplete="current-password" required placeholder="Su contraseña"></label>
+      <button id="entrar" type="submit">Iniciar sesión</button>
+      <p id="error" role="alert" aria-live="polite"></p>
+    </form><div class="login-footer">Adquisiciones y proveedores · Guatemala</div>
+  </main>
 
   <script>
     async function iniciarSesion() {
@@ -23,6 +36,7 @@
       const contrasena = document.getElementById('contrasena').value;
       const errorEl = document.getElementById('error');
       errorEl.textContent = '';
+      document.getElementById('entrar').disabled = true;
 
       try {
         const respuesta = await fetch('api/login', {
@@ -38,9 +52,11 @@
           return;
         }
 
-        window.location.href = 'index.html';
+        window.location.href = 'portal.html';
       } catch (e) {
         errorEl.textContent = 'Error de conexión con el servidor';
+      } finally {
+        document.getElementById('entrar').disabled = false;
       }
     }
   </script>

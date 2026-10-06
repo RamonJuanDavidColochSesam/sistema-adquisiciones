@@ -17,6 +17,7 @@ public class Usuario {
     public String getNombreUsuario() { return nombreUsuario; }
     public void setNombreUsuario(String nombreUsuario) { this.nombreUsuario = nombreUsuario; }
 
+    @com.fasterxml.jackson.annotation.JsonIgnore
     public String getContrasenaHash() { return contrasenaHash; }
     public void setContrasenaHash(String contrasenaHash) { this.contrasenaHash = contrasenaHash; }
 

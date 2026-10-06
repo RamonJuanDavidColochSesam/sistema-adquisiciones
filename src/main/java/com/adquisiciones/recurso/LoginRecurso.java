@@ -1,69 +1,47 @@
 package com.adquisiciones.recurso;
-
 import com.adquisiciones.modelo.Usuario;
 import com.adquisiciones.servicio.LoginServicio;
-
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpSession;
+import com.adquisiciones.servicio.SeguridadServicio;
+import jakarta.servlet.http.*;
 import jakarta.ws.rs.*;
-import jakarta.ws.rs.core.Context;
-import jakarta.ws.rs.core.MediaType;
-import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.core.*;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-
-@Path("/login")
-public class LoginRecurso {
-
-    private final LoginServicio loginServicio = new LoginServicio();
-
-    @POST
-    @Consumes(MediaType.APPLICATION_JSON)
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response login(Map<String, String> credenciales, @Context HttpServletRequest request) {
-        String nombreUsuario = credenciales.get("nombreUsuario");
-        String contrasena = credenciales.get("contrasena");
-
-        if (nombreUsuario == null || contrasena == null) {
-            return Response.status(Response.Status.BAD_REQUEST)
-                    .entity(Map.of("error", "Debe enviar nombreUsuario y contrasena"))
-                    .build();
-        }
-
-        try {
-            Usuario usuario = loginServicio.autenticar(nombreUsuario, contrasena);
-
-            if (usuario == null) {
-                return Response.status(Response.Status.UNAUTHORIZED)
-                        .entity(Map.of("error", "Usuario o contraseña incorrectos"))
-                        .build();
-            }
-
-            HttpSession sesion = request.getSession(true);
-            sesion.setAttribute("idUsuario", usuario.getIdUsuario());
-            sesion.setAttribute("rol", usuario.getNombreRol());
-            sesion.setAttribute("idRol", usuario.getIdRol());
-            sesion.setAttribute("idProveedor", usuario.getIdProveedor());
-
-            Map<String, Object> respuesta = new LinkedHashMap<>();
-            respuesta.put("nombreCompleto", usuario.getNombreCompleto());
-            respuesta.put("rol", usuario.getNombreRol());
-
-            return Response.ok(respuesta).build();
-
-        } catch (Exception e) {
-            return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
-                    .entity(Map.of("error", "Error interno: " + e.getMessage()))
-                    .build();
-        }
-    }
-
-    @POST
-    @Path("/logout")
-    public Response logout(@Context HttpServletRequest request) {
-        HttpSession sesion = request.getSession(false);
-        if (sesion != null) sesion.invalidate();
-        return Response.ok(Map.of("mensaje", "Sesión cerrada")).build();
-    }
+@Path("/login") @Produces(MediaType.APPLICATION_JSON)
+public final class LoginRecurso {
+ private final LoginServicio loginServicio=new LoginServicio();
+ private static final Map<String,Attempt> ATTEMPTS=new ConcurrentHashMap<>();
+ private record Attempt(long started,int count){}
+ @POST @Consumes(MediaType.APPLICATION_JSON)
+ public Response login(Map<String,String> credentials,@Context HttpServletRequest request) {
+  if(credentials==null)return bad("Debe enviar las credenciales");
+  String username=credentials.get("nombreUsuario"),password=credentials.get("contrasena");
+  if(username==null||username.isBlank()||username.length()>30||password==null||password.length()>128)return bad("Credenciales no válidas");
+  String ip=request.getRemoteAddr();long now=System.currentTimeMillis();
+  ATTEMPTS.entrySet().removeIf(e->now-e.getValue().started()>60000);
+  Attempt attempt=ATTEMPTS.compute(ip,(k,a)->a==null?new Attempt(now,1):new Attempt(a.started(),a.count()+1));
+  if(attempt.count()>10||ATTEMPTS.size()>10000)return Response.status(429).header("Retry-After","60").entity(Map.of("error","Demasiados intentos; espere un minuto")).build();
+  try {
+   Usuario user=loginServicio.autenticar(username,password);
+   if(user==null)return Response.status(401).entity(Map.of("error","Usuario o contraseña incorrectos")).build();
+   var previous=request.getSession(false);if(previous!=null)previous.invalidate();
+   var session=request.getSession(true);session.setMaxInactiveInterval(1800);
+   session.setAttribute("idUsuario",user.getIdUsuario());session.setAttribute("idRol",user.getIdRol());session.setAttribute("rol",user.getNombreRol());session.setAttribute("idProveedor",user.getIdProveedor());
+   session.setAttribute("csrf",UUID.randomUUID().toString());ATTEMPTS.remove(ip);
+   return me(request);
+  }catch(Exception e){return Response.status(503).entity(Map.of("error","No se pudo iniciar sesión")).build();}
+ }
+ @GET @Path("/me")
+ public Response me(@Context HttpServletRequest request)throws java.sql.SQLException {
+  var session=request.getSession(false);
+  if(session==null||!(session.getAttribute("idUsuario") instanceof Integer id))return Response.status(401).build();
+  var security=new SeguridadServicio();var user=security.usuarioActivo(id);
+  if(user==null)return Response.status(401).build();
+  user.put("csrf",session.getAttribute("csrf"));user.put("permisos",security.permisos((Integer)user.get("idRol")));
+  return Response.ok(user).build();
+ }
+ @POST @Path("/logout")
+ public Response logout(@Context HttpServletRequest request){var session=request.getSession(false);if(session!=null)session.invalidate();return Response.ok(Map.of("mensaje","Sesión cerrada")).build();}
+ private static Response bad(String message){return Response.status(400).entity(Map.of("error",message)).build();}
 }

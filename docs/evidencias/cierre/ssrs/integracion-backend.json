@@ -1,0 +1,66 @@
+{
+  "ssrsUrl": "http://localhost/ReportServer",
+  "informes": [
+    {
+      "id": 1,
+      "parametros": [
+        "articulo",
+        "desde",
+        "hasta"
+      ],
+      "nombre": "Historial de compra de artículos"
+    },
+    {
+      "id": 2,
+      "parametros": [
+        "desde",
+        "hasta"
+      ],
+      "nombre": "Top 5 proveedores por monto adjudicado"
+    },
+    {
+      "id": 3,
+      "parametros": [
+        "orden"
+      ],
+      "nombre": "Comparación de ofertas y ganadora por orden"
+    },
+    {
+      "id": 4,
+      "parametros": [],
+      "nombre": "Pedidos sin asignación"
+    },
+    {
+      "id": 5,
+      "parametros": [],
+      "nombre": "Órdenes abiertas para ofertas (VIEW)"
+    },
+    {
+      "id": 6,
+      "parametros": [
+        "sucursal",
+        "anio"
+      ],
+      "nombre": "Gasto por departamento, sucursal y año"
+    },
+    {
+      "id": 7,
+      "parametros": [
+        "desde",
+        "hasta"
+      ],
+      "nombre": "Promedio de días entre creación y adjudicación"
+    },
+    {
+      "id": 8,
+      "parametros": [
+        "articulo",
+        "proveedor",
+        "desde",
+        "hasta"
+      ],
+      "nombre": "Evolución de precios ofrecidos por artículo y proveedor"
+    }
+  ],
+  "ssrsConfigurado": true
+}

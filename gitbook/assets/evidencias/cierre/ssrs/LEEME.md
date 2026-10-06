@@ -1,0 +1,1 @@
+SSRS COMPLETADO: ocho informes publicados y ocho PDF reales revisados. Consulte CIERRE_SSRS.md y verificacion-datos.json. Para republicar use TERMINAR_SSRS.cmd desde la carpeta superior con su sesión Windows autorizada.

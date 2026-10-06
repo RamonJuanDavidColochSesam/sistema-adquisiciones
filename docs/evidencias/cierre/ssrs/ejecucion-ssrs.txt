@@ -1,0 +1,40 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261006015630
+Nombre de usuario: JAIME_REYES\dinae
+Usuario RunAs: JAIME_REYES\dinae
+Nombre de la configuración: 
+Máquina: JAIME_REYES (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\dinae\Documents\Codex\2026-10-05\files-pasted-by-the-user-misi\outputs\TERMINAR_SSRS.ps1
+Id. de proceso: 18748
+PSVersion: 5.1.26100.9444
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9444
+BuildVersion: 10.0.26100.9444
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PUBLICADO 01_HistorialCompra
+PUBLICADO 02_TopProveedores
+PUBLICADO 03_ComparacionOfertas
+PUBLICADO 04_PedidosSinAsignar
+PUBLICADO 05_OrdenesAbiertas
+PUBLICADO 06_GastoDepartamento
+PUBLICADO 07_PromedioAdjudicacion
+PUBLICADO 08_EvolucionPrecios
+Ocho informes publicados. Ejecute verificar_ssrs.ps1 para comprobar el renderizado PDF.
+PASS SSRS PDF 01_HistorialCompra 190211 bytes
+PASS SSRS PDF 02_TopProveedores 177977 bytes
+PASS SSRS PDF 03_ComparacionOfertas 180617 bytes
+PASS SSRS PDF 04_PedidosSinAsignar 192226 bytes
+PASS SSRS PDF 05_OrdenesAbiertas 176787 bytes
+PASS SSRS PDF 06_GastoDepartamento 176319 bytes
+PASS SSRS PDF 07_PromedioAdjudicacion 162703 bytes
+PASS SSRS PDF 08_EvolucionPrecios 223989 bytes
+PUBLICACION Y EXPORTACION COMPLETADAS: ocho PDF reales. Avise a Codex para revisar datos y aspecto.
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261006015703
+**********************

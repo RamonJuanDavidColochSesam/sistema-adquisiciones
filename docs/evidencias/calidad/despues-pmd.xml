@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 https://pmd.github.io/schema/report_2_0_0.xsd" version="7.17.0" timestamp="2026-10-06T00:31:13.334">
+<file name="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\dao\SqlDAO.java">
+<violation beginline="9" endline="9" begincolumn="97" endcolumn="110" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.adquisiciones.dao" class="SqlDAO" method="bind" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+Unnecessary qualifier 'java.sql': 'Date' is already in scope because it is imported in this file
+</violation>
+<violation beginline="12" endline="12" begincolumn="292" endcolumn="305" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.adquisiciones.dao" class="SqlDAO" method="query" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+Unnecessary qualifier 'java.sql': 'Date' is already in scope because it is imported in this file
+</violation>
+</file>
+<file name="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\filtro\AuthFilter.java">
+<violation beginline="37" endline="37" begincolumn="5" endcolumn="160" rule="CollapsibleIfStatements" ruleset="Design" package="com.adquisiciones.filtro" class="AuthFilter" method="doFilter" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#collapsibleifstatements" priority="3">
+This if statement could be combined with its parent
+</violation>
+</file>
+<file name="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\util\SemillaDemo.java">
+<violation beginline="123" endline="123" begincolumn="167" endcolumn="179" rule="UselessParentheses" ruleset="Code Style" package="com.adquisiciones.util" class="SemillaDemo" method="price" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses around `provider % 5`.
+</violation>
+<violation beginline="136" endline="136" begincolumn="185" endcolumn="198" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.adquisiciones.util" class="SemillaDemo" method="bind" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+Unnecessary qualifier 'java.sql': 'Date' is already in scope because it is imported in this file
+</violation>
+</file>
+</pmd>

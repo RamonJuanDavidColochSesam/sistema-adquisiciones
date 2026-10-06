@@ -33,6 +33,7 @@ public class DepartamentoServicio {
     }
 
     private void validar(Departamento d) {
+        if (d == null) throw new IllegalArgumentException("Debe enviar los datos del registro");
         if (d.getIdSucursal() <= 0)
             throw new IllegalArgumentException("Debe seleccionar una sucursal");
         if (d.getNombre() == null || d.getNombre().isBlank())

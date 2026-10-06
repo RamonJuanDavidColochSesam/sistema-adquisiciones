@@ -1,0 +1,145 @@
+{
+  "fecha": "2026-10-06",
+  "documentos": 16,
+  "errores": [],
+  "faltanDocumentos": [],
+  "capitulos": 29,
+  "preguntas": 60,
+  "enlacesLocales": 291,
+  "enlacesRotos": [],
+  "diagramas": [
+    {
+      "documento": "GUIA_COMPLETA_DESARROLLO.md",
+      "tipo": "flowchart LR",
+      "lineas": 21
+    },
+    {
+      "documento": "GUIA_COMPLETA_DESARROLLO.md",
+      "tipo": "flowchart TD",
+      "lineas": 16
+    },
+    {
+      "documento": "GUIA_COMPLETA_DESARROLLO.md",
+      "tipo": "sequenceDiagram",
+      "lineas": 15
+    },
+    {
+      "documento": "GUIA_COMPLETA_DESARROLLO.md",
+      "tipo": "flowchart TD",
+      "lineas": 12
+    },
+    {
+      "documento": "GUIA_COMPLETA_DESARROLLO.md",
+      "tipo": "sequenceDiagram",
+      "lineas": 25
+    },
+    {
+      "documento": "BASE_DATOS.md",
+      "tipo": "erDiagram",
+      "lineas": 27
+    },
+    {
+      "documento": "FRONTEND.md",
+      "tipo": "sequenceDiagram",
+      "lineas": 12
+    },
+    {
+      "documento": "WPF.md",
+      "tipo": "flowchart LR",
+      "lineas": 10
+    },
+    {
+      "documento": "REPORTES.md",
+      "tipo": "sequenceDiagram",
+      "lineas": 11
+    },
+    {
+      "documento": "CRONOLOGIA_DESARROLLO.md",
+      "tipo": "flowchart TD",
+      "lineas": 10
+    }
+  ],
+  "bloquesCodigo": 29,
+  "clasesJava": 49,
+  "rutasREST": 49,
+  "modulos": 17,
+  "tablas": 22,
+  "ssrs": [
+    {
+      "nombre": "01_HistorialCompra",
+      "rdlHashCoincide": true,
+      "pdfHashCoincide": true,
+      "filas": 30,
+      "paginas": 2
+    },
+    {
+      "nombre": "02_TopProveedores",
+      "rdlHashCoincide": true,
+      "pdfHashCoincide": true,
+      "filas": 5,
+      "paginas": 1
+    },
+    {
+      "nombre": "03_ComparacionOfertas",
+      "rdlHashCoincide": true,
+      "pdfHashCoincide": true,
+      "filas": 9,
+      "paginas": 1
+    },
+    {
+      "nombre": "04_PedidosSinAsignar",
+      "rdlHashCoincide": true,
+      "pdfHashCoincide": true,
+      "filas": 40,
+      "paginas": 3
+    },
+    {
+      "nombre": "05_OrdenesAbiertas",
+      "rdlHashCoincide": true,
+      "pdfHashCoincide": true,
+      "filas": 10,
+      "paginas": 1
+    },
+    {
+      "nombre": "06_GastoDepartamento",
+      "rdlHashCoincide": true,
+      "pdfHashCoincide": true,
+      "filas": 10,
+      "paginas": 1
+    },
+    {
+      "nombre": "07_PromedioAdjudicacion",
+      "rdlHashCoincide": true,
+      "pdfHashCoincide": true,
+      "filas": 1,
+      "paginas": 1
+    },
+    {
+      "nombre": "08_EvolucionPrecios",
+      "rdlHashCoincide": true,
+      "pdfHashCoincide": true,
+      "filas": 180,
+      "paginas": 10
+    }
+  ],
+  "filasPDF": 285,
+  "paginasPDF": 20,
+  "fuentesConfiguracionScriptsProtegidos": 133,
+  "archivosProtegidosModificados": [],
+  "documentosConClavePrivada": [],
+  "ausenciasInspeccionadas": {
+    "jasper": true,
+    "githubActions": true,
+    "docusaurus": true
+  },
+  "resultado": "PASS",
+  "powershellSintaxis": {
+    "Bloques": 7,
+    "Errores": 0
+  },
+  "requisitosOriginales": {
+    "CUMPLIDO": 73,
+    "PENDIENTE": 1,
+    "NO APLICA": 1
+  }
+}

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd xmlns="https://pmd-code.org/schema/cpd-report"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         pmdVersion="7.17.0"
+         timestamp="2026-10-06T00:31:15.0944144-06:00"
+         version="1.0.0"
+         xsi:schemaLocation="https://pmd-code.org/schema/cpd-report https://pmd.github.io/schema/cpd-report_1_0_0.xsd">
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\conexion\AplicacionLifecycle.java"
+         totalNumberOfTokens="30"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\conexion\ConexionManager.java"
+         totalNumberOfTokens="448"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\conexion\PruebaConexion2.java"
+         totalNumberOfTokens="99"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\conexion\PruebasConexion.java"
+         totalNumberOfTokens="99"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\dao\ArticuloDAO.java"
+         totalNumberOfTokens="499"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\dao\DepartamentoDAO.java"
+         totalNumberOfTokens="522"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\dao\ProveedorArticuloDAO.java"
+         totalNumberOfTokens="421"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\dao\ProveedorDAO.java"
+         totalNumberOfTokens="569"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\dao\SqlDAO.java"
+         totalNumberOfTokens="576"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\dao\SucursalDAO.java"
+         totalNumberOfTokens="569"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\dao\UsuarioDAO.java"
+         totalNumberOfTokens="207"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\filtro\AuthFilter.java"
+         totalNumberOfTokens="828"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\modelo\Articulo.java"
+         totalNumberOfTokens="109"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\modelo\Departamento.java"
+         totalNumberOfTokens="135"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\modelo\Modulo.java"
+         totalNumberOfTokens="1247"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\modelo\Proveedor.java"
+         totalNumberOfTokens="161"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\modelo\ProveedorArticulo.java"
+         totalNumberOfTokens="135"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\modelo\Sucursal.java"
+         totalNumberOfTokens="161"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\modelo\Usuario.java"
+         totalNumberOfTokens="249"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\recurso\AdjudicacionRecurso.java"
+         totalNumberOfTokens="288"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\recurso\ArticuloRecurso.java"
+         totalNumberOfTokens="675"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\recurso\AuditoriaRecurso.java"
+         totalNumberOfTokens="105"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\recurso\ConexionRecurso.java"
+         totalNumberOfTokens="248"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\recurso\DashboardRecurso.java"
+         totalNumberOfTokens="66"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\recurso\DepartamentoRecurso.java"
+         totalNumberOfTokens="583"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\recurso\ErroresApi.java"
+         totalNumberOfTokens="249"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\recurso\GestionRecurso.java"
+         totalNumberOfTokens="449"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\recurso\HelloRecurso.java"
+         totalNumberOfTokens="28"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\recurso\LoginRecurso.java"
+         totalNumberOfTokens="696"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\recurso\OrdenRecurso.java"
+         totalNumberOfTokens="336"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\recurso\ProveedorArticuloRecurso.java"
+         totalNumberOfTokens="506"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\recurso\ProveedorRecurso.java"
+         totalNumberOfTokens="675"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\recurso\ReportesRecurso.java"
+         totalNumberOfTokens="325"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\recurso\SucursalRecurso.java"
+         totalNumberOfTokens="495"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\servicio\AdquisicionServicio.java"
+         totalNumberOfTokens="3104"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\servicio\ArticuloServicio.java"
+         totalNumberOfTokens="253"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\servicio\CatalogoServicio.java"
+         totalNumberOfTokens="3521"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\servicio\DepartamentoServicio.java"
+         totalNumberOfTokens="175"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\servicio\LoginServicio.java"
+         totalNumberOfTokens="81"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\servicio\ProveedorArticuloServicio.java"
+         totalNumberOfTokens="247"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\servicio\ProveedorServicio.java"
+         totalNumberOfTokens="363"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\servicio\ReportesServicio.java"
+         totalNumberOfTokens="1088"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\servicio\SeguridadServicio.java"
+         totalNumberOfTokens="462"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\servicio\SucursalServicio.java"
+         totalNumberOfTokens="263"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\util\GenerarHash.java"
+         totalNumberOfTokens="133"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\util\MigrarBases.java"
+         totalNumberOfTokens="416"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\util\PasswordUtil.java"
+         totalNumberOfTokens="50"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\util\SemillaDemo.java"
+         totalNumberOfTokens="2693"/>
+   <file path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\util\VerificarBases.java"
+         totalNumberOfTokens="636"/>
+   <duplication lines="17" tokens="101">
+      <file begintoken="7700"
+            column="40"
+            endcolumn="49"
+            endline="86"
+            endtoken="7800"
+            line="70"
+            path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\recurso\ArticuloRecurso.java"/>
+      <file begintoken="8777"
+            column="44"
+            endcolumn="49"
+            endline="81"
+            endtoken="8877"
+            line="65"
+            path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\recurso\DepartamentoRecurso.java"/>
+      <file begintoken="11652"
+            column="41"
+            endcolumn="49"
+            endline="86"
+            endtoken="11752"
+            line="70"
+            path="C:\Users\dinae\Desktop\ProyectoBD\sistema-adquisiciones\src\main\java\com\adquisiciones\recurso\ProveedorRecurso.java"/>
+      <codefragment><![CDATA[            return Response.ok(articulo).build();
+        } catch (IllegalArgumentException e) {
+            return badRequest(e.getMessage());
+        } catch (SQLException e) {
+            return manejarErrorSql(e);
+        } catch (Exception e) {
+            return error(e);
+        }
+    }
+
+    @DELETE
+    @Path("/{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response eliminar(@PathParam("id") int id) {
+        try {
+            if (!servicio.eliminar(id)) return notFound();
+            return Response.ok(Map.of("mensaje", "Artículo eliminado")).build();
+]]></codefragment>
+   </duplication>
+</pmd-cpd>

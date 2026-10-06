@@ -64,6 +64,7 @@ public class ProveedorRecurso {
     @Produces(MediaType.APPLICATION_JSON)
     public Response actualizar(@PathParam("id") int id, Proveedor proveedor) {
         try {
+            if (proveedor == null) throw new IllegalArgumentException("Se requiere un cuerpo JSON");
             proveedor.setIdProveedor(id);
             if (!servicio.actualizar(proveedor)) return notFound();
             return Response.ok(proveedor).build();
@@ -114,7 +115,6 @@ public class ProveedorRecurso {
     }
 
     private Response error(Exception e) {
-        String mensaje = e.getMessage() != null ? e.getMessage() : "Error interno";
-        return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(Map.of("error", mensaje)).build();
+        return new ErroresApi().toResponse(e);
     }
 }

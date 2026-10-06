@@ -1,0 +1,174 @@
+
+=== security ===
+PASS sesión anónima 401
+PASS diagnóstico protegido 401
+PASS contraseña incorrecta 401
+PASS login admin 200
+PASS sesión admin 200
+PASS login gestor 200
+PASS sesión gestor 200
+PASS login proveedor 200
+PASS sesión proveedor 200
+PASS login auditor 200
+PASS sesión auditor 200
+PASS FK heredada devuelve conflicto uniforme 409
+PASS diagnóstico autenticado 200
+PASS mutación sin CSRF 403
+PASS auditor lectura 200
+PASS auditor escritura denegada 403
+PASS gestor cambio catálogo denegado 403
+PASS proveedor catálogo propio 200
+PASS proveedor catálogo ajeno denegado 403
+PASS CRUD crear artículo 201
+PASS CRUD actualizar artículo 200
+PASS CRUD consultar artículo 200
+PASS CRUD borrar artículo temporal 200
+PASS logout 200
+PASS sesión cerrada no reutilizable 401
+PASS pruebas HTTP de roles, catálogo propio, CSRF, pools y CRUD reversible
+
+=== crud ===
+PASS login CRUD 200
+PASS crear roles 201
+PASS crear pantallas 201
+PASS crear permisos 201
+PASS actualizar permisos 200
+PASS crear usuarios 201
+PASS actualizar usuarios 200
+PASS borrado bloqueado por referencias 409
+PASS borrar usuarios 204
+PASS borrar permisos 204
+PASS borrar pantallas 204
+PASS borrar roles 204
+PASS crear sucursales 201
+PASS actualizar sucursales 200
+PASS crear telefonos 201
+PASS borrar telefonos 204
+PASS crear departamentos 201
+PASS actualizar departamentos 200
+PASS crear articulos 201
+PASS actualizar articulos 200
+PASS crear proveedores 201
+PASS actualizar proveedores 200
+PASS crear proveedores 201
+PASS crear proveedorarticulos 201
+PASS actualizar proveedorarticulos 200
+PASS validación precio catálogo 400
+PASS crear rubros 201
+PASS crear relaciones 201
+PASS actualizar relaciones 200
+PASS crear pedidos 201
+PASS actualizar pedidos 200
+PASS cantidad positiva 400
+PASS fecha necesaria posterior 400
+PASS borrar pedidos 204
+PASS borrar relaciones 204
+PASS borrar rubros 204
+PASS borrar proveedorarticulos 204
+PASS borrar proveedores 204
+PASS borrar proveedores 204
+PASS borrar articulos 204
+PASS borrar departamentos 204
+PASS borrar sucursales 204
+PASS listar tiposorden 200
+PASS listar subtiposorden 200
+PASS listar roles 200
+PASS listar pantallas 200
+PASS listar permisos 200
+PASS listar usuarios 200
+PASS listar articulos 200
+PASS listar proveedores 200
+PASS listar pedidos 200
+PASS listar ofertas 200
+PASS búsqueda preparada 200
+PASS registro inexistente 404
+PASS rol inexistente 400
+PASS CRUD faltantes, compuestos, validaciones, referencias, paginación y búsqueda preparada
+PASS JOIN legible departamentos 200
+PASS JOIN legible proveedorarticulos 200
+PASS JOIN legible pedidos 200
+
+=== acquisitions ===
+PASS login adquisiciones 200
+PASS login ofertante 200
+PASS consulta api/gestion/departamentos 200
+PASS consulta api/gestion/articulos 200
+PASS solicitud temporal 201
+PASS solicitud temporal 201
+PASS consulta api/gestion/tiposorden 200
+PASS consulta api/gestion/subtiposorden 200
+PASS orden programada 201
+PASS consulta api/reportes/5 200
+PASS borrar orden programada temporal 204
+PASS orden anterior a solicitud 400
+PASS consulta api/gestion/pedidos/120 200
+PASS consulta api/gestion/pedidos/121 200
+PASS crear orden agrupada 201
+PASS impedir pedido en segunda orden 400
+PASS actualizar orden sin ofertas 200
+PASS oferta de proveedor propio 201
+PASS oferta de proveedor propio 201
+PASS consulta api/gestion/proveedores 200
+PASS oferta con empate 201
+PASS consulta api/ordenes/34 200
+PASS preservar orden con ofertas 400
+PASS consulta api/ordenes/34 200
+PASS consulta api/adjudicaciones 200
+PASS precio debe corresponder a oferta 400
+PASS adjudicación debe incluir todos los pedidos 400
+PASS oferta no corresponde al pedido 400
+PASS consulta api/adjudicaciones 200
+PASS adjudicación atómica 201
+PASS consulta api/ordenes/34 200
+PASS única adjudicación por orden 400
+PASS no alterar oferta adjudicada 400
+PASS evaluación proveedor 201
+PASS actualizar evaluación 200
+PASS conservar adjudicación evaluada 400
+PASS borrar evaluación temporal 204
+PASS actualizar adjudicación completa 200
+PASS revertir adjudicación temporal 204
+PASS borrar oferta temporal 204
+PASS borrar oferta temporal 204
+PASS borrar oferta temporal 204
+PASS borrar orden y liberar pedidos 204
+PASS consulta api/gestion/pedidos/120 200
+PASS borrar solicitud temporal 204
+PASS consulta api/gestion/pedidos/121 200
+PASS borrar solicitud temporal 204
+PASS flujo pedido-orden-oferta-adjudicación-evaluación, CRUD, integridad y rollback por API
+
+=== reports ===
+PASS login informes 200
+PASS dashboard real 200
+PASS órdenes para comparación 200
+PASS catálogo ocho informes 200
+PASS informe académico 1 200
+PASS informe académico 2 200
+PASS informe académico 3 200
+PASS informe académico 4 200
+PASS informe académico 5 200
+PASS informe académico 6 200
+PASS informe académico 7 200
+PASS informe académico 8 200
+PASS rango invertido 400
+PASS comparación requiere orden 400
+PASS login proveedor informes 200
+PASS gasto institucional protegido 403
+PASS precios propios 200
+PASS auditoría persistida 200
+PASS ocho consultas, filtros, montos, ganadoras, tiempos, dashboard real y alcance por proveedor
+
+=== edge_cases ===
+PASS login límites 200
+PASS cuerpo nulo articulos 400
+PASS cuerpo nulo sucursales 400
+PASS cuerpo nulo departamentos 400
+PASS cuerpo nulo proveedores 400
+PASS asociación nula 400
+PASS concurrencia: un solo encabezado y asignación; respuestas [201, 400]
+PASS limpieza orden concurrente 204
+PASS entrada SQL parametrizada 200
+PASS entradas nulas, concurrencia y limpieza transaccional
+PASS seis dashboards concurrentes sin retener dos conexiones del pool
+PASS SUITE HTTP COMPLETA

@@ -33,6 +33,7 @@ public class SucursalServicio {
     }
 
     private void validar(Sucursal s) {
+        if (s == null) throw new IllegalArgumentException("Debe enviar los datos del registro");
         if (s.getCodigoSucursal() == null || s.getCodigoSucursal().isBlank())
             throw new IllegalArgumentException("El código de sucursal es obligatorio");
         if (s.getDireccion() == null || s.getDireccion().isBlank())

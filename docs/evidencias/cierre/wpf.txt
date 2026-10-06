@@ -1,0 +1,27 @@
+PASS login WPF con cookies y CSRF
+PASS módulos según permisos
+PASS dashboard con datos reales
+PASS CRUD reversible mediante EditorViewModel y API protegida
+PASS formulario de precio conserva decimales y rechaza formato ambiguo
+PASS ordenamiento WPF numérico
+PASS agrupación y liberación de pedidos mediante WorkflowViewModel
+PASS carga MVVM articulos registros=20
+PASS carga MVVM proveedores registros=20
+PASS carga MVVM ordenes registros=20
+PASS carga MVVM adjudicaciones registros=10
+PASS carga MVVM reportes registros=8
+PASS carga MVVM conexion registros=2
+PASS informe WPF y CSV 1 filas=30
+PASS informe WPF y CSV 2 filas=5
+PASS informe WPF y CSV 3 filas=9
+PASS informe WPF y CSV 4 filas=40
+PASS informe WPF y CSV 5 filas=10
+PASS informe WPF y CSV 6 filas=10
+PASS informe WPF y CSV 7 filas=1
+PASS informe WPF y CSV 8 filas=180
+PASS CSV neutraliza fórmulas
+PASS mensaje de validación WPF desde API
+PASS logout WPF
+PASS cliente WPF y permisos gestor
+PASS cliente WPF y permisos proveedor
+PASS cliente WPF y permisos auditor

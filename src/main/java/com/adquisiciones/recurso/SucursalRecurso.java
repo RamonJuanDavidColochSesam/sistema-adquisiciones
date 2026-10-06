@@ -7,7 +7,7 @@ import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
-import java.util.List;
+
 import java.util.Map;
 
 @Path("/sucursales")
@@ -57,6 +57,7 @@ public class SucursalRecurso {
     @Produces(MediaType.APPLICATION_JSON)
     public Response actualizar(@PathParam("id") int id, Sucursal sucursal) {
         try {
+            if (sucursal == null) throw new IllegalArgumentException("Se requiere un cuerpo JSON");
             sucursal.setIdSucursal(id);
             if (!servicio.actualizar(sucursal)) return notFound();
             return Response.ok(sucursal).build();
@@ -88,6 +89,6 @@ public class SucursalRecurso {
     }
 
     private Response error(Exception e) {
-        return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(Map.of("error", e.getMessage())).build();
+        return new ErroresApi().toResponse(e);
     }
 }

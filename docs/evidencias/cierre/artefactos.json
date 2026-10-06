@@ -1,0 +1,13 @@
+{
+  "war": "C:\\Users\\dinae\\Desktop\\ProyectoBD\\sistema-adquisiciones\\target\\sistema-adquisiciones.war",
+  "bytes": 9232455,
+  "sha256": "be52cff10f160d619c28d3acbd471a9b2bffec8fb4f97273efeceaf43db52d9e",
+  "clasesAplicacion": 52,
+  "majorVersions": [
+    61
+  ],
+  "sinConfiguracionPrivada": true,
+  "rdlXsdValidos": 8,
+  "javascriptSintaxis": "PASS",
+  "servidorSSRS": "CONFIGURADO: http://localhost/ReportServer; ocho reportes publicados y PDF verificados"
+}

@@ -33,6 +33,7 @@ public class ProveedorServicio {
     }
 
     private void validar(Proveedor p) {
+        if (p == null) throw new IllegalArgumentException("Debe enviar los datos del registro");
         if (p.getCodigoProveedor() == null || p.getCodigoProveedor().isBlank())
             throw new IllegalArgumentException("El código de proveedor es obligatorio");
         if (p.getCodigoProveedor().length() > 20)

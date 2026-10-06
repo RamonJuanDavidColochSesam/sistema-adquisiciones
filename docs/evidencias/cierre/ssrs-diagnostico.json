@@ -1,0 +1,23 @@
+{
+  "fecha": "2026-10-06T00:29:38.6951491-06:00",
+  "servicio": "Running",
+  "baseCatalogoConfigurada": false,
+  "aplicaciones": [
+    {
+      "nombre": "ReportServerWebService",
+      "directorio": "",
+      "urls": [
+        null
+      ]
+    },
+    {
+      "nombre": "ReportServerWebApp",
+      "directorio": "",
+      "urls": [
+        null
+      ]
+    }
+  ],
+  "http": null,
+  "error": "Conexión rechazada en localhost:80; WSDL SOAP no accesible (Windows PowerShell 5.1, exit 1)."
+}

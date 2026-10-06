@@ -1,0 +1,38 @@
+<Window x:Class="GuateCompras.Desktop.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="GuateCompras · Gestión institucional" Width="1400" Height="900" MinWidth="1000" MinHeight="680" WindowStartupLocation="CenterScreen">
+ <Window.Resources><BooleanToVisibilityConverter x:Key="BoolVisibility"/></Window.Resources>
+ <Grid Background="#F4F7FA">
+  <Grid.ColumnDefinitions><ColumnDefinition Width="250"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+  <Border Background="{StaticResource Navy}">
+   <DockPanel Margin="20,28,15,20">
+    <StackPanel DockPanel.Dock="Top" Margin="8,0,0,28"><TextBlock Text="GuateCompras" Foreground="White" FontSize="24" FontWeight="SemiBold"/><TextBlock Text="ADQUISICIONES INSTITUCIONALES" Foreground="#91AFBE" FontSize="9" Margin="0,9,0,0"/><TextBlock Text="ESPACIO DE TRABAJO" Foreground="#82A5B7" FontSize="10" Margin="0,34,0,0"/></StackPanel>
+    <StackPanel DockPanel.Dock="Bottom" Margin="8,18,0,0"><TextBlock Text="Guatemala · Quetzales (GTQ)" Foreground="#AFC8D7" FontSize="10"/><TextBlock Text="Cliente de escritorio institucional" Foreground="#7FA2B4" FontSize="10" Margin="0,7,0,0"/></StackPanel>
+    <ListBox x:Name="ModuleList" ItemsSource="{Binding Modules}" SelectedItem="{Binding SelectedModule}" DisplayMemberPath="Label" Background="Transparent" BorderThickness="0" Foreground="#D4E3EC" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="Module_Changed">
+     <ListBox.ItemContainerStyle><Style TargetType="ListBoxItem"><Setter Property="Padding" Value="12,10"/><Setter Property="Margin" Value="0,2"/><Setter Property="FontSize" Value="13"/><Setter Property="HorizontalContentAlignment" Value="Stretch"/></Style></ListBox.ItemContainerStyle>
+    </ListBox>
+   </DockPanel>
+  </Border>
+  <Grid Grid.Column="1">
+   <Grid.RowDefinitions><RowDefinition Height="74"/><RowDefinition Height="*"/><RowDefinition Height="40"/></Grid.RowDefinitions>
+   <Border Background="White" BorderBrush="#E2E8EE" BorderThickness="0,0,0,1"><DockPanel Margin="32,0"><Button DockPanel.Dock="Right" Content="Cerrar sesión" Click="Logout_Click" Background="#EDF2F6" Foreground="#536D7D" VerticalAlignment="Center"/><TextBlock Text="{Binding Identity}" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,18,0" FontSize="12"/></DockPanel></Border>
+   <Grid Grid.Row="1" Margin="32">
+    <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+    <StackPanel Margin="0,0,0,24"><TextBlock Text="GUATECOMPRAS / OPERACIONES" Foreground="{StaticResource Teal}" FontSize="10" FontWeight="SemiBold"/><TextBlock Text="{Binding Title}" FontSize="29" FontWeight="SemiBold" Margin="0,9"/><TextBlock Text="Información real para gestionar y dar seguimiento a las compras." Foreground="#6C7D8D" FontSize="13"/></StackPanel>
+    <UniformGrid Grid.Row="1" Columns="4" Margin="0,0,0,22" Visibility="{Binding IsDashboard,Converter={StaticResource BoolVisibility}}">
+     <Border Background="White" BorderBrush="#E2E8EE" BorderThickness="1" CornerRadius="8" Padding="20" Margin="0,0,12,0"><StackPanel><TextBlock Text="Monto adjudicado" Foreground="#6C7D8D" FontSize="12"/><TextBlock Text="{Binding MoneyTotal}" FontSize="26" FontWeight="SemiBold" Margin="0,14,0,0"/></StackPanel></Border>
+     <Border Background="White" BorderBrush="#E2E8EE" BorderThickness="1" CornerRadius="8" Padding="20" Margin="0,0,12,0"><StackPanel><TextBlock Text="Órdenes abiertas" Foreground="#6C7D8D" FontSize="12"/><TextBlock Text="{Binding OpenOrders}" FontSize="28" FontWeight="SemiBold" Margin="0,14,0,0"/></StackPanel></Border>
+     <Border Background="White" BorderBrush="#E2E8EE" BorderThickness="1" CornerRadius="8" Padding="20" Margin="0,0,12,0"><StackPanel><TextBlock Text="Solicitudes" Foreground="#6C7D8D" FontSize="12"/><TextBlock Text="{Binding Requests}" FontSize="28" FontWeight="SemiBold" Margin="0,14,0,0"/></StackPanel></Border>
+     <Border Background="White" BorderBrush="#E2E8EE" BorderThickness="1" CornerRadius="8" Padding="20"><StackPanel><TextBlock Text="Adjudicaciones" Foreground="#6C7D8D" FontSize="12"/><TextBlock Text="{Binding Awards}" FontSize="28" FontWeight="SemiBold" Margin="0,14,0,0"/></StackPanel></Border>
+    </UniformGrid>
+    <DockPanel Grid.Row="2" Margin="0,0,0,12">
+     <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
+      <Button Content="Nuevo" Click="New_Click" IsEnabled="{Binding CanCreate}"/><Button Content="Editar" Click="Edit_Click" IsEnabled="{Binding CanEdit}"/><Button Content="Borrar / revertir" Click="Delete_Click" IsEnabled="{Binding CanDelete}" Background="#FFF0F1" Foreground="#AC313A"/><Button Content="Ver / consultar" Click="Detail_Click" Background="#EDF2F6" Foreground="#20364A"/>
+     </StackPanel>
+     <StackPanel Orientation="Horizontal"><TextBox Text="{Binding Search,UpdateSourceTrigger=PropertyChanged}" Width="200" Margin="0,4,4,4" ToolTip="Buscar en el módulo"/><Button Content="Buscar" Command="{Binding SearchCommand}" Background="#EDF2F6" Foreground="#20364A"/><Button Content="↻" Command="{Binding RefreshCommand}" ToolTip="Actualizar"/></StackPanel>
+    </DockPanel>
+    <DataGrid Grid.Row="3" x:Name="RecordsGrid" ItemsSource="{Binding Rows}" SelectionMode="Single" AutoGeneratingColumn="Grid_AutoGeneratingColumn" MouseDoubleClick="Grid_DoubleClick"/>
+    <DockPanel Grid.Row="4" Margin="0,14,0,0"><StackPanel DockPanel.Dock="Right" Orientation="Horizontal"><TextBlock Text="{Binding PageLabel}" VerticalAlignment="Center" Margin="0,0,12,0" Foreground="#6C7D8D" FontSize="11"/><Button Content="Anterior" Command="{Binding PreviousCommand}" Background="#EDF2F6" Foreground="#20364A"/><Button Content="Siguiente" Command="{Binding NextCommand}" Background="#EDF2F6" Foreground="#20364A"/></StackPanel><TextBlock Text="{Binding Status}" VerticalAlignment="Center" TextWrapping="Wrap" Foreground="#536D7D" FontSize="12"/></DockPanel>
+   </Grid>
+   <TextBlock Grid.Row="2" Text="Gestión de adquisiciones y proveedores · Proyecto académico · Guatemala" Foreground="#7B8D9B" FontSize="10" Margin="32,0" VerticalAlignment="Center"/>
+  </Grid>
+ </Grid>
+</Window>

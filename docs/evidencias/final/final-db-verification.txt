@@ -1,0 +1,44 @@
+[main] INFO com.zaxxer.hikari.HikariDataSource - GuateCompras-sqlserver - Starting...
+[main] INFO com.zaxxer.hikari.pool.HikariPool - GuateCompras-sqlserver - Added connection ConnectionID:1 ClientConnectionId: 6c1153d4-99cb-489d-ab93-6cc72c4933a1
+[main] INFO com.zaxxer.hikari.HikariDataSource - GuateCompras-sqlserver - Start completed.
+PASS sqlserver Rol=4
+PASS sqlserver Pedido=100
+PASS sqlserver Departamento=10
+PASS sqlserver Sucursal=5
+PASS sqlserver Usuario=5
+PASS sqlserver Proveedor=20
+PASS sqlserver Articulo=50
+PASS rechazo: precio no positivo
+PASS rechazo: oferta fuera de plazo
+PASS rechazo: pedido no asignado
+PASS rechazo: detalle incompatible
+PASS rechazo: oferta ganadora inmutable
+PASS rechazo: pedido con ofertas no reasignable
+PASS rechazo: resoluci�n anterior a ofertas
+PASS rechazo: padre no invalida plazo de ofertas
+PASS rechazo: cat�logo conserva historial
+PASS sqlserver vista, m�nimos, integridad y rollback
+[main] INFO com.zaxxer.hikari.HikariDataSource - GuateCompras-postgres - Starting...
+[main] INFO com.zaxxer.hikari.pool.HikariPool - GuateCompras-postgres - Added connection org.postgresql.jdbc.PgConnection@43f02ef2
+[main] INFO com.zaxxer.hikari.HikariDataSource - GuateCompras-postgres - Start completed.
+PASS postgres Rol=4
+PASS postgres Pedido=100
+PASS postgres Departamento=10
+PASS postgres Sucursal=5
+PASS postgres Usuario=4
+PASS postgres Proveedor=20
+PASS postgres Articulo=50
+PASS rechazo: precio no positivo
+PASS rechazo: oferta fuera de plazo
+PASS rechazo: pedido no asignado
+PASS rechazo: detalle incompatible
+PASS rechazo: oferta ganadora inmutable
+PASS rechazo: pedido con ofertas no reasignable
+PASS rechazo: resoluci�n anterior a ofertas
+PASS rechazo: padre no invalida plazo de ofertas
+PASS rechazo: cat�logo conserva historial
+PASS postgres vista, m�nimos, integridad y rollback
+[main] INFO com.zaxxer.hikari.HikariDataSource - GuateCompras-sqlserver - Shutdown initiated...
+[main] INFO com.zaxxer.hikari.HikariDataSource - GuateCompras-sqlserver - Shutdown completed.
+[main] INFO com.zaxxer.hikari.HikariDataSource - GuateCompras-postgres - Shutdown initiated...
+[main] INFO com.zaxxer.hikari.HikariDataSource - GuateCompras-postgres - Shutdown completed.

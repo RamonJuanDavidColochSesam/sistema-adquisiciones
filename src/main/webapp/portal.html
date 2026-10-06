@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GuateCompras · Gestión institucional</title>
+  <link rel="stylesheet" href="css/portal.css"><script src="js/api.js"></script>
+  <script src="js/portal.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="portal.html"><span class="brand-icon">G</span><span>GuateCompras<small>ADQUISICIONES INSTITUCIONALES</small></span></a>
+    <div class="nav-caption">ESPACIO DE TRABAJO</div><nav id="navigation" aria-label="Módulos"></nav>
+    <div class="sidebar-footer"><span class="live-dot"></span> Datos de la institución<br><small>Guatemala · Quetzales (GTQ)</small></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><button id="menu-toggle" class="icon-button" aria-label="Mostrar menú">☰</button><span id="breadcrumb">Resumen institucional</span><div class="identity"><span id="identity"></span><button id="logout" class="quiet">Cerrar sesión</button></div></header>
+    <main>
+      <div class="page-heading"><div><div class="eyebrow">GUATECOMPRAS / OPERACIONES</div><h1 id="title">Resumen institucional</h1><p id="subtitle">Información para decidir y dar seguimiento a las compras.</p></div><span class="date-pill" id="today"></span></div>
+      <div id="notice" role="status" aria-live="polite" hidden></div>
+      <section id="content" aria-busy="false"></section>
+    </main>
+    <footer>Gestión de adquisiciones y proveedores <span>Proyecto académico · Guatemala</span></footer>
+  </div>
+  <dialog id="editor"><form id="editor-form"><div class="dialog-heading"><div><div class="eyebrow">GESTIÓN INSTITUCIONAL</div><h2 id="editor-title"></h2></div><button type="button" id="close-editor" class="icon-button" aria-label="Cerrar">×</button></div><div id="editor-error" role="alert" hidden></div><div id="editor-fields" class="form-grid"></div><div class="dialog-actions"><button type="button" id="cancel-editor" class="secondary">Cancelar</button><button type="submit" id="save-editor">Guardar cambios</button></div></form></dialog>
+</body>
+</html>

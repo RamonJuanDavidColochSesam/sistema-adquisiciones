@@ -59,6 +59,7 @@ public class DepartamentoRecurso {
     @Produces(MediaType.APPLICATION_JSON)
     public Response actualizar(@PathParam("id") int id, Departamento departamento) {
         try {
+            if (departamento == null) throw new IllegalArgumentException("Se requiere un cuerpo JSON");
             departamento.setIdDepartamento(id);
             if (!servicio.actualizar(departamento)) return notFound();
             return Response.ok(departamento).build();
@@ -101,6 +102,6 @@ public class DepartamentoRecurso {
     }
 
     private Response error(Exception e) {
-        return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(Map.of("error", e.getMessage())).build();
+        return new ErroresApi().toResponse(e);
     }
 }

@@ -1,0 +1,13 @@
+{
+  "war": "C:\\Users\\dinae\\Desktop\\ProyectoBD\\sistema-adquisiciones\\target\\sistema-adquisiciones.war",
+  "bytes": 9232009,
+  "sha256": "658fb73765927cac66259d4e78eef5c3fa56768ca628e59315baa4faa7633a96",
+  "clasesAplicacion": 52,
+  "majorVersions": [
+    61
+  ],
+  "sinConfiguracionPrivada": true,
+  "rdlXsdValidos": 8,
+  "javascriptSintaxis": "PASS",
+  "servidorSSRS": "NO CONFIGURADO"
+}

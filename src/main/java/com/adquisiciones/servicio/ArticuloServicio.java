@@ -33,6 +33,7 @@ public class ArticuloServicio {
     }
 
     private void validar(Articulo a) {
+        if (a == null) throw new IllegalArgumentException("Debe enviar los datos del registro");
         if (a.getCodigoArticulo() == null || a.getCodigoArticulo().isBlank())
             throw new IllegalArgumentException("El código de artículo es obligatorio");
         if (a.getCodigoArticulo().length() > 20)
