@@ -10,7 +10,7 @@
       "default": true
     }
   ],
-  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.configuration.updateBuildConfiguration": "interactive",
   "maven.executable.path": "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\work\\tooling\\apache-maven-3.9.9\\bin\\mvn.cmd",
   "maven.terminal.customEnv": [
     {

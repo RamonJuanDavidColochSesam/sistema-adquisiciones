@@ -2,12 +2,11 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "GuateCompras: portal web (Chrome)",
-      "type": "chrome",
+      "name": "GuateCompras: portal web (Edge)",
+      "type": "msedge",
       "request": "launch",
       "url": "http://127.0.0.1:18080/sistema-adquisiciones/portal.html",
-      "webRoot": "${workspaceFolder}/src/main/webapp",
-      "runtimeExecutable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      "webRoot": "${workspaceFolder}/src/main/webapp"
     },
     {
       "name": "GuateCompras: depurar WPF",

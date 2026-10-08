@@ -6,10 +6,10 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>25</maven.compiler.source>
+        <maven.compiler.target>25</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.release>17</maven.compiler.release>
+        <maven.compiler.release>25</maven.compiler.release>
     </properties>
     <dependencies>
         <dependency>
@@ -154,7 +154,7 @@
                                     <target>
                                         <java jar="${project.build.directory}/compiler/ecj.jar" fork="true" failonerror="true">
                                             <arg value="--release" />
-                                            <arg value="17" />
+                                            <arg value="25" />
                                             <arg value="-encoding" />
                                             <arg value="UTF-8" />
                                             <arg value="-classpath" />
