@@ -7,9 +7,12 @@ import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.*;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Path("/login") @Produces(MediaType.APPLICATION_JSON)
 public final class LoginRecurso {
+ private static final Logger LOGGER=LoggerFactory.getLogger(LoginRecurso.class);
  private final LoginServicio loginServicio=new LoginServicio();
  private static final Map<String,Attempt> ATTEMPTS=new ConcurrentHashMap<>();
  private record Attempt(long started,int count){}
@@ -30,7 +33,13 @@ public final class LoginRecurso {
    session.setAttribute("idUsuario",user.getIdUsuario());session.setAttribute("idRol",user.getIdRol());session.setAttribute("rol",user.getNombreRol());session.setAttribute("idProveedor",user.getIdProveedor());
    session.setAttribute("csrf",UUID.randomUUID().toString());ATTEMPTS.remove(ip);
    return me(request);
-  }catch(Exception e){return Response.status(503).entity(Map.of("error","No se pudo iniciar sesión")).build();}
+  }catch(IllegalStateException e){
+   LOGGER.error("Base de datos no disponible al autenticar a '{}'", username, e);
+   return Response.status(503).entity(Map.of("error", e.getMessage()==null?"Configuración de base de datos no disponible":e.getMessage())).build();
+  }catch(Exception e){
+   LOGGER.error("Error inesperado al autenticar a '{}'", username, e);
+   return Response.status(503).entity(Map.of("error","No se pudo iniciar sesión")).build();
+  }
  }
  @GET @Path("/me")
  public Response me(@Context HttpServletRequest request)throws java.sql.SQLException {

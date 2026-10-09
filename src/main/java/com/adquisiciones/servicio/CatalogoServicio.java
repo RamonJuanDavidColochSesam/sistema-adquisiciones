@@ -32,7 +32,7 @@ public final class CatalogoServicio {
   if(m.nombre().equals("ofertas"))columns+=",CASE WHEN EXISTS(SELECT 1 FROM DetalleAdjudicacion d WHERE d.id_oferta=Oferta.id_oferta) THEN 'Adjudicada' WHEN EXISTS(SELECT 1 FROM Pedido p JOIN OrdenCompra o ON o.id_orden=p.id_orden WHERE p.id_pedido=Oferta.id_pedido AND o.fecha_limite_oferta<CAST(GETDATE() AS DATE)) THEN 'Vencida' ELSE 'Vigente' END AS estado_oferta";
   if(m.nombre().equals("departamentos"))columns+=",codigo_sucursal";
   if(m.nombre().equals("proveedorarticulos"))columns+=",proveedor,articulo";
-  if(m.nombre().equals("pedidos"))columns+=",departamento,sucursal,articulo";
+  if(m.nombre().equals("pedidos"))columns+=",departamento,sucursal,articulo,CASE WHEN EXISTS(SELECT 1 FROM vw_OrdenesAbiertas ab WHERE ab.id_orden=Pedido.id_orden) THEN 'Sí' ELSE 'No' END AS disponible_oferta";
   return columns;
  }
  private static String readSource(Modulo m){
@@ -51,13 +51,19 @@ public final class CatalogoServicio {
   var rows=SqlDAO.query(c,"SELECT "+selectColumns(m)+" FROM "+readSource(m)+" WHERE "+where,params.toArray());
   if(rows.isEmpty())throw new NotFoundException();var row=rows.get(0);key(m,row);return row;
  }
- public Map<String,Object> guardar(Modulo m,String key,Map<String,Object> body,Map<String,Object> user)throws SQLException {
+ /** Fila guardada e indicador de si se insertó (true) o solo se actualizó (false). */
+ public record Guardado(Map<String,Object> fila,boolean creado) {}
+ public Guardado guardar(Modulo m,String key,Map<String,Object> body,Map<String,Object> user)throws SQLException {
   boolean creating=key==null;var row=validar(m,body,creating,user);
   try(var c=ConexionManager.getInstancia().getConexionSqlServer()){
    c.setAutoCommit(false);c.setTransactionIsolation(Connection.TRANSACTION_SERIALIZABLE);
    try {
     Map<String,Object> original=creating?null:obtener(c,m,key,user);
     reglas(c,m,row,original,user);
+    if(creating&&m.nombre().equals("ofertas")){
+     long previa=ofertaPrevia(c,row); // un proveedor conserva una sola oferta por pedido
+     if(previa>0){key=String.valueOf(previa);original=obtener(c,m,key,user);creating=false;} // se actualiza la existente en lugar de duplicarla
+    }
     if(creating){
      if(m.identidad()){int id=SqlDAO.insert(c,m.tabla(),m.claves().get(0),row);key=String.valueOf(id);}
      else {SqlDAO.execute(c,"INSERT INTO "+m.tabla()+"("+String.join(",",row.keySet())+") VALUES("+String.join(",",Collections.nCopies(row.size(),"?"))+")",row.values().toArray());key=String.join("~",m.claves().stream().map(k->String.valueOf(row.get(k))).toList());}
@@ -70,7 +76,7 @@ public final class CatalogoServicio {
      SqlDAO.execute(c,"UPDATE "+m.tabla()+" SET "+String.join(",",row.keySet().stream().map(k->k+"=?").toList())+" WHERE "+where,params.toArray());
     }
     SqlDAO.audit(c,(Integer)user.get("idUsuario"),creating?"CREAR":"ACTUALIZAR",m.tabla(),key);
-    var result=obtener(c,m,key,user);c.commit();return result;
+    var result=obtener(c,m,key,user);c.commit();return new Guardado(result,creating);
    }catch(Exception e){c.rollback();throw e;}
   }
  }
@@ -135,7 +141,9 @@ public final class CatalogoServicio {
    case "usuarios"->{
     var role=SqlDAO.query(c,"SELECT nombre_rol FROM Rol WHERE id_rol=?",row.get("id_rol"));
     if(role.isEmpty())throw new IllegalArgumentException("Rol no válido");
-    if(role.get(0).get("nombre_rol").equals("AdminProveedor")&&row.get("id_proveedor")==null)throw new IllegalArgumentException("El administrador de proveedor requiere proveedor asociado");
+    boolean adminProveedor="AdminProveedor".equals(role.get(0).get("nombre_rol"));
+    if(adminProveedor&&row.get("id_proveedor")==null)throw new IllegalArgumentException("El administrador de proveedor requiere proveedor asociado");
+    if(!adminProveedor&&row.get("id_proveedor")!=null)throw new IllegalArgumentException("Sólo el administrador de proveedor puede llevar proveedor asociado");
     if(original!=null){
      if(Objects.equals(original.get("id_usuario"),user.get("idUsuario"))&&(!"Activo".equals(row.get("estado"))||!Objects.equals(original.get("id_rol"),row.get("id_rol"))))throw new IllegalArgumentException("No puede desactivar su cuenta ni cambiar su propio rol");
      protegerAdmin(c,original,row);
@@ -168,6 +176,9 @@ public final class CatalogoServicio {
  private static void ofertaModificable(Connection c,Map<String,Object> row)throws SQLException {
   if(SqlDAO.scalar(c,"SELECT COUNT(*) FROM Pedido p JOIN OrdenCompra o ON o.id_orden=p.id_orden WHERE p.id_pedido=? AND o.fecha_limite_oferta>=CAST(GETDATE() AS DATE) AND o.fecha_creacion<=CAST(GETDATE() AS DATE)",row.get("id_pedido"))!=1)throw new IllegalArgumentException("La orden no está abierta para recibir cambios de ofertas");
   if(SqlDAO.scalar(c,"SELECT COUNT(*) FROM Pedido p JOIN Adjudicacion a ON a.id_orden=p.id_orden WHERE p.id_pedido=?",row.get("id_pedido"))>0)throw new IllegalArgumentException("La orden ya está adjudicada; sus ofertas se conservan");
+ }
+ private static long ofertaPrevia(Connection c,Map<String,Object> row)throws SQLException {
+  return SqlDAO.scalar(c,"SELECT ISNULL(MAX(id_oferta),0) FROM Oferta WHERE id_proveedor=? AND id_pedido=?",row.get("id_proveedor"),row.get("id_pedido"));
  }
  private static String scope(Modulo m,Map<String,Object> user,List<Object> params){
   if(!"AdminProveedor".equals(user.get("rol")))return "1=1";

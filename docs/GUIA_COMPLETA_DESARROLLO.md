@@ -231,7 +231,7 @@ Ejemplo real en [`src/main/java/com/adquisiciones/recurso/GestionRecurso.java`](
 @Path("/gestion/{modulo}") @Produces(MediaType.APPLICATION_JSON)
 ```
 
-Esto no permite cualquier tabla enviada por el cliente. `Modulo.obtener(name)` busca un esquema estático autorizado; CatalogoServicio valida campos y usa SqlDAO. `@POST` devuelve 201 con la fila creada. `@PUT /{key}` sustituye los campos editables del esquema; no es un PATCH parcial. `@DELETE` devuelve 204 en este recorrido, mientras algunas rutas originales devuelven 200 con mensaje.
+Esto no permite cualquier tabla enviada por el cliente. `Modulo.obtener(name)` busca un esquema estático autorizado; CatalogoServicio valida campos y usa SqlDAO. `@POST` devuelve 201 con la fila creada; cuando el registro ya existía (upsert de ofertas por proveedor y pedido) devuelve 200 con la fila actualizada. `@PUT /{key}` sustituye los campos editables del esquema; no es un PATCH parcial. `@DELETE` devuelve 204 en este recorrido, mientras algunas rutas originales devuelven 200 con mensaje.
 
 En el recorrido específico, `POST /api/proveedores` recibe Proveedor, ProveedorServicio valida longitudes y obligatoriedad, y ProveedorDAO ejecuta INSERT con PreparedStatement. En el recorrido actual del portal, `POST /api/gestion/proveedores` recibe campos snake_case y agrega auditoría dentro de una transacción. En compras, OrdenRecurso y AdjudicacionRecurso delegan una operación económica completa en AdquisicionServicio, con una sola conexión y commit/rollback.
 

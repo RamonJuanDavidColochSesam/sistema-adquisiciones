@@ -4,27 +4,20 @@
     {
       "label": "GuateCompras: verificar JavaScript",
       "type": "process",
-      "command": "C:\\Users\\dinae\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
-      "args": [
-        "${workspaceFolder}/.vscode/check-js.cjs"
-      ],
+      "command": "node",
+      "args": ["${workspaceFolder}/.vscode/check-js.cjs"],
       "problemMatcher": []
     },
     {
       "label": "GuateCompras: compilar backend",
       "type": "process",
-      "command": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "command": "powershell.exe",
       "args": [
         "-NoProfile",
         "-ExecutionPolicy",
         "Bypass",
         "-File",
-        "${workspaceFolder}/scripts/build.ps1",
-        "-Maven",
-        "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\work\\tooling\\apache-maven-3.9.9\\bin\\mvn.cmd",
-        "-RestrictedWindows",
-        "-Repository",
-        "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\work\\maven-repository"
+        "${workspaceFolder}/scripts/compilar_backend.ps1"
       ],
       "options": {
         "cwd": "${workspaceFolder}"
@@ -34,32 +27,40 @@
     {
       "label": "GuateCompras: iniciar backend",
       "type": "process",
-      "command": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "command": "powershell.exe",
       "args": [
         "-NoProfile",
         "-ExecutionPolicy",
         "Bypass",
         "-File",
         "${workspaceFolder}/scripts/iniciar_tomcat.ps1",
-        "-TomcatHome",
-        "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\work\\tooling\\apache-tomcat-10.1.60",
-        "-Java",
-        "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\work\\tooling\\jdk17\\jdk-17.0.20.1+1\\bin\\java.exe"
+        "-Compilar"
       ],
       "options": {
         "cwd": "${workspaceFolder}"
       },
-      "problemMatcher": [],
       "isBackground": true,
+      "problemMatcher": {
+        "owner": "tomcat",
+        "pattern": {
+          "regexp": "^###SIN-PROBLEMAS###"
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": ".",
+          "endsPattern": "Server startup in|SERVIDOR-NO-INICIADO"
+        }
+      },
       "presentation": {
         "reveal": "always",
-        "panel": "dedicated"
+        "panel": "dedicated",
+        "clear": true
       }
     },
     {
       "label": "GuateCompras: compilar WPF",
       "type": "process",
-      "command": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "command": "powershell.exe",
       "args": [
         "-NoProfile",
         "-ExecutionPolicy",
@@ -78,7 +79,7 @@
     {
       "label": "GuateCompras: verificar bases",
       "type": "process",
-      "command": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "command": "powershell.exe",
       "args": [
         "-NoProfile",
         "-ExecutionPolicy",
@@ -86,9 +87,7 @@
         "-File",
         "${workspaceFolder}/scripts/bases.ps1",
         "-Accion",
-        "Verificar",
-        "-Java",
-        "C:\\Users\\dinae\\Documents\\Codex\\2026-10-05\\files-pasted-by-the-user-misi\\work\\tooling\\jdk17\\jdk-17.0.20.1+1\\bin\\java.exe"
+        "Verificar"
       ],
       "options": {
         "cwd": "${workspaceFolder}"

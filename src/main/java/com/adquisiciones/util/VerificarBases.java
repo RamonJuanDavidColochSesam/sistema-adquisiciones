@@ -14,8 +14,12 @@ public final class VerificarBases {
       long n=count(c,"SELECT COUNT(*) FROM "+e.getKey());
       require(n>=e.getValue(),db+" mínimo "+e.getKey());System.out.println("PASS "+db+" "+e.getKey()+"="+n);
      }
-     require(count(c,"SELECT COUNT(*) FROM vw_OrdenesAbiertas")>=10,db+" vista órdenes abiertas");
-     require(count(c,"SELECT COUNT(*) FROM Pedido WHERE id_orden IS NULL")>=40,db+" pedidos sin asignación");
+     // La vista refleja el uso real (fechas vencidas y adjudicaciones), así que se
+     // comprueba que coincida con su definición en vez de exigir un conteo fijo.
+     long vista=count(c,"SELECT COUNT(*) FROM vw_OrdenesAbiertas");
+     long esperada=count(c,"SELECT COUNT(*) FROM OrdenCompra o WHERE NOT EXISTS(SELECT 1 FROM Adjudicacion a WHERE a.id_orden=o.id_orden) AND o.fecha_creacion<=CURRENT_DATE AND o.fecha_limite_oferta>=CURRENT_DATE");
+     require(vista==esperada,db+" vista órdenes abiertas");System.out.println("PASS "+db+" vw_OrdenesAbiertas="+vista);
+     require(count(c,"SELECT COUNT(*) FROM Oferta f JOIN Pedido p ON p.id_pedido=f.id_pedido WHERE p.id_orden IS NULL")==0,db+" ofertas sólo en pedidos con orden");
      c.setAutoCommit(false);
      try {
       long before=count(c,"SELECT COUNT(*) FROM Oferta");

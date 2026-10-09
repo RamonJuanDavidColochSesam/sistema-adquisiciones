@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="js/api.js"></script>
+<script src="js/api.js?v=20261009"></script>
 <meta charset="UTF-8">
 <title>Artículos del proveedor</title>
 <style>
@@ -43,7 +43,7 @@
 
     async function cargarProveedor() {
       const respuesta = await fetch(`api/proveedores/${idProveedor}`, { credentials: 'same-origin' });
-      if (respuesta.status === 401) { window.location.href = 'login.html'; return; }
+      if (respuesta.status === 401) { window.location.href = 'login.html?v=20261009'; return; }
       if (!respuesta.ok) { window.location.href = 'proveedores.html'; return; }
       const proveedor = await respuesta.json();
       document.getElementById('nombreProveedor').textContent = `${proveedor.codigoProveedor} - ${proveedor.nombreComercial}`;
@@ -51,7 +51,7 @@
 
     async function cargarArticulosEnSelect() {
       const respuesta = await fetch('api/articulos', { credentials: 'same-origin' });
-      if (respuesta.status === 401) { window.location.href = 'login.html'; return; }
+      if (respuesta.status === 401) { window.location.href = 'login.html?v=20261009'; return; }
       const articulos = await respuesta.json();
       const select = document.getElementById('idArticulo');
       select.innerHTML = '<option value="">-- Seleccione artículo --</option>';
@@ -65,7 +65,7 @@
 
     async function cargarAsociaciones() {
       const respuesta = await fetch(`api/proveedores/${idProveedor}/articulos`, { credentials: 'same-origin' });
-      if (respuesta.status === 401) { window.location.href = 'login.html'; return; }
+      if (respuesta.status === 401) { window.location.href = 'login.html?v=20261009'; return; }
       asociaciones = await respuesta.json();
       const tbody = document.getElementById('tablaArticulosProveedor');
       tbody.innerHTML = '';

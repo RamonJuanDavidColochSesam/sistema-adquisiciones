@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="js/api.js"></script>
+<script src="js/api.js?v=20261009"></script>
 <meta charset="UTF-8">
 <title>Proveedores</title>
 <style>
@@ -44,7 +44,7 @@
 
     async function cargarProveedores() {
       const respuesta = await fetch('api/proveedores', { credentials: 'same-origin' });
-      if (respuesta.status === 401) { window.location.href = 'login.html'; return; }
+      if (respuesta.status === 401) { window.location.href = 'login.html?v=20261009'; return; }
       proveedores = await respuesta.json();
       const tbody = document.getElementById('tablaProveedores');
       tbody.innerHTML = '';

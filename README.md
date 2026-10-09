@@ -25,6 +25,14 @@ Java17, Maven, Tomcat10.1, SQL Server/PostgreSQL y .NET Desktop Runtime10 en Win
 
 Abrir http://127.0.0.1:18080/sistema-adquisiciones/ y mantener Tomcat activo. Ejecutar EXE Release WPF o abrir desktop/GuateCompras.sln en Visual Studio. URL de API editable en login. Para restricciones del sandbox Windows, build Java -RestrictedWindows y WPF -Isolated. [Manual completo](docs/MANUAL_INSTALACION.md).
 
+### Ejecución local en este equipo (VS Code y Eclipse)
+
+En este equipo Tomcat corre en el **puerto 8080** (no 18080) y no hay Maven instalado, así que la compilación local usa `scripts/compilar_backend.ps1` (javac + librerías del repositorio `~/.m2`).
+
+- **VS Code:** F5 con `GuateCompras: portal web (Edge)` ejecuta la tarea `GuateCompras: iniciar backend` (compila, crea `target/tomcat-base` y arranca Tomcat) y abre el navegador en `http://127.0.0.1:8080/sistema-adquisiciones/portal.html`. Si el servidor ya está corriendo, use la configuración `GuateCompras: portal web (servidor ya corriendo)`. Para detenerlo: panel de Tareas → detener tarea.
+- **Eclipse:** servidor `apache-tomcat-10.1.36 at localhost` (mismo puerto 8080); `ConexionManager` localiza `config/local-db.properties` aunque el directorio de trabajo del servidor no sea el del proyecto.
+- Tareas útiles: `GuateCompras: compilar backend`, `GuateCompras: verificar bases`, `GuateCompras: verificar JavaScript`.
+
 ## Bases y usuarios de prueba
 
 DDL SQL Server: schema.sql; PostgreSQL: db/schema_postgres.sql. Migraciones V001–V004 por motor. Semilla idempotente, mínimos 5/10/50/20/100. Usuarios admin, gestor, proveedor y auditor; contraseñas aleatorias en config/demo-access.properties, privado/excluido. No se incluyen claves reales en README o paquetes.
