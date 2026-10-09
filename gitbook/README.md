@@ -4,7 +4,7 @@ Gestión institucional de adquisiciones · Base de Datos I · UMG Salamá.
 
 Web y WPF comparten backend Java/Jersey; SQL Server opera compras y PostgreSQL tiene modelo/verificación independiente. Esta documentación explica ejecución, uso y defensa con evidencia.
 
-> **6 de octubre de 2026:** aplicación y pruebas locales comprobadas. SSRS instalado, catálogo/URLs y ocho PDF pendientes. GitBook preparado, sin sincronización; entrega Sonat no realizada.
+> **9 de octubre de 2026:** aplicación y pruebas locales comprobadas. SSRS con catálogo/URLs y ocho informes publicados y ocho PDF reales verificados ([evidencia local](assets/evidencias/cierre/ssrs/local-20261009.txt)). GitBook preparado, sin sincronización; entrega Sonat no realizada.
 
 ## Rutas de lectura
 

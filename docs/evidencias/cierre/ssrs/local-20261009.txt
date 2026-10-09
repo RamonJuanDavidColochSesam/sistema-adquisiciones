@@ -1,0 +1,66 @@
+EVIDENCIA SSRS - equipo local (BMO), 2026-10-09 14:32:50
+Sistema: Microsoft Windows 11 Home | Usuario: BMO\Coloc
+
+1) INSTALACION
+   Producto: Microsoft SQL Server Reporting Services 16.0.9760.42787 (edicion Developer, modo Native)
+   Instalador: SQLServerReportingServices.exe 137587528 bytes, firma Authenticode valida de Microsoft Corporation
+   Servicio: SQLServerReportingServices [Running]
+   Catalogo: bases ReportServer y ReportServerTempDB en el SQL Server local; GuateCompras sin tocar
+   GuateCompras: pedidos=108 ofertas=190 usuarios=7 ofertas_sin_orden=0
+
+2) URLS (credenciales Windows)
+   http://localhost/ReportServer/ReportService2010.asmx?wsdl -> HTTP 200
+   http://localhost/Reports -> HTTP 200
+
+3) PUBLICACION (scripts/publicar_ssrs.ps1)
+   / (tipo 1, raiz)
+   /68f0607b-9378-4bbb-9e70-4da3d7d66838 (tipo 1)
+   /GuateCompras (tipo 1)
+   /GuateCompras/01_HistorialCompra (tipo 2)
+   /GuateCompras/02_TopProveedores (tipo 2)
+   /GuateCompras/03_ComparacionOfertas (tipo 2)
+   /GuateCompras/04_PedidosSinAsignar (tipo 2)
+   /GuateCompras/05_OrdenesAbiertas (tipo 2)
+   /GuateCompras/06_GastoDepartamento (tipo 2)
+   /GuateCompras/07_PromedioAdjudicacion (tipo 2)
+   /GuateCompras/08_EvolucionPrecios (tipo 2)
+   /GuateCompras/GuateComprasSQL (tipo 5)
+
+4) RENDERIZADO (scripts/verificar_ssrs.ps1 -IdOrden 11 -Desde 2025-10-09 -Hasta 2026-10-09) salida reports/evidencia
+   01_HistorialCompra.pdf  bytes=193990  sha256=C57B9AB6487CA281742F8698570ADDDA412D179F3346812F47C76DEE429189D7
+   02_TopProveedores.pdf  bytes=177877  sha256=C1AE6EF905757C72AB4900615A54071EDF2A6B5E2D4DE0C2C298580C26999597
+   03_ComparacionOfertas.pdf  bytes=181247  sha256=387C464B3BAAF1BF108A9DBEA00D885908725E5DA2ACBA64838454796167FCB3
+   04_PedidosSinAsignar.pdf  bytes=193943  sha256=B3BFECD2C7FFE3D9C93E6E2D050BA9527E7D1E40C370579EF701FA1971E211B0
+   05_OrdenesAbiertas.pdf  bytes=178466  sha256=CE194A32DB032015C435C8BF196193B7B88E1EE4AF864903F06CC8EB17EA9BCD
+   06_GastoDepartamento.pdf  bytes=176455  sha256=DAE06868A077653ED7F559D63809114873394A851BB1C388EED63018685F545E
+   07_PromedioAdjudicacion.pdf  bytes=164592  sha256=2678EA13CF8EB93E38DAE2FBE772167B10F85404CCB75DC60FF71950FA4C8988
+   08_EvolucionPrecios.pdf  bytes=227438  sha256=9C7A91C3800A39056D17B89866D65EEF263F3B716447B15F2BFC7F8E4F579513
+
+5) CONTENIDO (pdfplumber 0.11.10)
+   01_HistorialCompra.pdf: paginas=3 caracteres=4428 lineas_no_vacias=81
+       muestra: Codigo articulo Articulo Proveedor Fecha resolucion Cantidad final Precio acordado Monto | ART-041 Alcohol desinfectante galón Limpieza Integral del Valle 10/09/2026 00:00:00 10 78.00 780.00 | ART-041
+   02_TopProveedores.pdf: paginas=1 caracteres=306 lineas_no_vacias=7
+       muestra: Codigo proveedor Proveedor Monto adjudicado Ordenes | PRV-005 Tecnología Maya Institucional 26290.00 2 | PRV-009 Mobiliario Los Pinos 15070.00 2
+   03_ComparacionOfertas.pdf: paginas=1 caracteres=997 lineas_no_vacias=22
+       muestra: Id pedido Articulo Cantidad Proveedor Precio unitario Fecha oferta Ganadora Cantidad final Precio acordado | 31 Marcador de pizarra 10 Papelería Valle 12.00 2/10/2026 00:00:00 | azul Central
+   04_PedidosSinAsignar.pdf: paginas=3 caracteres=3836 lineas_no_vacias=64
+       muestra: Id pedido Codigo sucursal Departamento Articulo Cantidad Fecha solicitud Fecha necesaria | 63 GC-002 Administración Caja bolígrafos azules 12 7 4/10/2026 00:00:00 22/10/2026 00:00:00 | unidades
+   05_OrdenesAbiertas.pdf: paginas=1 caracteres=926 lineas_no_vacias=19
+       muestra: Id orden Descripcion Fecha creacion Fecha limite oferta Tipo Subtipo | 11 OC-2026-011 - Abastecimiento 30/09/2026 00:00:00 17/10/2026 00:00:00 Chica Normal | de papelería
+   06_GastoDepartamento.pdf: paginas=1 caracteres=451 lineas_no_vacias=12
+       muestra: Codigo sucursal Ciudad Departamento Gasto | GC-001 Guatemala Administración 9120.00 | GC-001 Guatemala Operaciones 8870.00
+   07_PromedioAdjudicacion.pdf: paginas=1 caracteres=82 lineas_no_vacias=3
+       muestra: Ordenes adjudicadas Promedio dias | 15 8.600000
+   08_EvolucionPrecios.pdf: paginas=11 caracteres=18259 lineas_no_vacias=239
+       muestra: Codigo articulo Articulo Proveedor Fecha oferta Precio unitario Id orden | ART-041 Alcohol desinfectante galón Distribuidora Limpieza La Ceiba 2/09/2026 00:00:00 83.46 4 | ART-041 Alcohol desinfectant
+
+6) CRUCES CON SQL SERVER (mismos parametros)
+   Informe 07 -> SQL: ordenes=15 promedio_dias=8.600000 (PDF: 15 / 8.6) - coincide
+   Informe 02 -> SQL: PRV-005 26290.00 (2), PRV-009 15070.00 (2), PRV-013 9050.00 (3), PRV-001 8255.00 (5), PRV-017 6930.00 (3) - coincide con el PDF
+
+7) INTEGRACION DE LA APLICACION
+   GUATECOMPRAS_SSRS_URL (entorno de usuario) = http://localhost/ReportServer
+   GET /api/reportes -> ssrsConfigurado=true, ssrsUrl=http://localhost/ReportServer, informes=8
+   Boton 'Abrir SSRS' abre: http://localhost/ReportServer?/GuateCompras/01_HistorialCompra&rs:Command=Render&Articulo=0&Desde=2025-10-09&Hasta=2026-10-09
+   Esa URL responde HTTP 200 con el Report Viewer completo (83765 bytes) usando credenciales Windows.
+   Nota: el navegador embebido de la sesion de automatizacion no envia credenciales NTLM y recibe 401; en el navegador normal del equipo aplica la autenticacion Windows integrada.

@@ -39,7 +39,7 @@ DDL SQL Server: schema.sql; PostgreSQL: db/schema_postgres.sql. Migraciones V001
 
 ## Reportes y WPF
 
-Ocho consultas en db/queries y API /reportes; CSV WPF. RDL en reports/ssrs. SSRS instalado, catálogo/URLs, publicación y ocho PDF pendientes. [Inventario](docs/SSRS_INVENTARIO.md), [publicación/aceptación](docs/REPORTES_SSRS.md). Integración web/WPF requiere GUATECOMPRAS_SSRS_URL y permisos Windows efectivos.
+Ocho consultas en db/queries y API /reportes; CSV WPF. RDL en reports/ssrs. SSRS 2022 instalado y configurado por script (scripts/instalar_ssrs.ps1); ocho informes publicados y ocho PDF reales verificados el 9 de octubre de 2026. [Inventario](docs/SSRS_INVENTARIO.md), [publicación/aceptación](docs/REPORTES_SSRS.md). Integración web/WPF usa GUATECOMPRAS_SSRS_URL y autenticación Windows efectivos.
 
 ## Pruebas y calidad
 
@@ -69,4 +69,4 @@ gitbook/          Documentación web/activos para Git Sync
 config/           Ejemplos públicos; privados ignorados
 ```
 
-[75 requisitos](docs/MATRIZ_REQUISITOS.md) · [Evidencia](docs/EVIDENCIA_VERIFICACION.md) · [Auditoría](docs/AUDITORIA_FINAL.md). Cierre externo incompleto: SSRS real, GitBook publicado y Sonat pendientes. No se declara 100%; paquetes sin credenciales ni herramientas de trabajo.
+[75 requisitos](docs/MATRIZ_REQUISITOS.md) · [Evidencia](docs/EVIDENCIA_VERIFICACION.md) · [Auditoría](docs/AUDITORIA_FINAL.md). Cierre externo incompleto: GitBook publicado y Sonat pendientes. No se declara 100%; paquetes sin credenciales ni herramientas de trabajo.

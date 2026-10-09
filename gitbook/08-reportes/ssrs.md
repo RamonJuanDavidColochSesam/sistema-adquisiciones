@@ -3,6 +3,8 @@
 ## Publicar y verificar los ocho informes SSRS
 
 > **Estado real, 6 de octubre de 2026:** SSRS configurado; ocho RDL publicados y ocho PDF reales verificados, 285 filas y 20 páginas. Consulte CIERRE_SSRS.md y la evidencia de cierre.
+>
+> **Equipo local, 9 de octubre de 2026:** SSRS 2022 16.0.9760.42787 (edición Developer) instalado y configurado por script; ocho RDL publicados y ocho PDF reales verificados (22 páginas, 447 líneas con datos) en `reports/evidencia`, con cruces contra SQL Server. Evidencia: [local-20261009.txt](../assets/evidencias/cierre/ssrs/local-20261009.txt).
 
 ## Configuración reproducible (ya completada en este equipo)
 
@@ -42,18 +44,20 @@ El publicador crea/reutiliza carpeta y fuente antes de cargar los RDL. El verifi
 
 | # | RDL | Publicado | Abre SSRS | Datos SSRS | PDF | Resultado |
 |---|---|---|---|---|---|---|
-| 1 | `01_HistorialCompra.rdl` | Pendiente | Pendiente | No comprobados | No generado | PENDIENTE |
-| 2 | `02_TopProveedores.rdl` | Pendiente | Pendiente | No comprobados | No generado | PENDIENTE |
-| 3 | `03_ComparacionOfertas.rdl` | Pendiente | Pendiente | No comprobados | No generado | PENDIENTE |
-| 4 | `04_PedidosSinAsignar.rdl` | Pendiente | Pendiente | No comprobados | No generado | PENDIENTE |
-| 5 | `05_OrdenesAbiertas.rdl` | Pendiente | Pendiente | No comprobados | No generado | PENDIENTE |
-| 6 | `06_GastoDepartamento.rdl` | Pendiente | Pendiente | No comprobados | No generado | PENDIENTE |
-| 7 | `07_PromedioAdjudicacion.rdl` | Pendiente | Pendiente | No comprobados | No generado | PENDIENTE |
-| 8 | `08_EvolucionPrecios.rdl` | Pendiente | Pendiente | No comprobados | No generado | PENDIENTE |
+| 1 | `01_HistorialCompra.rdl` | Sí | Sí (URL Access) | Verificados contra SQL | Generado, SHA-256 en evidencia | COMPLETADO |
+| 2 | `02_TopProveedores.rdl` | Sí | Sí (URL Access) | Verificados contra SQL | Generado, SHA-256 en evidencia | COMPLETADO |
+| 3 | `03_ComparacionOfertas.rdl` | Sí | Sí (URL Access) | Verificados contra SQL | Generado, SHA-256 en evidencia | COMPLETADO |
+| 4 | `04_PedidosSinAsignar.rdl` | Sí | Sí (URL Access) | Verificados contra SQL | Generado, SHA-256 en evidencia | COMPLETADO |
+| 5 | `05_OrdenesAbiertas.rdl` | Sí | Sí (URL Access) | Verificados contra SQL | Generado, SHA-256 en evidencia | COMPLETADO |
+| 6 | `06_GastoDepartamento.rdl` | Sí | Sí (URL Access) | Verificados contra SQL | Generado, SHA-256 en evidencia | COMPLETADO |
+| 7 | `07_PromedioAdjudicacion.rdl` | Sí | Sí (URL Access) | Verificados contra SQL | Generado, SHA-256 en evidencia | COMPLETADO |
+| 8 | `08_EvolucionPrecios.rdl` | Sí | Sí (URL Access) | Verificados contra SQL | Generado, SHA-256 en evidencia | COMPLETADO |
+
+Parámetros de la verificación local: orden 11, fechas 2025-10-09 a 2026-10-09; páginas 3/1/1/3/1/1/1/11; cruces 07 (15 órdenes, promedio 8.6) y 02 (Top5) coinciden con `db/queries`. Instalación y configuración automatizadas: `scripts/instalar_ssrs.ps1` (consola elevada) y `scripts/reinstalar-ssrs.ps1`.
 
 ## Integración en web y WPF
 
-Establecer GUATECOMPRAS_SSRS_URL con la URL real del servicio antes de iniciar Tomcat y reiniciar. El enlace abre SSRS con parámetros y autenticación Windows independiente. Un valor de variable no prueba disponibilidad. CSV y la impresión web complementan; no son PDF SSRS.
+Establecer GUATECOMPRAS_SSRS_URL con la URL real del servicio antes de iniciar Tomcat y reiniciar. En este equipo la variable está definida a nivel de usuario y `scripts/iniciar_tomcat.ps1` la toma del registro del usuario si la sesión no la trae (así funciona también al pulsar F5). El enlace abre SSRS con parámetros y autenticación Windows independiente; si el navegador pide credenciales se acepta con la cuenta local. Un valor de variable no prueba disponibilidad. CSV y la impresión web complementan; no son PDF SSRS.
 
 
 [Volver a Reportes](README.md)

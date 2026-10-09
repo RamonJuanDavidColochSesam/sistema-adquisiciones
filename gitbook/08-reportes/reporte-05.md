@@ -2,7 +2,7 @@
 
 **Definición:** `reports/ssrs/05_OrdenesAbiertas.rdl`. Dataset `Datos`, fuente `/GuateCompras/GuateComprasSQL`.
 
-**Estado:** consulta API/WPF comprobada; publicación/ejecución SSRS y PDF pendientes.
+**Estado:** consulta API/WPF comprobada; publicación y ejecución SSRS comprobadas y PDF real de 1 página verificado el 9 de octubre de 2026 (evidencia `../assets/evidencias/cierre/ssrs/local-20261009.txt`).
 
 | Parámetro | Tipo | Predeterminado |
 |---|---|---|

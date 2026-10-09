@@ -17,6 +17,13 @@ param(
 $ErrorActionPreference = 'Stop'
 $raiz = Split-Path $PSScriptRoot -Parent
 
+# SSRS: si la sesión no trae GUATECOMPRAS_SSRS_URL (p. ej. VS Code abierto antes de
+# definirla), se toma el valor del entorno del usuario; así el botón "Abrir SSRS" siempre funciona.
+if ([string]::IsNullOrWhiteSpace($env:GUATECOMPRAS_SSRS_URL)) {
+    $urlSsrs = [Environment]::GetEnvironmentVariable('GUATECOMPRAS_SSRS_URL', 'User')
+    if ($urlSsrs) { $env:GUATECOMPRAS_SSRS_URL = $urlSsrs }
+}
+
 function Obtener-Tomcat {
     $candidatos = @()
     if ($TomcatHome) { $candidatos += $TomcatHome }

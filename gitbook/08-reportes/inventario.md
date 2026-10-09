@@ -4,18 +4,20 @@
 
 6 de octubre de 2026. El servicio SQLServerReportingServices está Running, pero rsreportserver.config no tiene DSN de catálogo, directorios virtuales ni reservas de URL. El WSDL local no es accesible. Instalación comprobada, configuración funcional pendiente. Evidencia: `evidencias/cierre/ssrs-diagnostico.json` y `ssrs-intento.txt`.
 
+9 de octubre de 2026 (equipo local): SSRS 2022 16.0.9760.42787 configurado por `scripts/instalar_ssrs.ps1`; WSDL y portal responden HTTP 200, catálogo `ReportServer` creado y los ocho RDL publicados en `/GuateCompras`. Evidencia: `evidencias/cierre/ssrs/local-20261009.txt`.
+
 Carpeta prevista `/GuateCompras`; fuente compartida `/GuateCompras/GuateComprasSQL`; extensión SQL; conexión `Data Source=localhost;Initial Catalog=GuateCompras`; Windows Integrated. La URL destino debe confirmarse después de configurar SSRS. No se atribuye al ejemplo localhost una publicación real.
 
 | # | RDL | Publicado | Abre SSRS | Datos SSRS | PDF | Resultado |
 |---|---|---|---|---|---|---|
-| 1 | `01_HistorialCompra.rdl` | Pendiente | Pendiente | No comprobados | No generado | PENDIENTE |
-| 2 | `02_TopProveedores.rdl` | Pendiente | Pendiente | No comprobados | No generado | PENDIENTE |
-| 3 | `03_ComparacionOfertas.rdl` | Pendiente | Pendiente | No comprobados | No generado | PENDIENTE |
-| 4 | `04_PedidosSinAsignar.rdl` | Pendiente | Pendiente | No comprobados | No generado | PENDIENTE |
-| 5 | `05_OrdenesAbiertas.rdl` | Pendiente | Pendiente | No comprobados | No generado | PENDIENTE |
-| 6 | `06_GastoDepartamento.rdl` | Pendiente | Pendiente | No comprobados | No generado | PENDIENTE |
-| 7 | `07_PromedioAdjudicacion.rdl` | Pendiente | Pendiente | No comprobados | No generado | PENDIENTE |
-| 8 | `08_EvolucionPrecios.rdl` | Pendiente | Pendiente | No comprobados | No generado | PENDIENTE |
+| 1 | `01_HistorialCompra.rdl` | Sí | Sí (URL Access) | Verificados contra SQL | Generado, SHA-256 en evidencia | COMPLETADO |
+| 2 | `02_TopProveedores.rdl` | Sí | Sí (URL Access) | Verificados contra SQL | Generado, SHA-256 en evidencia | COMPLETADO |
+| 3 | `03_ComparacionOfertas.rdl` | Sí | Sí (URL Access) | Verificados contra SQL | Generado, SHA-256 en evidencia | COMPLETADO |
+| 4 | `04_PedidosSinAsignar.rdl` | Sí | Sí (URL Access) | Verificados contra SQL | Generado, SHA-256 en evidencia | COMPLETADO |
+| 5 | `05_OrdenesAbiertas.rdl` | Sí | Sí (URL Access) | Verificados contra SQL | Generado, SHA-256 en evidencia | COMPLETADO |
+| 6 | `06_GastoDepartamento.rdl` | Sí | Sí (URL Access) | Verificados contra SQL | Generado, SHA-256 en evidencia | COMPLETADO |
+| 7 | `07_PromedioAdjudicacion.rdl` | Sí | Sí (URL Access) | Verificados contra SQL | Generado, SHA-256 en evidencia | COMPLETADO |
+| 8 | `08_EvolucionPrecios.rdl` | Sí | Sí (URL Access) | Verificados contra SQL | Generado, SHA-256 en evidencia | COMPLETADO |
 
 ## Definiciones existentes
 

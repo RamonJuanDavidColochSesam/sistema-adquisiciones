@@ -71,7 +71,7 @@ Agregar -Isolated solamente si el perfil NuGet es inaccesible. También puede ab
 
 ## 7. SSRS
 
-Configurar ReportServer con sus herramientas y probar URLs. La identidad Windows debe estar autorizada en SSRS y en SQL. Usar Windows PowerShell 5.1 desde la raíz:
+Instalar y configurar SSRS con una consola elevada (`scripts/instalar_ssrs.ps1 -Instalador ...`, ver REPORTES_SSRS.md) o con Report Server Configuration Manager, y probar URLs. La identidad Windows debe estar autorizada en SSRS y en SQL. Usar Windows PowerShell 5.1 desde la raíz:
 
 ```powershell
 ./scripts/publicar_ssrs.ps1 -ReportServer 'http://localhost/ReportServer' -SqlServer localhost -Database GuateCompras

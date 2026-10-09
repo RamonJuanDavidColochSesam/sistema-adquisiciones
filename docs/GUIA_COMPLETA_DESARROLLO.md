@@ -129,7 +129,7 @@ La tabla distingue versiones declaradas en archivos de versiones respaldadas por
 | Visual Studio | `.sln` declara formato 12 y encabezado versión 17 | `desktop/GuateCompras.sln` | Organización de la solución; no prueba la versión instalada del IDE ni compatibilidad con cualquier VS17 |
 | Eclipse | Metadatos: Java 17 y web 6.0; IDE exacto desconocido | `.settings` | Proyecto Java/web original; ECJ no demuestra uso de la interfaz Eclipse |
 | ECJ | 3.36.0 | Perfil restricted-windows del POM | Compilación alternativa ante restricción de lectura ZIPFS del entorno |
-| SSRS | Formato RDL2016; versión binaria SSRS no confirmada | `reports/ssrs`, scripts y evidencia | Servicio independiente de publicación y renderizado PDF |
+| SSRS | Formato RDL2016; SSRS 2022 16.0.9760.42787 (edición Developer) instalado y configurado en este equipo | `reports/ssrs`, scripts y evidencia | Servicio independiente de publicación y renderizado PDF |
 | Python | Versión exacta no fijada por el proyecto | `tests/integration` y generador RDL | Suite HTTP sin mocks; comparación PDF usa pdfplumber |
 | PMD/CPD | 7.17.0; Maven plugin 3.28.0 | `scripts/calidad.ps1`, evidencia XML | Análisis estático y detección de duplicación |
 | Git | Versión instalada no fijada | Siete commits existentes | Reconstrucción parcial del origen y control de archivos |

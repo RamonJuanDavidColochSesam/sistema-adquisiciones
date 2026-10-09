@@ -59,7 +59,7 @@ La ventana de login permite editar la URL API. Predeterminada: `http://127.0.0.1
 
 ## SSRS
 
-**SSRS ya está instalado y su servicio funciona. La configuración actual no tiene catálogo ReportServer ni URLs de servicio/portal.** Hay ocho RDL 2016 válidos y scripts de publicación/verificación. Seguir `REPORTES_SSRS.md`. Hasta configurar y renderizar en un servidor real, el apartado SSRS permanece PARCIAL; no se incluyen PDFs simulados.
+**SSRS está instalado, configurado y publicado en este equipo (9 de octubre de 2026): catálogo ReportServer, URLs de servicio y portal, ocho RDL publicados y ocho PDF reales verificados.** Instalación y configuración automatizadas en `scripts/instalar_ssrs.ps1` (consola elevada, un solo aviso de Control de Cuenta de Usuario) y `scripts/reinstalar_ssrs.ps1` para un ciclo completo; publicación y verificación en `scripts/publicar_ssrs.ps1` y `scripts/verificar_ssrs.ps1`. Seguir `REPORTES_SSRS.md`; no se incluyen PDFs simulados.
 
 ## Pruebas
 
@@ -83,6 +83,6 @@ La suite Python usa solo la biblioteca estándar, lee las contraseñas locales s
 - SSRS no disponible: configurar el servidor; CSV y consulta web no equivalen a renderizado SSRS.
 
 
-> Cierre: SSRS ya está instalado; configurar catálogo/URLs según Reportes, no reinstalar innecesariamente.
+> Cierre: SSRS instalado, configurado y publicado con ocho PDF verificados. En otra máquina, seguir `scripts/instalar_ssrs.ps1` según REPORTES_SSRS.md; no reinstalar innecesariamente.
 
 [Volver a Manual de instalación](README.md)
