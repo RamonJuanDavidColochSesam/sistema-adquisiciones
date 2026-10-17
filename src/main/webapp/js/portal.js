@@ -66,7 +66,7 @@ async function load(){
   else if(active==='ordenes')view=await orders();
   else if(active==='adjudicaciones')view=await awards();
   else if(active==='reportes')view=await reports();
-  else if(active==='conexion'){const data=await api('conexion/test');view=el('div');view.append(table([{motor:'SQL Server',estado:data.sqlServer?'Disponible':'Sin conexión',consulta:'SELECT 1',tiempo_ms:data.sqlServerMs},{motor:'PostgreSQL',estado:data.postgres?'Disponible':'Sin conexión',consulta:'SELECT 1',tiempo_ms:data.postgresMs}]));}
+  else if(active==='conexion')view=await conexiones();
   else if(active==='auditoria'){const data=await api('auditoria?page='+page);view=el('div');view.append(table(data.items),pager(data.total,50));}
   else view=await catalog(active);
   if(current===ticket)$('content').replaceChildren(view);
@@ -168,6 +168,21 @@ async function reports(){
  if(!catalog.ssrsConfigurado)view.append(el('div','Los ocho informes SSRS están preparados. Su servidor de informes todavía no está configurado. Las consultas de esta pantalla usan datos reales de la institución.','help-note'));
  filters.onsubmit=async e=>{e.preventDefault();clearNotice();submit.disabled=true;try{const params=new URLSearchParams();const metadata=catalog.informes.find(r=>r.id===Number(selector.value));metadata.parametros.forEach(key=>{if(controls[key].input.value)params.set(key,controls[key].input.value);});const data=await api('reportes/'+selector.value+'?'+params);results.replaceChildren(el('h2',data.nombre),el('p',data.total+' registros'),table(data.items));const toolbar=el('div',undefined,'toolbar');toolbar.append(action('Imprimir',()=>window.print()));toolbar.append(action('Exportar CSV',()=>csv(data.items,'GuateCompras-Informe-'+selector.value+'.csv')));if(catalog.ssrsConfigurado&&user.rol!=='AdminProveedor'){toolbar.append(action('Abrir SSRS',()=>{const names=['01_HistorialCompra','02_TopProveedores','03_ComparacionOfertas','04_PedidosSinAsignar','05_OrdenesAbiertas','06_GastoDepartamento','07_PromedioAdjudicacion','08_EvolucionPrecios'];const url=new URL(catalog.ssrsUrl);if(!['http:','https:'].includes(url.protocol))throw Error('URL SSRS no válida');url.search='/GuateCompras/'+names[Number(selector.value)-1]+'&rs:Command=Render';const mapping={articulo:'Articulo',proveedor:'Proveedor',orden:'Orden',sucursal:'Sucursal',anio:'Anio',desde:'Desde',hasta:'Hasta'};for(const [k,v]of params)url.search+='&'+mapping[k]+'='+encodeURIComponent(v);window.open(url.href,'_blank','noopener');}));}results.prepend(toolbar);}catch(error){notify(error.message);}finally{submit.disabled=false;}};
  return view;
+}
+async function conexiones(){
+ const view=el('div'),toolbar=el('div',undefined,'toolbar'),grid=el('div',undefined,'db-grid'),stamp=el('p',undefined,'help-note');
+ toolbar.append(el('p','Comprobación en vivo de los dos motores: cada motor responde con su versión real, base de datos, servidor y una prueba SELECT 1.'));
+ const refresh=action('Comprobar conexiones ahora',async()=>{refresh.disabled=true;clearNotice();try{const data=await api('conexion/test');pintar(data);notify('Comprobación realizada a las '+new Date().toLocaleTimeString('es-GT'),true);}finally{refresh.disabled=false;}},'');
+ toolbar.append(refresh);
+ const tarjeta=motor=>{
+  const card=el('div',undefined,'db-card'+(motor.disponible?'':' db-card-down')),head=el('div',undefined,'db-card-head');
+  head.append(el('span',motor.motor,'db-card-title'),el('span',motor.disponible?'Disponible':'Sin conexión','badge'+(motor.disponible?'':' inactive')));card.append(head);
+  const filas=el('div',undefined,'db-list'),version=motor.nivel&&motor.nivel!=='RTM'?motor.version+' · '+motor.nivel:motor.version;
+  [['Base de datos',motor.base],['Servidor',motor.servidor],['Versión',version],['Edición',motor.edicion],['Compilación',motor.compilacion],['Prueba en vivo',motor.prueba?(motor.prueba.consulta+' → '+(motor.prueba.valor??'sin respuesta')):'—'],['Hora del servidor',motor.horaServidor],['Latencia',motor.ms+' ms'],['Error',motor.error]].forEach(([key,value])=>{if(value===null||value===undefined||value==='')return;const row=el('div',undefined,'db-row');row.append(el('span',key,'db-key'),el('span',String(value),'db-val'));filas.append(row);});
+  card.append(filas);return card;
+ };
+ const pintar=data=>{grid.replaceChildren(...(data.motores||[]).map(tarjeta));stamp.textContent='Última comprobación: '+(data.fecha||'—')+' · ambos motores se consultaron en la misma petición.';};
+ view.append(toolbar,stamp,grid);pintar(await api('conexion/test'));return view;
 }
 function csv(items,name){if(!items.length)throw Error('No hay datos para exportar');const keys=Object.keys(items[0]);const escape=value=>{let s=value==null?'':String(value);if(/^[=+@-]/.test(s))s="'"+s;return '"'+s.replaceAll('"','""')+'"';};const content=[keys.map(label).map(escape).join(','),...items.map(r=>keys.map(k=>escape(r[k])).join(','))].join('\r\n');const url=URL.createObjectURL(new Blob(['\uFEFF'+content],{type:'text/csv;charset=utf-8'}));const a=el('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
 init().catch(e=>notify(e.message));

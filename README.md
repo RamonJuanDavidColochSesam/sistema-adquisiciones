@@ -6,7 +6,7 @@ Sistema institucional de adquisiciones para Base de Datos I, UMG Salamá: sucurs
 
 Java17 · Maven3.9.9 · Jersey/Jakarta Servlet6 · JDBC/HikariCP · SQL Server operativo · PostgreSQL como segundo modelo/verificación · Tomcat10.1 · HTML/CSS/JavaScript · WPF/.NET10 · ocho RDL SSRS2016.
 
-Portal y WPF → API REST → autorización/servicios → DAO → SQL Server. PostgreSQL tiene conexión, migraciones y pruebas independientes; sin réplica automática. SSRS consulta SQL Server mediante identidad Windows separada.
+Portal y WPF → API REST → autorización/servicios → DAO → SQL Server. PostgreSQL tiene conexión y pruebas independientes; sin réplica automática. SSRS consulta SQL Server mediante identidad Windows separada.
 
 ## Requisitos y preparación
 
@@ -23,7 +23,7 @@ Java17, Maven, Tomcat10.1, SQL Server/PostgreSQL y .NET Desktop Runtime10 en Win
 ./scripts/build_desktop.ps1
 ```
 
-Abrir http://127.0.0.1:18080/sistema-adquisiciones/ y mantener Tomcat activo. Ejecutar EXE Release WPF o abrir desktop/GuateCompras.sln en Visual Studio. URL de API editable en login. Para restricciones del sandbox Windows, build Java -RestrictedWindows y WPF -Isolated. [Manual completo](docs/MANUAL_INSTALACION.md).
+Abrir http://127.0.0.1:18080/sistema-adquisiciones/ y mantener Tomcat activo. Ejecutar EXE Release WPF o abrir desktop/GuateCompras.sln en Visual Studio. URL de API editable en login. Para restricciones del sandbox Windows, build Java -RestrictedWindows y WPF -Isolated.
 
 ### Ejecución local en este equipo (VS Code y Eclipse)
 
@@ -35,11 +35,11 @@ En este equipo Tomcat corre en el **puerto 8080** (no 18080) y no hay Maven inst
 
 ## Bases y usuarios de prueba
 
-DDL SQL Server: schema.sql; PostgreSQL: db/schema_postgres.sql. Migraciones V001–V004 por motor. Semilla idempotente, mínimos 5/10/50/20/100. Usuarios admin, gestor, proveedor y auditor; contraseñas aleatorias en config/demo-access.properties, privado/excluido. No se incluyen claves reales en README o paquetes.
+DDL de estructura: `db/ddl/sqlserver.sql` y `db/ddl/postgres.sql` (21 tablas, vista vw_OrdenesAbiertas, índices, restricciones y 10 triggers de reglas de negocio). Verificado el 14 de octubre de 2026 contra ambas bases reales: recuentos idénticos de tablas, columnas, claves, índices, vistas y triggers. Semilla idempotente, mínimos 5/10/50/20/100. Usuarios admin, gestor, proveedor y auditor; contraseñas aleatorias en config/demo-access.properties, privado/excluido. No se incluyen claves reales en README o paquetes.
 
 ## Reportes y WPF
 
-Ocho consultas en db/queries y API /reportes; CSV WPF. RDL en reports/ssrs. SSRS 2022 instalado y configurado por script (scripts/instalar_ssrs.ps1); ocho informes publicados y ocho PDF reales verificados el 9 de octubre de 2026. [Inventario](docs/SSRS_INVENTARIO.md), [publicación/aceptación](docs/REPORTES_SSRS.md). Integración web/WPF usa GUATECOMPRAS_SSRS_URL y autenticación Windows efectivos.
+Ocho consultas en db/queries y API /reportes; CSV WPF. RDL en reports/ssrs. SSRS 2022 instalado y configurado por script (scripts/instalar_ssrs.ps1); ocho informes publicados y ocho PDF reales verificados el 9 de octubre de 2026. Integración web/WPF usa GUATECOMPRAS_SSRS_URL y autenticación Windows efectivos.
 
 ## Pruebas y calidad
 
@@ -48,11 +48,7 @@ python tests/integration/run.py
 ./scripts/calidad.ps1 -Maven mvn
 ```
 
-Suite HTTP, ambos motores y self-test WPF reales; no JUnit ni cobertura unitaria certificada. PMD/CPD:10→5 advertencias y un grupo de duplicación. [Detalle](docs/CALIDAD_SOFTWARE.md). Documento oficial exige Sonat para entrega; no exige Sonar.
-
-## Documentación oficial preparada para GitBook
-
-[Inicio](gitbook/README.md) · [16 capítulos](gitbook/SUMMARY.md) · [sincronización/entrega](gitbook/sincronizar.md). Espacio solicitado: https://app.gitbook.com/o/bcbMuvR3ChdMMJmBjl68/s/I4ADiWkYzeTnxOULsd7Y/ . Preparada; publicación no realizada sin sesión/conexión autenticada.
+Suite HTTP, ambos motores y self-test WPF reales; no JUnit ni cobertura unitaria certificada. PMD/CPD:10→5 advertencias y un grupo de duplicación. Documento oficial exige Sonat para entrega; no exige Sonar.
 
 ## Estructura
 
@@ -60,13 +56,11 @@ Suite HTTP, ambos motores y self-test WPF reales; no JUnit ni cobertura unitaria
 src/main/java/     Backend y módulos
 src/main/webapp/   Portal y páginas conservadas
 desktop/          WPF Visual Studio
-db/               DDL, migraciones y consultas
+db/               DDL de ambos motores y consultas
 reports/ssrs/     Ocho RDL y fuente compartida
 scripts/          Build, bases, Tomcat, SSRS, calidad
 tests/integration Pruebas reales y limpieza de fixtures
-docs/             Manuales, matriz, auditoría, evidencia
-gitbook/          Documentación web/activos para Git Sync
 config/           Ejemplos públicos; privados ignorados
 ```
 
-[75 requisitos](docs/MATRIZ_REQUISITOS.md) · [Evidencia](docs/EVIDENCIA_VERIFICACION.md) · [Auditoría](docs/AUDITORIA_FINAL.md). Cierre externo incompleto: GitBook publicado y Sonat pendientes. No se declara 100%; paquetes sin credenciales ni herramientas de trabajo.
+Matriz de 75 requisitos y auditoría final: documentación archivada el 14 de octubre de 2026 (recuperable desde el historial de git, carpeta docs/). Cierre externo incompleto: entrega Sonat pendiente. No se declara 100%; paquetes sin credenciales ni herramientas de trabajo.

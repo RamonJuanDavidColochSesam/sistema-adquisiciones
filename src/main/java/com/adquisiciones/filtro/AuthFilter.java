@@ -40,6 +40,9 @@ public final class AuthFilter implements Filter {
   } catch(java.sql.SQLException e){fail(response,503,"No se pudo verificar la autorización");}
  }
  private static void fail(HttpServletResponse response,int code,String message)throws IOException {
-  response.setStatus(code);response.setContentType("application/json");response.getWriter().write("{\"error\":\""+message+"\"}");
+  response.setStatus(code);response.setContentType("application/json");
+  // El 401 se explica además en lenguaje llano: abrir una URL de /api en una pestaña sin sesión es lo habitual.
+  String detalle=code==401?",\"detalle\":\"Sesión no activa: inicie sesión en la aplicación y vuelva a consultar; este recurso exige sesión vigente.\"}":"}";
+  response.getWriter().write("{\"error\":\""+message+"\""+detalle);
  }
 }
